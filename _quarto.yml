@@ -2,10 +2,11 @@ project:
   type: website
 
 website:
-  title: "The Quant Economist"
-  subtitle: "Bringing clarity to the world of finance"
+  #title: "The Quant Economist"
+  #subtitle: "Bringing clarity to the world of finance"
   page-footer:
     right: "Bringing clarity to the world of finance"
+    left: "Usual Disclaimer applies"
   listing:
     contents: posts
     sort: "date desc"
