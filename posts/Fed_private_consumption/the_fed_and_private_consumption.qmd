@@ -24,7 +24,7 @@ title-block-banner: false
 
 > - *It also appears that luck factors matter more for inflation dynamics as neither the supply side factors nor the indirect effects of higher interest rates (which appear more relevant empirically) are in Fed’s direct control*. 
 
-> - *Overall, even if the aggregate effects of monetary policy are probably about as large as we want, I discuss here why monetary policy works largely through redistribution. For that reason, if inflation does not normalize as quickly as the Fed hopes it is questionable whether it will insist on any excessive tightening*. 
+> - *Overall, even if the aggregate effects of monetary policy are probably about as large as we want, I discuss here why monetary policy works largely through redistribution. For that reason, if inflation does not normalize as quickly as the Fed hopes it is questionable whether it will insist on any excessive tightening for too long*. 
 
 
 ## Introduction 
@@ -167,9 +167,9 @@ So, even if the aggregate effects of monetary policy are probably about as large
 
 ## A Few Further Considerations 
 
-My post didn't aim to provide a comprehensive analysis here. To fix ideas, I only focused on consumption-saving choices taking into account the desire of consumers to smooth consumption over-time. At times of heightened uncertainty, however, precautionary savings is another motive households might develop to insure themselves against uncertain labor market prospects. This extra savings combined with pessimistic sentiment also contribute to a falling aggregate demand. So, even if the Fed gets it wrong on how sensitive consumption to higher interest rates, uncertainty is on its side. Spreading the fear of recession is all it takes to have aggregate demand (and oil prices) falling.
+My post didn't aim to provide a comprehensive analysis here. To fix ideas, I only focused on consumption-saving choices taking into account the desire of consumers to smooth consumption over-time. At times of heightened uncertainty, however, precautionary savings is another motive households might develop to insure themselves against uncertain labor market prospects. This extra savings combined with pessimistic sentiment also contribute to a falling aggregate demand. So, even if the Fed gets it wrong with the intertemporal substitution, uncertainty is on its side. Spreading the fear of recession is all it takes to have aggregate demand (and oil prices) falling.
 
-Overall, however, it appears that are the luck factors that would determine the inflation dynamics as neither the supply side factors nor the indirect effects are under the direct control of the Fed.
+Overall, however, it appears that the luck factors are more important for inflation dynamics as neither the supply side factors nor the indirect effects are under the Fed's direct control.
 
 [^1]: Risk aversion and EIS are not separable here. For asset pricing and studying the behavior of equity premia is important to separate the two. There is a large body of literature that uses the so called [Epstein-Zin preferences](https://www.wikiwand.com/en/Epstein%E2%80%93Zin_preferences) for this purpose.
 
