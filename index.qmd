@@ -1,6 +1,6 @@
 ---
 title: "The Quant Economist"
-description: "Bringing clarity to the world of finance"
+#description: "Bringing clarity to the world of finance"
 listing:
   contents: posts
   fields: [date, title, reading-time]
