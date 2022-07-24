@@ -25,8 +25,8 @@ website:
         href: https://twitter.com/Hajjouz
       - icon: linkedin
         href: https://www.linkedin.com/in/moustafa-chatzouz/
-      - icon: rss
-        href: index.xml
+    #  - icon: rss
+    #    href: index.xml
 
 format:
   html:
