@@ -1,0 +1,170 @@
+---
+title: "The Fed and Private Consumption (Wonkish)"
+subtitle: "*why inflation might not go down as fast as the Fed believes?*"
+date: "07/06/2022"
+categories:
+  - Monetary Policy
+  - Macroeconomics
+  - Inflation  
+execute:
+   echo: false
+format:
+  html:
+    code-fold: true   
+title-block-banner: false
+---
+
+<div align="justify">
+
+> -   *How hawkish is the Fed? The answer to this question depends on the transmission of interest rates to consumer spending, the largest component of aggregate demand. In this post, I provide an illustrative analysis of how sensitive consumption is to changes in interest rates according to the Fed's recent projections*.
+
+> -   *According to this analysis, the Fed is expecting that private consumption would be extremely sensitive to its projected policy rates; the assumed degree of sensitivity implies a very tight monetary policy stance, especially in the near term.*
+
+> -   *Fed's assumptions are not implausible, but it implies an elasticity of intertemporal substitution that is quite unusual across a range of empirical studies. For this reason, it is quite likely that consumption might prove less responsive than the Fed expects because rich households (net savers) benefit from higher interest income. In this situation, higher interest rate hikes might not necessarily bring inflation down as fast as the Fed wants.*
+
+> -   *It also appears that luck factors matter more for inflation dynamics as neither the supply side factors nor the indirect effects of higher interest rates (which appear more relevant empirically) are in Fed's direct control*.
+
+> -   *Overall, even if the aggregate effects of monetary policy are probably about as large as we want, I discuss here why monetary policy works largely through redistribution. For that reason, if inflation does not normalise as quickly as the Fed hopes it is questionable whether it will insist on any excessive tightening for too long*.
+
+## Introduction
+
+Central Banks have begun their tightening cycle to bring an exceptionally high inflation rate down and are committed to even more tightening if inflation stays high. In assessing the tightness of monetary policy it is common to compare the fund rate relative to the size of inflation or the level of neutral interest rates. Though such an approach could provide good quick insights, it nevertheless does not say much about the expected drop in aggregate demand. More importantly, comparisons across time are not very meaningful either. For example, a 50 bps increase might have a stronger impact today than 20--30 years ago because a much larger number of people is leveraged. So, even if the distance between fund rates and inflation might look larger (or smaller) between two different periods, such comparisons are inconsistent due to differences in the prevailing structure of the economy.
+
+Central to the Fed's ability to control inflation is how interest rates transmit into consumer spending as this is the largest component (roughly 60%) of aggregate demand, equivalently GDP. Thus, a supplementary (and perhaps more appropriate) way to assess the tightness of monetary policy is to look at the effects of interest rates on private consumption. The short-term nominal interest rates, Fed's main tool to affect aggregate demand, transmit to private consumption in two broad ways. Through a direct channel that takes into account how interest rates alone are affecting consumption and an indirect channel that only focuses on the second-order effects of interest rate changes on aggregate demand, namely the change in disposable income of households. Note that the indirect effects emanate from the direct impact of the original interest rate change and thus are a function of consumers' response to rising interest rates.
+
+In evaluating the right monetary policy stance then it requires judgments on two interdependent issues: a) how the direct effects would affect consumption, and b) whether the transmission mechanism of monetary policy relies more on the direct or indirect channel. Evidently, inappropriate judgments on the first would necessarily lead to misleading or fallacious judgments on the second. And, while the first issue might sound less controversial, the quantitative impact of monetary policy on private consumption is still ambiguous.
+
+In this post, I would mostly discuss the first issue. Cleaning the picture here helps to bring more clarity when assessing monetary policy tightness. For example, if the direct effects are expected to be sufficiently strong the fall in disposable income contributes less to the drop in aggregate demand. Otherwise, the potential reliance on the indirect effects implies a more uncertain inflation outlook and adds to the luck factors that the Fed needs to overcome since such second-order effects are (together with the supply side factors) not in its direct control.
+
+## Interest rates and the price of consumption across time
+
+The effects of interest rates on consumption are at the heart of macroeconomic theory. Very briefly, when interest rates are rising there are two aspects to look at: the negative effect of higher rates encouraging consumers to save, and the positive effect that higher rates result in more interest income. To summarise, the effects of interest rates on consumption can be decomposed into:
+
+1.  **The substitution effect:** An increase in interest rates tends to lower consumption through the substitution effect, because current consumption becomes expensive relative to saving--households reduce their spending today in favour of spending tomorrow. In other words, they might want to save more (e.g. from 10% of their income to 12%) or borrow less.
+
+2.  **The income effect:** For *given* savings higher interest rates boost consumption through the higher interest income. For net borrowers, the opposite holds true when they are affected by interest rates.
+
+Combining the income and substitution effects and following an increase in the interest rate, borrowers have an incentive to borrow less. The substitution effect encourages saving, while the income effect discourages saving. The overall effect is ambiguous. Thus, in theory, the direct effects of monetary policy on consumption are in general uncertain.
+
+Here you can immediately notice two things. First, for net borrowers, higher interest rates would unambiguously decrease their current consumption. For net savers, things are less clear and in general would depend on how rich they already are.
+
+This brings us to the second point. The income effect is more relevant, and likely much stronger than the substitution effect, for those at the top of income or wealth distribution. While the substitution effects are likely to play more role for the rest. Hence, the direct effects of monetary policy on consumption depend pretty much on both the fraction of people who are net borrowers as well as the ***shape*** of income or wealth distribution (not irrelevant for the US which suffers from extreme levels of income and wealth inequality).
+
+For now, the conventional view is that higher interest rates reduce consumption as the negative substitution effect outweighs the positive income effect hence higher interest rates result in a drop in aggregate consumption. But, the size of this drop is equally relevant in the present context and one way to get a sense of the tightness of the monetary policy stance is by looking at the relative strength of income and substitution effects. This is usually parameterized by the so-called elasticity of intertemporal substitution (EIS). In the next section, I estimate this parameter based on the Fed's forecasts aiming to extract the implicit judgement that the Fed might be making here.
+
+## Some illustrative (and inconvenient) Arithmetics
+
+To this end, I will use a conventional macroeconomic approach. This might not allow definite conclusions but works well as a proof of concept. Assuming that households are reasonably forward-looking, conventional macroeconomic theory likes to use the so-called Euler Equation to study consumption dynamics. People might also recognise this through the CAMP model used for studying the relationship between business cycles and asset prices.
+
+There are various versions of this equation, depending on the application. For the point I want to make here, a conventional approach more than suffices. In this case, and in order to link inflation, interest rates, consumption and income and substitution effects, I would assume that aggregate consumption follows the rule below (See [here](https://core.ac.uk/download/pdf/6377146.pdf) or [here](https://www.thijsvanrens.com/macro/SE_IE_note.pdf) for a simple example)
+
+$$
+E_{t} \Delta \overline{ c_{t+1}}=\sigma \widehat{r_{t}}
+$$
+
+where
+
+$$
+\Delta \overline{ c_{t+1}} = \log(c_{t+1}) - \log(c_{t}) \quad ( \text{real consumption growth}) 
+$$ $$
+\widehat{r_{t}} = \log(r_{t}) - \log(r^*) 
+$$ $$
+\text{and} \quad r_{t} = i_{t} - \pi_{t+1} \quad ( \text{real risk-free/fund rate with } r^* \equiv \text{long-run values})
+$$
+
+The parameter $\sigma$ is the so-called [elasticity of intertemporal substitution](https://www.wikiwand.com/en/Elasticity_of_intertemporal_substitution) that controls the sensitivity of consumption growth to changes in interest rates[^1]. The higher this value is, the more sensitive to a change in interest rate consumption growth is. This parameter is also controlling the balance between the substitution and income effects. More specifically:
+
+[^1]: Risk aversion and EIS are not separable here. For asset pricing and studying the behaviour of equity premia is important to separate the two. There is a large body of literature that uses, the so-called, [Epstein-Zin preferences](https://www.wikiwand.com/en/Epstein%E2%80%93Zin_preferences) for this purpose.
+
+$$
+\sigma 
+\begin{cases}
+< 1 \qquad \text{Income Effect > Substitution Effect} \\
+> 1 \qquad \text{Income Effect < Substitution Effect} \\
+= 1 \qquad \text{Income Effect = Substitution Effect} 
+\end{cases}
+$$
+
+It is usually assumed that an estimate of less than one implies that the income effect dominates the substitution effect and consumption tends to increase after an increase in interest rates. Conversely, when the substitution effect is greater than the income effect (σ \>1) higher interest rates encourage more savings and less borrowing, hence aggregate demand is falling. There is the third case where these two effects cancel each other out so consumption is insensitive to interest rates. This is irrelevant in the short-run, but not implausible in the long-run.
+
+Note here that the natural interest rate is a function of σ which, as discussed, captures households' desire to smooth consumption over time. For example, if consumers change their consumption preferences this affects the path of consumption and, by extension, the supply of savings --- which is important for natural interest rates.
+
+In the [June statement](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20220615.htm), the Fed released the following projections:
+
+| Variable           | 2022 | 2023 | 2024 | Long-run |
+|--------------------|------|------|------|----------|
+| real GDP growth    | 1.7  | 1.7  | 1.9  | 1.8      |
+| PCE Inflation      | 5.2  | 2.6  | 2.2  | 2        |
+| Federal funds rate | 3.4  | 3.4  | 3.4  | 2.5      |
+
+I use these projections to reverse engineer and uncover the parameter $\sigma$ based on the consumption rule above. Because the Fed is not publishing its projections for real consumption growth I will use instead the real GDP growth. In the data, real GDP growth and real consumption growth are strongly correlated ( the correlation coefficient is roughly 0.90--0.99) so that approximation does little harm. Then, such forecasts imply that the EIS is:
+
+|                  | 2022 | 2023 | 2024 |
+|------------------|------|------|------|
+| Central Scenario | N/A  | 4.5  | 5    |
+
+For the 2022 year, it was not possible to estimate $\sigma$ since mathematically at least the interest rates were too low for the size of inflation and hence the logarithm was not defined. In general, Fed's central forecasts imply a rather stable $\sigma \approx 5$ across the forecast years. Interestingly, this model implies that if EIS is stable across the forecast years, the Fed to validate its assumption may need to raise interest rates by another 200 bps by the end of 2022. By this, the Fed might be assuming that substitution effects outweigh income effects on the aggregate[^2]. This is in line with conventional wisdom. But in the current context the strength of the substitution effects, that is the size of $\sigma$, also matters for the tightness of monetary policy.
+
+[^2]: This also implies that the demand for mortgages will also drop. So, house prices might be under real pressure considering the banking sector will cut lending.
+
+## Reality vs the Fed
+
+To get some sense of this, I utilise an excellent [meta-analysis](http://meta-analysis.cz/substitution/) that collects more than 2700 published estimates of the elasticity of intertemporal substitution across countries with about half of them focusing on the United States. Based on this study, I show below the distribution of $\sigma$ across countries including the US. The red horizontal line is when $\sigma$ equals 1, so values above this line indicate when the substitution effect dominates.
+
+```{python}
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.express as px 
+
+path_stata_file = '/Users/safishajjouz/Downloads/eis_det.dta'
+df_eis = pd.read_stata(path_stata_file)
+
+# Winsorization 
+upper_limit = df_eis['eis'].quantile(0.99)
+lower_limit = df_eis['eis'].quantile(0.01)
+
+df_eis['eis'] = np.where(df_eis['eis'] >= upper_limit,
+        upper_limit,
+        np.where(df_eis['eis'] <= lower_limit,
+        lower_limit,
+        df_eis['eis']))
+
+df_eis = df_eis.dropna()
+mask = df_eis['country'].isin(['UK, USA','USA, Austria, Canada, Denmark, Finland, France, Greece, Italy, Japan, Norway, UK'])
+df = df_eis[~mask]
+
+
+# drop countries who have less than 10 studies 
+drop_countries = df.groupby('country').count()
+drop_countries = drop_countries[drop_countries['id']<10].index.to_list()
+
+mask2 = df['country'].isin(drop_countries)
+df = df[~mask2]
+
+plt.figure(figsize=(8,6))
+plt.axhline(y=1, color='r', linestyle='-')
+ax = sns.boxplot(data=df.dropna(), x='country', y='eis')
+#plt.setp(ax.get_xticklabels(), rotation=30, horizontalalignment='right')
+ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
+
+#plt.tight_layout()
+plt.show()
+```
+
+The good news is that the $\sigma$ estimate implied by the Fed's forecasts lies in the range of extreme values. Meaning, that monetary policy is quite tight. For the size of the substitution effects assumed here, the rise in interest rates implies a rather big bump in consumption in the near term, which is expected to recover quite fast in later years given that savers would have more spending power in the future and discouraged borrowers have fewer liabilities to serve.
+
+The bad news is that the Fed is quite likely to be wrong. The most likely values of $\sigma$ (See Fig) imply that is the income effect that typically dominates (except in Japan, which as usual is an interesting special case). Practically, this implies that consumption could still drop (assuming that there is a sufficient number of borrowers subject to floating rates) but not as much as the Fed might be expecting as the rich might hold consumption firm. Relative to the case where the substitution effects dominate, in this case, consumption takes a smaller hit but a long time to recover.
+
+The ugly part is that central banks - including the Fed - have traditionally focused on aggregate outcomes. In part this was due to data limitations - it was hard to identify distributional effects without large individual-level panels. But it also reflected the conventional view that monetary policy works largely through intertemporal substitution, which was thought to affect everyone in much the same way. Nevertheless, [recent research](https://benjaminmoll.com/wp-content/uploads/2019/07/HANK.pdf) is convincingly suggesting that monetary policy works largely through the indirect effects and, as I noted, income effects are likely to be empirically more relevant than Fed might be assuming.
+
+So, even if the aggregate effects of monetary policy are probably about as large as we want, it now appears that monetary policy works largely through redistribution. For that reason, it is questionable whether the Fed would insist on any excessive tightening for too long.
+
+## A Few Further Considerations
+
+My post didn't aim to provide a comprehensive analysis here. To fix ideas, I only focused on consumption-saving choices taking into account the desire of consumers to smooth consumption over-time. At times of heightened uncertainty, however, precautionary savings is another motive households might develop to insure themselves against uncertain labour market prospects. A precautionary savings motive combined with pessimistic sentiment also contribute to a falling aggregate demand. So, even if the Fed gets it wrong with the intertemporal substitution, uncertainty is on its side. Spreading the fear of recession is all it takes to have aggregate demand (and oil prices) falling.
+
+Wealth effects, that is the drop in consumption due to the fall in asset prices, is another important channel that affects private consumption. I didn't discuss this here either, but I expect that such effects are already incorporated in Fed's latest forecasts. In principle, one could use the same strategy that I developed here to uncover what the Fed is expecting, but the consumption rule might need to change to Epstein-Zin preferences.
+
+Overall, however, it appears that the luck factors are more important for inflation dynamics as neither the supply side factors nor the indirect effects are under the Fed's direct control.
