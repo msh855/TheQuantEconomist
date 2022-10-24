@@ -1,6 +1,6 @@
 ---
 title: "Has inflation changed regime?"
-subtitle: "*This post applies basic clustering methods to identify inflation regimes. It shows that headline inflation has changed regime, but not core iflation. This suggests that supply side factors dominate and it is quite likely Core inflation to change regime, too*"
+subtitle: "*This post applies basic clustering methods to identify inflation regimes. The analysis suggests a change of regime for headline inflation, but not for the core. Meaning, Supply side factors dominate and that Core inflation might also change regime, too*"
 date: "09/21/2021"
 categories:
   - Machine learning
