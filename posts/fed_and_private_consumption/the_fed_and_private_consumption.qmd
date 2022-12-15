@@ -18,9 +18,9 @@ title-block-banner: false
 
 > -   *How hawkish is the Fed? The answer to this question depends on the transmission of interest rates to consumer spending, the largest component of aggregate demand. In this post, I provide an illustrative analysis of how sensitive consumption is to changes in interest rates according to the Fed's recent projections*.
 
-> -   *According to this analysis, the Fed is expecting that private consumption would be extremely sensitive to its projected policy rates; the assumed degree of sensitivity implies a very tight monetary policy stance, especially in the near term.*
+> -   *According to this analysis, the Fed assumes that private consumption is extremely sensitive to its projected policy rates; the assumed degree of sensitivity implies a very tight monetary policy stance, especially in the near term.*
 
-> -   *Fed's assumptions are not implausible, but it implies an elasticity of intertemporal substitution that is quite unusual across a range of empirical studies. For this reason, it is quite likely that consumption might prove less responsive than the Fed expects because rich households (net savers) benefit from higher interest income. In this situation, higher interest rate hikes might not necessarily bring inflation down as fast as the Fed wants.*
+> -   *The Federal Reserve's assumptions about the impact of higher interest rates on consumption may not be unrealistic, but they are based on an unusual level of elasticity of intertemporal substitution compared to other empirical studies. As a result, it is possible that consumption may not react as much to higher interest rates as the Fed expects, because higher rates also support personal incomes, particularly for those who are net savers and wealthier individuals. In this case, higher interest rate hikes may not effectively reduce inflation as quickly as the Fed desires, leading to the potential for even higher interest rate increases in the future.*
 
 > -   *It also appears that luck factors matter more for inflation dynamics as neither the supply side factors nor the indirect effects of higher interest rates (which appear more relevant empirically) are in Fed's direct control*.
 
@@ -65,11 +65,13 @@ $$
 where
 
 $$
-\Delta \overline{ c_{t+1}} = \log(c_{t+1}) - \log(c_{t}) \quad ( \text{real consumption growth}) 
+\Delta \overline{ c_{t+1}} = \log(c_{t+1})-\log(c_{t}) \quad (\text{real consumption growth})
 $$ $$
-\widehat{r_{t}} = \log(r_{t}) - \log(r^*) 
-$$ $$
-\text{and} \quad r_{t} = i_{t} - \pi_{t+1} \quad ( \text{real risk-free/fund rate with } r^* \equiv \text{long-run values})
+\widehat{r_{t}} = \log(r_{t})-\log(r^*) 
+$$
+
+$$ 
+\text{and} \quad r_{t} = i_{t}-\pi_{t+1} \quad ( \text{real risk-free/fund rate with } r^* \equiv \text{long-run values})
 $$
 
 The parameter $\sigma$ is the so-called [elasticity of intertemporal substitution](https://www.wikiwand.com/en/Elasticity_of_intertemporal_substitution) that controls the sensitivity of consumption growth to changes in interest rates[^1]. The higher this value is, the more sensitive to a change in interest rate consumption growth is. This parameter is also controlling the balance between the substitution and income effects. More specifically:

@@ -21,21 +21,27 @@ Welcome to my blog!
 The only important information you really need to know about me is that I grew up in the beautiful [Meteora](https://www.wikiwand.com/en/Meteora). 
 
 
-Other than this, my boring bio accumulates roughly 10 years of experience as a macroeconomist, mainly working in policy-making, economic research, and academia. Please have a look at my [Linkedin profile](https://www.linkedin.com/in/moustafa-chatzouz/) if you are interested in my "CV". 
+Other than this, my bio accumulates roughly 10 years of experience as a macroeconomist, mainly working in policy-making, economic research, and academia. In this period I developed strong knowledge mainly of the US and the UK economy, and to a lesser extent the Eurozone. Academically, I specialize in fiscal policy, macroeconomic theory, and asset pricing. 
 
-Academically, I specialize in Fiscal Policy, Macroeconomic Theory, and Computational Economics. I  have worked in the  applications of [General Equilibrium with Incomplete Asset Markets](https://cowles.yale.edu/sites/default/files/files/pub/d09/d0919.pdf), and as an economist I am strongly influenced by the works of [Peter Diamond](https://www.wikiwand.com/en/Peter_Diamond), [T. Sargent](https://www.wikiwand.com/en/Thomas_J._Sargent), and [O. Blanchard](https://www.wikiwand.com/en/Olivier_Blanchard). The combined influences of their work on my research helped me to build a solid knowledge around fiscal policy, public debt, and macroeconomic and finance theory. 
+The blog is still in its infancy, but I intend to (infrequently) write about macroeconomic and finance issues by synthesizing my experiences and knowledge from academia, policy making, and portfolio management (trading) world.
+
+I am usually unmoved by financial news, and I like to have a more data driven analysis. 
+
+<!-- Please have a look at my [Linkedin profile](https://www.linkedin.com/in/moustafa-chatzouz/) if you are interested in my "CV". 
+
+<!-- Academically, I specialize in Fiscal Policy, Macroeconomic Theory, and Computational Economics. I  have worked in the  applications of [General Equilibrium with Incomplete Asset Markets](https://cowles.yale.edu/sites/default/files/files/pub/d09/d0919.pdf), and as an economist I am strongly influenced by the works of [Peter Diamond](https://www.wikiwand.com/en/Peter_Diamond), [T. Sargent](https://www.wikiwand.com/en/Thomas_J._Sargent), and [O. Blanchard](https://www.wikiwand.com/en/Olivier_Blanchard). The combined influences of their work on my research helped me to build a solid knowledge around fiscal policy, public debt, and macroeconomic and finance theory. 
 
 Computational Economics came as a byproduct of my research. I ended up discovering that I enjoy coding, programming and got reasonably good at it. I developed own ways of solving stochastic macroeconomic models with large state-space. Because of this strand of research, I later on discovered Machine Learning as it was related to some of the stuff I was working (See [here](https://web.stanford.edu/~maliars/Files/JME2021.pdf) for what I mean). 
 
 <!-- #I never managed to finish my academic work that I started at graduate school as I accidentally dropped out from academia and then I was left with no courage to start over. Now I don't feel much regret, but I do miss the time to be creative and think about interesting problems. Maybe this website is a reflection of this need.  -->
 
-Since I cannot separate my quant and economist side, I decided to name this blog "_The Quant Economist_", but I  mainly aim to write (infrequently) about macroeconomic and finance related topics, and applied data science material. I believe that evidence based economics is pretty much data science, and data science is a good tool for better economics. Not to mention that data science (or Machine Learning) is the new econometrics. So, whenever I post about some applied data science material this is mostly to promote some good use-cases in macroeconomics or finance. 
+<!-- Since I cannot separate my quant and economist side, I decided to name this blog "_The Quant Economist_", but I  mainly aim to write (infrequently) about macroeconomic and finance related topics, and applied data science material. I believe that evidence based economics is pretty much data science, and data science is a good tool for better economics. Not to mention that data science (or Machine Learning) is the new econometrics. So, whenever I post about some applied data science material this is mostly to promote some good use-cases in macroeconomics or finance. -->
 
-[//]: # Another reason that I like to use data science is because it helps to cut the noise from the financial press or the exposure to too much information. I admit I dislike most of the financial news. Most of the time the financial press writes too much and says too little, tends to unnecessarily complicate things, and recycles knowledge without any added value. After all, journalism is a business about entertainment not a search for truth. The trick is to stay away from most on what you read and try to develop your own process of making decisions. 
+<!-- [//]: # Another reason that I like to use data science is because it helps to cut the noise from the financial press or the exposure to too much information. I admit I dislike most of the financial news. Most of the time the financial press writes too much and says too little, tends to unnecessarily complicate things, and recycles knowledge without any added value. After all, journalism is a business about entertainment not a search for truth. The trick is to stay away from most on what you read and try to develop your own process of making decisions. 
 
 [//]: # (This was also one of the reasons behind my (private) [Python library](https://github.com/msh855/myPortfolioManagement) for asset management as it helps collect and analyse information in the way I see most fit for managing my savings as well as develop more intuition about the space of products that I might have to invest.)
 
-Ah, one final plead. I encourage you to call me Safis. This is my nickname name and how my family and friends call me. 
+Ah, one final plead. I encourage you to call me Safis. This is my nickname name and how my family and friends call me. -->
 
 
 I hope you enjoy the content here.

@@ -1,0 +1,42 @@
+---
+title: "The Proxy Rate"
+subtitle: "Why The Fed has tightened more and sooner than people assume"
+author: "Moustafa Chatzouz"
+format: html
+draft: true
+categories:
+  - Monetary Policy
+  - Macroeconomics
+  - Inflation  
+editor: visual
+---
+
+<div align="justify">
+
+## **The Proxy Rate**
+
+Now that the focus is on the "long and variable lags" of the monetary policy, I want to bring into the attention and discuss [a research paper by the Fed San Francisco](https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/monetary-policy-stance-is-tighter-than-federal-funds-rate/). The paper beautifully illustrates the case that the Fed acted much sooner than people believe and that the Fed is wildly hawkish. It does so by calculating what the authors of the paper called the "proxy fund rate" or just "proxy rate" for the purpose of this post. I like their approach because it brings more neutrality and objectivity and I find the proxy rate of great practical value. 
+
+As we know, the overall monetary policy stance is the sum of three components: Fed's fund rate + Forward Guidance + Balance Sheet Changes. For clarity, forward guidance means the inclusion of direct language in Fed's (or other central banks) communication to affect expectations. 
+
+The practical problem here is that the forward guidance and balance sheet changes don't have an interest rate equivalent to add on top of the fund rate. The economists at the Fed San Francisco did exactly this coming with the proxy rate, which is just the sum of the Fed's fund rate plus the interest rate equivalent of Fed's forward guidance policy and balance sheet changes. To do so, they used information from financial markets. You can read the paper if you are interested in the technical details. 
+
+I think this approach is much more convenient than Goldman's Financial Condition index while it brings more consistency and clarity across analysts' interpretation about what the Fed is doing. It also shows why many analysts are underestimating Fed's tightness and its overall stance by just looking at the fund rate. That is why I usually ignore most public analysis on this issue and took some time to demystify Fed's projections (which incorporate the impact of QT and forward guidance) to inform my thinking about Fed's tightness. 
+
+## **Interpreting the proxy rate**
+
+So to sum up:
+
+Proxy fund rate = fed's fund rate + interest rate equivalent of forward guidance + balance sheet changes 
+
+\
+
+The difference between the "proxy rate" and the official fund rate is effectively the "hypothetical interest rate" that the Fed uses to steer the markets through the "financial conditions" channel. When the Fed signals that hawkish markets would immediately re-price everything and adjust their expectations accordingly, this would be equivalent to having this \`hypothetical' rate going up.
+
+The dynamics and size of this hypothetical rate that link to financial conditions is the interesting bit. The researchers at the FSF found that the tightening cycle began as early as Nov 2021 when the proxy rate turned positive (and above neutral rate). The proxy rate was rising steeply at that period as the Fed signalled that it would turn hawkish.
+
+## **Financial conditions and lags**
+
+Now that everybody is focusing on the long and variable lags, 
+
+\
