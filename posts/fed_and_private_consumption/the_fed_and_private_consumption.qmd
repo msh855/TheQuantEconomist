@@ -85,7 +85,7 @@ $$
 \begin{cases}
 < 1 \qquad \text{Income Effect > Substitution Effect} \\
 > 1 \qquad \text{Income Effect < Substitution Effect} \\
-= 1 \qquad \text{Income Effect = Substitution Effect} 
+= 1 \qquad \text{Income Effect = Substitution Effect}
 \end{cases}
 $$
 
