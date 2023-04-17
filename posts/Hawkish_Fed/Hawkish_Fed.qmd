@@ -17,7 +17,7 @@ title-block-banner: false
 
 ## Introduction
 
-In recent years, the Federal Reserve (the Fed) has increasingly used forward guidance as a tool to steer interest rates in the desired direction. Forward guidance involves the Fed communicating its likely future policy stance to the markets, which allows the Fed to shape expectations and influence interest rates. This tool became particularly important during the 2008 financial crisis when the federal funds rate hit zero. The Fed also used its balance sheet as an additional tool for monetary policy by initiating large-scale asset purchases to support the economy in the aftermath of the crisis.
+In recent years, the Federal Reserve (the Fed) has increasingly used forward guidance as a tool to steer interest rates in the desired direction. Forward guidance involves the Fed communicating its likely future policy stance to the markets, which allows the Fed to shape expectations and influence interest rates. This tool became particularly important during the 2008 financial crisis when the federal funds rate hit zero. The second mean that the Fed is using to signal its intention is the change of its balance sheets.
 
 In this post, I discuss a few stylized facts about forward guidance and its role in the most recent period when inflation become the hot topic of our days. The Fed's use of forward guidance can be seen by comparing the "proxy rate" published by the Fed of San Francisco and the Fed's policy rate ( See [here](https://www.frbsf.org/economic-research/indicators-data/proxy-funds-rate/) and [here](https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/monetary-policy-stance-is-tighter-than-federal-funds-rate/)).
 
@@ -60,13 +60,11 @@ df_zcore['Forward_Guidance_zcore'] = df_zcore['Proxy_rate_zcore'] - df_zcore['Fe
 df_zcore = add_year_decade_dummies(df_zcore)
 ```
 
-The difference between these rates reflects the interest rate equivalent of the forward guidance. Before the global financial crisis, the proxy rate and the fund rate were quite close to each other. After the crisis, the Fed was able to set what was equivalent to a negative interest rate by loosening financial conditions. This amounted to negative interest rates as shown in the figure above. This situation continued until 2014 when the Fed effectively ended its stimulus and started becoming more hawkish all the way until the pandemic.
+The difference between these rates reflects the interest rate equivalent of the forward guidance. It was only after 2003 when the Federal Open Market Committee (FOMC) started including direct language in its postmeeting statements. Before the global financial crisis, the proxy rate and the fund rate were quite close to each other. The start deviating substantially more after 2007 when both QE and forward guidance become indispensable to the monetary policy framework. This is evident in `fig.cap` where the proxy rate was substantially lower than the official policy rate - which was stuck at the zero lower bound. In this period, forward guidance effectively amounted in a situation where the policy rate was effectively negative. This situation continued until 2014 when the Fed changed course and start turning more hawkish in the run up to the pandemic.
 
-Both inside and outside academia, interpreting how hawkish the Fed is was a source of tremendous confusion as most strategists and economic analysts got used to only checking Fed's fund rate without paying serious attention to how forward guidance was evolving (nor how it works). To be fair, that was also the result of a lack of a statistical measure that could map the effect of forward guidance on interest rates.
+In recent years much of the analysis (including commentary by respected academics) rushed to conclude that the Fed acted with a delay. But as shown in the `fig.cap`, this is in stark contrast with evidence. As we can see, the Fed turned hawkish and started preparing the markets (translation: tighten financial conditions) way before it started raising interest rates. The exact timing that this happened is around July 2021, which is 8 months earlier than the first rate hike in March 2022. It not coincidence, that shortly after July 2021 both the stock market and bonds start declining way before the first interest rate hike.
 
-With the availability of the proxy rate, however, this is no excuse anymore. Yet, in recent years much of the analysis (including commentary by respected academics) rushed to conclude that the Fed acted with a delay. But as shown in the figure below, this is in stark contrast with evidence. As we can see, the Fed turned hawkish and started preparing the markets (translation: tighten financial conditions) way before it started raising interest rates. The exact timing that this happened is around July 2021, which is 8 months earlier than the first rate hike in March 2022.
-
-```{python}
+```{python, fig.cap="ProxyRate"}
 # Plot
 plot1 = data[['Proxy_rate', 'Fed_rate']].plot(title='The Fed and Forward Guidance')
 plt.legend(['Proxy Rate', 'Fund rate'])
