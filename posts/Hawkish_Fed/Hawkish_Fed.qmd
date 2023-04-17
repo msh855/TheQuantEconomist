@@ -1,7 +1,7 @@
 ---
 title: "Forward Guidance"
 subtitle: "*Some Stylised Facts and recent performance*"
-date: "16/04/2023"
+date: "04/16/2023"
 #draft: true
 categories:
   - Monetary Policy
@@ -17,9 +17,11 @@ title-block-banner: false
 
 ## Introduction
 
-In recent years, the Federal Reserve (the Fed) has increasingly used forward guidance as a tool to steer interest rates in the desired direction. Forward guidance involves the Fed communicating its likely future policy stance to the markets, which allows the Fed to shape expectations and influence interest rates. This tool became particularly important during the 2008 financial crisis when the federal funds rate hit zero. The second mean that the Fed is using to signal its intention is the change of its balance sheets.
+In the world of central banking, few tools have gathered as much attention in recent years as forward guidance. Essentially, forward guidance involves the Federal Reserve (or "the Fed," as it's commonly known) communicating its future policy plans to the markets. By shaping expectations and influencing interest rates in this way, the Fed can steer the economy in the desired direction.
 
-In this post, I discuss a few stylized facts about forward guidance and its role in the most recent period when inflation become the hot topic of our days. The Fed's use of forward guidance can be seen by comparing the "proxy rate" published by the Fed of San Francisco and the Fed's policy rate ( See [here](https://www.frbsf.org/economic-research/indicators-data/proxy-funds-rate/) and [here](https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/monetary-policy-stance-is-tighter-than-federal-funds-rate/)).
+During the 2008 financial crisis, forward guidance became an especially critical tool, as the federal funds rate hit zero. In order to continue to stimulate the economy, the Fed needed to find new tricks or in the words of [Bernanke](https://www.amazon.co.uk/21st-Century-Monetary-Policy-Inflation/dp/1324020466/ref=sr_1_1?adgrpid=1172080352962224&hvadid=73255235197595&hvbmt=be&hvdev=c&hvlocphy=4923&hvnetw=o&hvqmt=e&hvtargid=kwd-73255197392577%3Aloc-188&hydadcr=18495_2211395&keywords=21st+century+monetary+policy&qid=1681764141&sr=8-1) ``we had to be creative". Forward guidance allowed it to do just that. More recently, forward guidance has played an important role in the ongoing debate over inflation. In this post, I would be looking at a few stylized facts about how the Fed uses this tool.
+
+One approach is to examine the "proxy rate" published by the Federal Reserve Bank of San Francisco, which allows us to gauge the Fed's hawkishness over time. This proxy rate combines the policy rate with the interest rate effects of both balance sheet changes and direct communication. You can find more information on the proxy rate [here](https://www.frbsf.org/economic-research/indicators-data/proxy-funds-rate/) and [here](https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/monetary-policy-stance-is-tighter-than-federal-funds-rate/). In essence, the proxy rate offers a way to compare the Fed's actual policy rate to a hypothetical rate that reflects the total impact of the Fed's actions (intentions) and statements on financial markets.
 
 ```{python}
 
@@ -60,12 +62,15 @@ df_zcore['Forward_Guidance_zcore'] = df_zcore['Proxy_rate_zcore'] - df_zcore['Fe
 df_zcore = add_year_decade_dummies(df_zcore)
 ```
 
-The difference between these rates reflects the interest rate equivalent of the forward guidance. It was only after 2003 when the Federal Open Market Committee (FOMC) started including direct language in its postmeeting statements. Before the global financial crisis, the proxy rate and the fund rate were quite close to each other. The start deviating substantially more after 2007 when both QE and forward guidance become indispensable to the monetary policy framework. This is evident in `fig.cap` where the proxy rate was substantially lower than the official policy rate - which was stuck at the zero lower bound. In this period, forward guidance effectively amounted in a situation where the policy rate was effectively negative. This situation continued until 2014 when the Fed changed course and start turning more hawkish in the run up to the pandemic.
+I plot these two rates in @fig-1, where the discrepancy between them represents the interest rate equivalent of the forward guidance. It is worth noting that due to the forward guidance and the way monetary policy is conducted (i.e. usually first preparing the markets and then acting) the proxy rate leads the actual policy rate, and this pattern is especially pronounced post-2007.
 
-In recent years much of the analysis (including commentary by respected academics) rushed to conclude that the Fed acted with a delay. But as shown in the `fig.cap`, this is in stark contrast with evidence. As we can see, the Fed turned hawkish and started preparing the markets (translation: tighten financial conditions) way before it started raising interest rates. The exact timing that this happened is around July 2021, which is 8 months earlier than the first rate hike in March 2022. It not coincidence, that shortly after July 2021 both the stock market and bonds start declining way before the first interest rate hike.
+Before the global financial crisis, the proxy rate and the fund rate were tightly correlated, until they started to diverge after 2007, when both QE and forward guidance became integral components of the monetary policy framework. During this period, the use of forward guidance amounted to a monetary policy stance of negative interest rates (the intention of QE and forward guidance). These ultra-low interest rates persisted until 2014, when the Fed reversed course.
 
-```{python, fig.cap="ProxyRate"}
-# Plot
+In the more recent years, much of the analysis (including that of respected academics) has rushed to the conclusion that the Fed acted with a delay. However, as @fig-1 clearly shows, the Fed began to tighten financial conditions through forward guidance well before the interest rate hikes took place. According to the proxy rate, this tightening began around July 2021, a full eight months prior to the first rate hike in March 2022.
+
+```{python}
+#| label: fig-1
+
 plot1 = data[['Proxy_rate', 'Fed_rate']].plot(title='The Fed and Forward Guidance')
 plt.legend(['Proxy Rate', 'Fund rate'])
 plt.show()
@@ -73,15 +78,14 @@ plt.show()
 
 ## Forward Guidance Since the Pandemic
 
-It is important to note that the proxy rate and the fund rate cannot be exactly the same even before the GFC. This is due to measurement errors in calculating the proxy rate, as well as the potential influence of Fed officials' speeches, which can reveal the Fed's intentions and impact markets. However, when the statistical error is small, we can assume that most of the difference between the proxy rate and the fund rate is due to the effect of forward guidance.
+It's worth emphasizing that even prior to the Global Financial Crisis (GFC), the proxy rate and the fund rate were not identical. This discrepancy can be attributed to the inevitable measurement errors involved in calculating the proxy rate, as well as the potential impact of Fed officials' speeches, which have historically revealed the Federal Open Market Committee's (FOMC) intentions. Of course, it's impossible to completely eliminate statistical errors. However, we can reasonably assume that most of the difference between the proxy rate and the fund rate can be attributed to communication-related factors.
 
-In the figure below, we see the difference between the proxy rate and the fund rate, which shows the hypothetical level of interest rates that changes in the Fed's balance sheets and direct communication have added or subtracted from the official policy rate. For example, when the Fed started turning hawkish, its forward guidance added an extra 3% at the peak of its hawkish stance. This meant that, at that time, the economy was effectively operating as if the Fed set an interest rate equal to about 6%, rather than the official policy rate of 3% at the peak of the proxy rate.
-
-Since then, the Fed it actually soften financial conditions but kept hiking. However, the proxy rate is a leading indicator, and hence, the evidence from the figure suggests that the Fed is likely to pause and start cutting interest rates soon (not this was way before the revision in the implied fund rate after the SBV shock). This assumes that the Fed knows what is doing. To the extend that this is not true, this evidence can also be used against the Fed and some disconnect between Fed's stance and what the market believe.
+@fig-2 illustrates the difference between the proxy rate and the fund rate. It reveals the hypothetical level of interest rates that changes in the Fed’s balance sheet and the impact of direct communication have added or subtracted from the official policy rate. For instance, in this monetary policy tightening cycle, at its peak, forward guidance added an extra 3% to the policy rate. This implies that until last October, the economy has effectively functioning at a level of interest rates that is closer to the 6% than the official policy rate of 3%. It was only after Oct 2022 that the Fed turned less hawkish. 
 
 ```{python}
+#| label: fig-2
 
-# Plot
+
 plot_data = data[['Forward_Guidance']].plot(title='Interest rate equivalence of Forward Guidance')
 plot_data.axhline(y=0, color='black', linewidth=1, linestyle="--")
 plt.legend(['Proxy rate - Fund Rate'])
@@ -90,15 +94,29 @@ plt.show()
 
 ## The Most Hawkish Fed in the US History
 
-To conclude, let me make some additional observations about forward guidance and explain why the Fed's current stance is the most hawkish since the 1970s. In the figure below, I present the z-score of the forward guidance measure (i.e. distance between the proxy rate and fund rate). This metric enables us to compare the current stance with historical averages more consistently. A positive z-score indicates a hawkish stance, whereas a negative z-score denotes a dovish stance.
-
-The distribution of forward guidance across different decades reveals some interesting insights. During the 1970s, markets were more likely seeing the Fed as being pursuing a soft policy stance - a case which have contributed to runaway inflation at that period. This perception persisted in the next decade, making, Volcker's job a little harder. Since 2000, when forward guidance became an integral part of the Fed's policy framework, we saw a better communication from the Fed and a symmetrical effect on the markets.
-
-Post-pandemic, evidently the Fed turned hawkish to fight inflation and this was also reflected in its forward guidance as well as in the proxy rate. Until now, a lot of the market commentary has accused the Fed as doing too little, yet the evidence is against this false perception. According to the figure, the Fed has exercised the most hawkish forward guidance in the US, far more hawkish than the Volcker era. Overall, this is inline with the camp that is suggesting that the Fed had already adopted an extreme stance to fight inflation. I first talked about this in an old post, where I tried to understand how hawkish the Fed by reverse engineering its projection, and concluded that although the Fed is quite hawkish, it was likely to increase interest rate (a prediction which turned true as markets back then were underestimating this possibility). This evidence is also in line with the academic discussions that effectively say that what matters is the pace of hikes, and not necessary the level of interest rates. And, as others have [discussed](https://stayathomemacro.substack.com/p/the-fed-should-hit-pause-and-give), the Fed - partly in order to catch-up with inflation - moved in the fastest rate increases in modern history.
-
-To the extent that the proxy rate still represents and accurately measures Fed's intentions, the overall evidence here is suggesting that the Fed after seeing that is winning the battle over inflation so far, it seems to have become convinced that it is about to win the war. Although, the proxy rate is suggesting that the Fed is stilling hawkish its intentions are softening and became less hawkish (note the term: less hawkish, not Dovish) as early as February.
+In conclusion, let me offer some final thoughts on forward guidance and explain why the Fed’s current stance is its most hawkish since the 1970s. @fig-3 below shows the per decade standardized distribution of the forward guidance measure - that is, the z-score of the distance between the proxy rate and fund rate. This metric allows us to compare the current stance with historical averages in a more consistent manner. A positive z-score signifies a hawkish stance, while a negative z-score indicates a dovish stance.
 
 ```{python}
+#| label: fig-3
+
+df_zcore = data.apply(zscore)
+df_zcore.columns = [x + '_zcore' for x in df_zcore.columns]
+df_zcore['Forward_Guidance_zcore'] = df_zcore['Proxy_rate_zcore'] - df_zcore['Fed_rate_zcore']
+df_zcore = add_year_decade_dummies(df_zcore)
+
+# Asymmetric effects of Forward Guidance (interest rates fall more when Hawkish raise less when Dovish)
+plothist =df_zcore['Forward_Guidance_zcore'].hist(by=df_zcore['Decade'], bins=10)
+```
+
+During the 1970s, the Fed’s communication was more often dovish than hawkish - a situation that may have contributed to the runaway inflation of that period. This perception persisted into the next decade until Volcker changed it. Since 2000, when forward guidance became an integral part of the Fed’s policy framework, we have seen improved communication from the Fed and a symmetrical effect on markets.
+
+Over the past two years, the Fed has certainly taken a more hawkish approach to tackle inflation, as evidenced by its policy rate and the proxy rate. Despite some market commentary accusing the Fed of not doing enough, the latest evidence contradicts this misconception. In fact, as seen in @fig-4, the Fed's hawkish tone has led to the largest hike in interest rates solely from its communication and balance sheet changes in the past half-century. What's more, the current policy rate is expected to have a significantly greater impact on output than in previous years, and the pace of interest rate hikes is the fastest in history. This only leads to one conclusion: we're currently witnessing the most hawkish monetary policy stance in modern US history, and its effects are just starting to emerge. It is not surprising then that the Fed already start softening as early as last 2022 when the proxy rate started to fall. 
+
+
+
+```{python}
+#| label: fig-4
+
 int_range = iqr(df_zcore['Forward_Guidance_zcore'], rng=(25, 75))
 plt3 = df_zcore[['Forward_Guidance_zcore']].plot(color='teal', title='Forward Guidance (zscore)')
 plt3.axhline(y=int_range, color='blue', linewidth=0.5, linestyle="--")
@@ -106,3 +124,5 @@ plt3.axhline(y=0, color='black', linewidth=1, linestyle="--")
 plt3.axhline(y=int_range * -1, color='blue', linewidth=0.5, linestyle="--")
 
 ```
+
+
