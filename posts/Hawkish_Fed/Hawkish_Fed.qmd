@@ -17,9 +17,9 @@ title-block-banner: false
 
 ## Introduction
 
-In the world of central banking, few tools have gathered as much attention in recent years as forward guidance. Essentially, forward guidance involves the Federal Reserve (or "the Fed," as it's commonly known) communicating its future policy plans to the markets. By shaping expectations and influencing interest rates in this way, the Fed can steer the economy in the desired direction.
+In the world of central banking few tools have gathered as much attention in recent years as forward guidance. Essentially, forward guidance involves the Federal Reserve (or "the Fed," as it's commonly known) communicating its future policy plans to the markets. By shaping expectations and influencing interest rates in this way, the Fed can steer the economy in the desired direction.
 
-During the 2008 financial crisis, forward guidance became an especially critical tool, as the federal funds rate hit zero. In order to continue to stimulate the economy, the Fed needed to find new tricks or in the words of [Bernanke](https://www.amazon.co.uk/21st-Century-Monetary-Policy-Inflation/dp/1324020466/ref=sr_1_1?adgrpid=1172080352962224&hvadid=73255235197595&hvbmt=be&hvdev=c&hvlocphy=4923&hvnetw=o&hvqmt=e&hvtargid=kwd-73255197392577%3Aloc-188&hydadcr=18495_2211395&keywords=21st+century+monetary+policy&qid=1681764141&sr=8-1) ``we had to be creative". Forward guidance allowed it to do just that. More recently, forward guidance has played an important role in the ongoing debate over inflation. In this post, I would be looking at a few stylized facts about how the Fed uses this tool.
+During the 2008 financial crisis, forward guidance became an especially critical tool, as the federal funds rate hit zero. In order to continue to stimulate the economy, the Fed needed to find new tricks or in the words of [Bernanke](https://www.amazon.co.uk/21st-Century-Monetary-Policy-Inflation/dp/1324020466/ref=sr_1_1?adgrpid=1172080352962224&hvadid=73255235197595&hvbmt=be&hvdev=c&hvlocphy=4923&hvnetw=o&hvqmt=e&hvtargid=kwd-73255197392577%3Aloc-188&hydadcr=18495_2211395&keywords=21st+century+monetary+policy&qid=1681764141&sr=8-1) ``we had to be creative". Forward guidance allowed it to do just that. More recently, forward guidance has played an important role in the ongoing debate over inflation. In this post, I will be looking at a few stylized facts about how the Fed uses this tool.
 
 One approach is to examine the "proxy rate" published by the Federal Reserve Bank of San Francisco, which allows us to gauge the Fed's hawkishness over time. This proxy rate combines the policy rate with the interest rate effects of both balance sheet changes and direct communication. You can find more information on the proxy rate [here](https://www.frbsf.org/economic-research/indicators-data/proxy-funds-rate/) and [here](https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/monetary-policy-stance-is-tighter-than-federal-funds-rate/). In essence, the proxy rate offers a way to compare the Fed's actual policy rate to a hypothetical rate that reflects the total impact of the Fed's actions (intentions) and statements on financial markets.
 
@@ -110,14 +110,16 @@ plothist =df_zcore['Forward_Guidance_zcore'].hist(by=df_zcore['Decade'], bins=10
 
 During the 1970s, the Fed’s communication was more often dovish than hawkish - a situation that may have contributed to the runaway inflation of that period. This perception persisted into the next decade until Volcker changed it. Since 2000, when forward guidance became an integral part of the Fed’s policy framework, we have seen improved communication from the Fed and a symmetrical effect on markets.
 
-Over the past two years, the Fed has certainly taken a more hawkish approach to tackle inflation, as evidenced by its policy rate and the proxy rate. Despite some market commentary accusing the Fed of not doing enough, the latest evidence contradicts this misconception. In fact, as seen in @fig-4, the Fed's hawkish tone has led to the largest hike in interest rates solely from its communication and balance sheet changes in the past half-century. What's more, the current policy rate is expected to have a significantly greater impact on output than in previous years, and the pace of interest rate hikes is the fastest in history. This only leads to one conclusion: we're currently witnessing the most hawkish monetary policy stance in modern US history, and its effects are just starting to emerge. It is not surprising then that the Fed already start softening as early as last 2022 when the proxy rate started to fall. 
+Over the past two years, the Fed has certainly taken a more hawkish approach to tackle inflation, as evidenced by its policy rate and the proxy rate. Despite some market commentary accusing the Fed of not doing enough, the latest evidence contradicts this misconception. In fact, as seen in @fig-4, the Fed's hawkish tone has led to the largest hike in interest rates solely from its communication and balance sheet changes in the past half-century. What's more, the current policy rate is expected to have a significantly greater impact on output than in previous years, and the pace of interest rate hikes is the fastest in history. This only leads to one conclusion: we're currently witnessing the most hawkish monetary policy stance in modern US history, and its effects are just starting to emerge. It is not surprising then that the Fed have effectively turned into a less hawkish communication as early as last Oct 2022 as is indicated by the turning point in the proxy rate. 
 
+```{python}
+int_range = iqr(df_zcore['Forward_Guidance_zcore'], rng=(25, 75))
+```
 
 
 ```{python}
 #| label: fig-4
 
-int_range = iqr(df_zcore['Forward_Guidance_zcore'], rng=(25, 75))
 plt3 = df_zcore[['Forward_Guidance_zcore']].plot(color='teal', title='Forward Guidance (zscore)')
 plt3.axhline(y=int_range, color='blue', linewidth=0.5, linestyle="--")
 plt3.axhline(y=0, color='black', linewidth=1, linestyle="--")
