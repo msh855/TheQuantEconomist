@@ -3,12 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "The Quant Economist"
+  title: "Moustafa Chatzouz"
   #subtitle: "Bringing clarity to the world of finance"
   site-url: https://msh855.github.io/TheQuantEconomist
   description: "Observations about Macroecnomics, Finance and Public Debates"
   page-footer:
-    #right: "Bringing clarity to the world of finance"
     left: "Usual Disclaimer applies"
   listing:
     contents: posts
@@ -34,9 +33,12 @@ website:
     #    href: index.xml
 
   google-analytics:  "170377145"
-  cookie-consent: true
+  cookie-consent: false
   filters:
   - code-filename
+
+execute:
+  freeze: auto
 
 format:
   html:
