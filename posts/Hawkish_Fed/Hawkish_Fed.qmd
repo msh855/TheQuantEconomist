@@ -132,9 +132,4 @@ plt3.axhline(y=int_range * -1, color='blue', linewidth=0.5, linestyle="--")
 plt.show()
 ```
 
-In light of this evidence, and with some basic judgment, you should be able to understand or clarify in your mind:
-
-- How a soft landing could be engineered in theory.
-- Whether it is more possible to avoid a severe recession for a given preference about the pace by which the Fed wants inflation to move to its target.
-- Whether the Fed already signaled the end of tightening cycles way before the recent banking crisis, or whether there was indeed a disconnect between the Fed and markets since October 2022.
 
