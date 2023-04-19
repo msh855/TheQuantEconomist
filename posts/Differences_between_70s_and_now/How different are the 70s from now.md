@@ -4,7 +4,7 @@ subtitle: "*Inflation is high, and while there are many similarities with the 70
 date: "03/24/2022"
 
 categories:
-  - Macroeconomics
+  - Monetary Policy
   - Inflation  
 execute:
   echo: false

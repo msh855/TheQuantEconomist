@@ -4,7 +4,6 @@ subtitle: "*why inflation might not go down as fast as the Fed believes?*"
 date: "07/06/2022"
 categories:
   - Monetary Policy
-  - Macroeconomics
   - Inflation  
 execute:
    echo: false

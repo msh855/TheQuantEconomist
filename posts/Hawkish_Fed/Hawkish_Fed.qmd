@@ -12,6 +12,9 @@ format:
   html:
     code-fold: true   
 title-block-banner: false
+comments:
+  hypothesis: 
+    theme: clean
 ---
 
 <div align="justify">

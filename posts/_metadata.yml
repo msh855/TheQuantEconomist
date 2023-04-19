@@ -17,7 +17,7 @@ page-layout: article
 
 comments:
   utterances:
-    repo:  TheQuantEconomist/blogComments
+    repo:  msh855/BlogComments
 
 
 # freeze computational output
