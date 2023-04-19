@@ -5,7 +5,6 @@ date: "04/18/2023"
 #draft: true
 categories:
   - Monetary Policy
-  - Macroeconomics
   - Inflation  
 execute:
    echo: false
@@ -63,7 +62,7 @@ df_zcore['Forward_Guidance_zcore'] = df_zcore['Proxy_rate_zcore'] - df_zcore['Fe
 df_zcore = add_year_decade_dummies(df_zcore)
 ```
 
-I have plotted the proxy and policy rate in @fig-1 below. It is important to note that the proxy rate lags the actual policy rate because of the way monetary policy is implemented. Typically, the markets are set up in anticipation of a change in the policy rate before the change actually takes place. This pattern is (unsurprisingly) pronounced after 2007.
+I have plotted the proxy and policy rate in @fig-1 below. It is important to note that the proxy rate leads the actual policy rate because of the way monetary policy is implemented. Typically, the markets are set up in anticipation of a change in the policy rate before the change actually takes place. This pattern is (unsurprisingly) pronounced after 2007.
 
 Before the global financial crisis, the proxy rate and the fund rate were closely correlated. However, they started to diverge after 2007, when quantitative easing (QE) and forward guidance became integral components of the monetary policy framework. During this period, the use of forward guidance amounted to a monetary policy stance of negative interest rates (validating the purpose that it was designed). These ultra-low interest rates persisted until 2014, when the Fed started to actually reverse its course, according to the proxy rate.
 
