@@ -19,6 +19,9 @@ comments:
   utterances:
     repo:  msh855/BlogComments
 
+format:
+  html:
+    include-after-body: ../share_button.html
 
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)

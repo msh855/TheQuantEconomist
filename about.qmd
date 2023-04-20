@@ -20,12 +20,20 @@ Welcome to my blog!
 
 The only important information you really need to know about me is that I grew up in the beautiful [Meteora](https://www.wikiwand.com/en/Meteora). 
 
+I have over 10 years of experience as an economist and in macroeconomic research, mainly working in academic and policy-making and economic research institutes. During this time, I developed strong knowledge of the US and UK economies, and to a lesser extent the Eurozone. Academically, I specialize in fiscal policy, macroeconomic theory, computational economics, and to a lesser extent asset pricing and financial theory. 
 
-Other than this, my bio accumulates roughly 10 years of experience as a macroeconomist, mainly working in policy-making, economic research, and academia. In this period I developed strong knowledge mainly of the US and the UK economy, and to a lesser extent the Eurozone. Academically, I specialize in fiscal policy, macroeconomic theory, asset pricing, Camputational Economics. 
+Outside academia, I also had the opportunity to work as a data scientist, which gave me a good understanding of the machine learning ecosystem and its applications. At heart and by training, I remain a macroeconomist, and I am fortunate to have developed a strong quantitative and mathematical background during my years of study and research. This has allowed me to approach problems with a great deal of flexibility but also made me a kind of polymath across different disciplines. My (unusual) career path is a reflection of this: I was able to provide practical advice to Rishi Sunak when I was at the HM Treasury, develop mathematical and statistical models to trade foreign exchange, and create forecasting models of all kinds (data-driven, theory-driven, and a combination of both).
 
-The blog is still in its infancy, but I intend to (infrequently) write about macroeconomic and finance issues by synthesizing my experiences and knowledge from academia, policy making, and portfolio management (trading) world.
+Friends would describe me as thoughtful. That is because they have see me enjoying debunking economic theories and ideas with solid academic theory or my own reflections and predictions.
 
-I am usually unmoved by financial news, and I like to have a more data driven analysis. 
+I intend to share my knowledge and curiosity about macroeconomic and financial issues in this blog. I will draw on my experiences and knowledge from academia, policy making, and portfolio management (trading) to write about these topics. I may also post other topics of general interest.
+
+
+The best way to contact me is via my socials: 
+
+<!-- 
+The best way to contact me is via my socials or by posting your comments. Unfortunately, using Quarto to create this website had some drawbacks. One drawback is that comments require users to have GitHub, which is not the best for the general audience. However, Quarto had other advantages which I needed to create this website.
+
 
 <!-- Please have a look at my [Linkedin profile](https://www.linkedin.com/in/moustafa-chatzouz/) if you are interested in my "CV". 
 
@@ -44,7 +52,7 @@ Computational Economics came as a byproduct of my research. I ended up discoveri
 Ah, one final plead. I encourage you to call me Safis. This is my nickname name and how my family and friends call me. -->
 
 
-I hope you enjoy the content here.
+I hope you enjoy the content here 
 
 
 
