@@ -1,5 +1,5 @@
 ---
-title: "About"
+#title: "About"
 about:
   template: jolla
   links:

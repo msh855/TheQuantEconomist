@@ -1,5 +1,5 @@
 ---
-title: "Home"
+#title: "Home"
 #description: "Bringing clarity to the world of finance"
 listing:
   contents: posts
