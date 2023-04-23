@@ -1,5 +1,5 @@
 ---
-title: "Fed's Forward Guidance"
+title: "Fed's Forward Guidance and Unconventional Policies"
 subtitle: "*Some Stylised Facts and recent performance*"
 date: "04/18/2023"
 draft: false
@@ -25,7 +25,10 @@ In the world of central banking, few policies have been as widely discussed in r
 
 [^1]: Throughout this post, I would be using this term to refer to the effects of direct communication or the signaling channel of balance sheet changes.
 
-One way to measure the Fed's forward guidance is to look at the "proxy rate," which is published by the Federal Reserve Bank of San Francisco (See [here](https://www.frbsf.org/economic-research/indicators-data/proxy-funds-rate/) and [here](https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/monetary-policy-stance-is-tighter-than-federal-funds-rate/)). The proxy rate combines the Fed's policy rate with the level of interest rate implied by the balance sheet changes and direct communication. Hence it incorporates the hypothetical interest rate that captures the total impact of balance sheet changes (which are also used to guide expectations) and statements on financial markets.
+
+## Measuring Unconventional Policies 
+
+One way to measure the Fed's unconventional policies is to look at the "proxy rate", which is published by the Federal Reserve Bank of San Francisco (See [here](https://www.frbsf.org/economic-research/indicators-data/proxy-funds-rate/) and [here](https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/monetary-policy-stance-is-tighter-than-federal-funds-rate/)). The proxy rate combines the Fed's policy rate with the level of interest rate implied by the balance sheet changes and direct communication. Hence it incorporates the hypothetical interest rate that captures the total impact of balance sheet changes (which are also used to guide expectations) and statements on financial markets.
 
 ```{python}
 
@@ -73,16 +76,22 @@ Before the global financial crisis, the proxy rate and the fund rate were closel
 #| label: fig-1
 #| fig-cap: "The Proxy and Policy Rate"
 
-plot1 = data[['Proxy_rate', 'Fed_rate']].plot(title='The Fed and Forward Guidance')
+fig, axes = plt.subplots(1, 2, gridspec_kw={"hspace": 0.5}, figsize=(10, 4))
+plot1 = data[['Proxy_rate', 'Fed_rate']].plot(ax=axes[0], title='The Fed and Forward Guidance', legend=False,  ylabel='Interest rate(%)')
+plot1.set(xlabel=None)
+plot2 = data[['Proxy_rate', 'Fed_rate']][data.index >= '2006-01-01'].plot(ax=axes[1],
+                                                                          title='The Fed and Forward Guidance Post-GFC')
 plt.legend(['Proxy Rate', 'Fund rate'])
+plot2.set(xlabel=None)
 plt.show()
+
 ```
 
 In recent years, many people (including respected [academics](https://www.lse.ac.uk/CFM/assets/pdf/CFM-Discussion-Papers-2022/CFMDP2022-09-Paper.pdf)) have criticized the Fed for acting too slowly to address the rising inflation. However, according to this evidence, the Fed began to tighten financial conditions well before the interest rate hikes took place. In fact, the actual tightening began eight months before the first rate hike in March 2022, and almost a year and a half after the pandemic shock. Note that when the Fed changed course, inflation was mostly [driven by supply-side factors](https://www.frbsf.org/economic-research/indicators-data/supply-and-demand-driven-pce-inflation/), such as supply chain disruptions and labor shortages. As a result, there was less room for monetary policy to do much. However, the Fed clearly began to change course before the pressure from the demand side on inflation started to substantially pick up.
 
 It's worth emphasizing that even prior to the Global Financial Crisis (GFC), the proxy rate and the fund rate were not identical. Part of this discrepancy can be attributed to the inevitable measurement errors involved in calculating a statistical measure such as the proxy rate. Of course, it's impossible to completely eliminate statistical errors, but we can reasonably assume that most of the difference between the proxy rate and the fund rate can be attributed to communication-related factors.
 
-## Measuring Forward Guidance: "Until We Finish the Job" 
+## "Until the Job is Done" 
 
 The difference between the proxy and policy rate shows the level of interest rate implied by the Fed's forward guidance. @fig-2 shows exactly this. For example, at the peak of the proxy rate during this monetary policy tightening cycle, the Fed added an extra 3% to the policy rate by just pointing what will be doing. This means that until October 2022, the economy was effectively operating at an interest rate level closer to 6% than the official policy rate of 3%[^2]. It was only after October 2022 that the proxy rate start coming off, signaling a less hawkish stance.
 
@@ -103,9 +112,10 @@ plt3.axhline(y=int_range * -1, color='blue', linewidth=0.5, linestyle="--", labe
 plt.show()
 ```
 
-What is interesting is that in recent years, when the Fed had to fight the largest increase in inflation since the 1970s, its tone changed to an equally extreme level. In fact, the evidence in @fig-2 suggests that the effects of its direct communication and balance sheet changes had the largest impact in the US history. Meanwhile, the Fed has raised interest rates at the fastest pace in US history, and the current level of interest rates already implies a significant impact on [large effect on output](https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html). This suggests that we are currently witnessing the most hawkish monetary policy stance in modern US history, and its effects are just starting to emerge.
+What is evident is that when the Fed had to fight the largest increase in inflation since the 1970s, its tone changed to an equally extreme level. Jay Powell declared the Federal Reserve “must keep at it until the job is done” as he used a speech at Jackson Hole to deliver his most hawkish message to date on the US central bank’s
 
-## Has Forward Guidance changed ?
+In fact, the evidence in @fig-2 suggests that the effects of its direct communication and balance sheet changes had the largest impact in the US history. Meanwhile, the Fed has raised interest rates at the fastest pace in US history, and the current level of interest rates already implies a significant impact on [large effect on output](https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html). This suggests that we are currently witnessing the most hawkish monetary policy stance in modern US history, and its effects are just starting to emerge.
+
 
 ```{python}
 
@@ -138,7 +148,7 @@ plt.show()
 
 Assessing the possibility of a soft landing, that's a whole other post. Instead, I'll focus on what this evidence means for soft landing. This discussion may already be moot after the recent mini banking crisis, but it's still helpful to step back and think how we started.
 
-First, let me say that all central banks are effectively aiming for a soft landing. This means reducing inflation without causing a recession. Technically, only the Fed is required to balance maximum employment and price stability. Other central banks don't have this restriction[^3].
+First, let me say that all central banks are effectively aiming for a soft landing. This means reducing inflation without causing a recession. Technically, only the Fed is has effectively a soft landing mandate since is required to balance maximum employment and price stability. Other central banks don't have this restriction[^3].
 
 [^3]: Although, they still care about unemployment to avoid overshooting or undershooting inflation
 

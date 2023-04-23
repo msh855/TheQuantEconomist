@@ -18,7 +18,6 @@ website:
 
   navbar:
     #right:
-
      # - text: Home
      #   href: home.qmd
     right:
