@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Moustafa Chatzouz"
-  site-url: https://msh855.github.io/TheQuantEconomist
+  site-url: www.the-quant-economist.com #https://msh855.github.io/TheQuantEconomist
   description: "Observations about Macroecnomics, Finance and Public Debates"
   page-footer:
     left: "Usual Disclaimer applies"
