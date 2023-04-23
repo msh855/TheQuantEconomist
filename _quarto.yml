@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Moustafa Chatzouz"
-  site-url: www.themacroquant.com #https://msh855.github.io/TheQuantEconomist
+  site-url: https://msh855.github.io/TheQuantEconomist
   description: "Observations about Macroecnomics, Finance and Public Debates"
   page-footer:
     left: "Usual Disclaimer applies"
@@ -56,3 +56,4 @@ format:
       light: theme.scss #yeti
       dark: Darkly
 ## ref: https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html
+
