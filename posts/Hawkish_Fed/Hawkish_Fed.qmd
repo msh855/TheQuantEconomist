@@ -119,10 +119,9 @@ plt.show()
 <p></p>
 
 
-Fed's tone shift was mostly evident in Jay Powell's Jackson Hole who declared ``the Federal Reserve must keep at it until the job is done”. The US stock market slid sharply after Powell spoke, with the benchmark S&P 500 index falling 3.4 per cent, while the tech-heavy Nasdaq Composite tumbled 3.9 per cent, recording the biggest one-day decline for both indices (outside sudden crashes). 
+Fed's tone shift was mostly evident in Jay Powell's Jackson Hole speech last August who declared ``the Federal Reserve must keep at it until the job is done”. The US stock market slid sharply after Powell spoke, with the benchmark S&P 500 index falling 3.4 per cent, while the tech-heavy Nasdaq Composite tumbled 3.9 per cent, recording the one biggest one-day decline for both indices (outside sudden crashes). 
 
-To put things in perspective, in @fig-2 I show the magnitude of this and other messages since 2020 and compare it to the historical standards. 
-
+To put things in perspective, in @fig-2 I show the magnitude of this and other messages since 2020 and compare the unconventional part of the monetary policy to historical standards. The calculations are still based on the distance between the proxy rate and the policy rate. The left panel shows the average interest rate across each decade that are implied by the non-conventional factors, where I have also filtered out the direct impact of balance sheet changes. The right panel shows the distribution of the interest rates across each decades^[For readers not familiar with the box plots, see this [post](https://en.wikipedia.org/wiki/Box_plot)]. To get some sense of the communication-related factors and other signalling channels, I also isolated the direct influence of the balance sheet changes.
 
 
 ```{python}
