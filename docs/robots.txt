@@ -1,1 +1,1 @@
-Sitemap: https://msh855.github.io/TheQuantEconomist/sitemap.xml
+Sitemap: www.themacroquant.com/sitemap.xml
