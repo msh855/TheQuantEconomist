@@ -91,6 +91,9 @@ In recent years, many people (including respected [academics](https://www.lse.ac
 
 It's worth emphasizing that even prior to the Global Financial Crisis (GFC), the proxy rate and the fund rate were not identical. Part of this discrepancy can be attributed to the inevitable measurement errors involved in calculating a statistical measure such as the proxy rate. Of course, it's impossible to completely eliminate statistical errors, but we can reasonably assume that most of the difference between the proxy rate and the fund rate can be attributed to communication-related factors.
 
+All in all, this evidence now makes it clear that the inclusion of forward guidance and other unconventional tools has broadened the criteria by which the monetary policy stance needs to be assessed. It is now clear that the Fed has become looser than it appears when stimulating the economy, and tighter than the policy rate indicates when tightening. As a result, it is becoming more important to get a better sense of and measure the non-conventional aspects of monetary policy. The next paragraphs will examine this issue more closely.
+
+
 ## "Until the Job is Done" 
 
 The difference between the proxy and policy rate shows the level of interest rate implied by the Fed's forward guidance. @fig-2 shows exactly this. For example, at the peak of the proxy rate during this monetary policy tightening cycle, the Fed added an extra 3% to the policy rate by just pointing what will be doing. This means that until October 2022, the economy was effectively operating at an interest rate level closer to 6% than the official policy rate of 3%[^2]. It was only after October 2022 that the proxy rate start coming off, signaling a less hawkish stance.
@@ -111,18 +114,23 @@ plt3.axhline(y=0, color='black', linewidth=1, linestyle="--")
 plt3.axhline(y=int_range * -1, color='blue', linewidth=0.5, linestyle="--", label='Interquartile Range')
 plt.show()
 ```
+<p></p>
 
-What is evident is that when the Fed had to fight the largest increase in inflation since the 1970s, its tone changed to an equally extreme level. Jay Powell declared the Federal Reserve “must keep at it until the job is done” as he used a speech at Jackson Hole to deliver his most hawkish message to date on the US central bank’s
+<br>
 
-In fact, the evidence in @fig-2 suggests that the effects of its direct communication and balance sheet changes had the largest impact in the US history. Meanwhile, the Fed has raised interest rates at the fastest pace in US history, and the current level of interest rates already implies a significant impact on [large effect on output](https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html). This suggests that we are currently witnessing the most hawkish monetary policy stance in modern US history, and its effects are just starting to emerge.
+<p></p>
 
+Fed's tone shift was mostly evident in Jay Powell's Jackson Hole who declared ``the Federal Reserve must keep at it until the job is done”. The US stock market slid sharply after Powell spoke, with the benchmark S&P 500 index falling 3.4 per cent, while the tech-heavy Nasdaq Composite tumbled 3.9 per cent, recording the biggest one-day decline for both indices (outside sudden crashes).
+
+
+This was not the only hawkish message,  of this and the previous and subsequent messages was unparalleled and matched the record level of inflation since the 70s. In fact, the evidence in @fig-2 suggests that the effects of its direct communication and balance sheet changes had the largest impact in the US history. 
 
 ```{python}
 
 full_data = pd.read_csv('/Users/safishajjouz/Google Drive/1. Thesis/inflation_papers/Data/full_data.csv')
 means = full_data[['Forward_Guidance', 'i_fq', 'i_qe', 'Decade']].groupby(by=['Decade']).mean()
 means.index = [str(x) + "'s" for x in means.index]
-leg_names = ["Forward Guidance", "Communication and Other Signalling Channels", 'Impact of Sheet Balance Changes']
+leg_names = ["Total Impact of Unconventional Policies", "Communication and Other Signalling Channels", 'Impact of Sheet Balance Changes']
 temp_df_box_plot = full_data[['Forward_Guidance', 'Decade']].copy()
 temp_df_box_plot['Decades'] = [str(x) + "'s" for x in temp_df_box_plot['Decade']]
 
@@ -146,23 +154,27 @@ plt.show()
 
 ## The implications for Soft Landing
 
-Assessing the possibility of a soft landing, that's a whole other post. Instead, I'll focus on what this evidence means for soft landing. This discussion may already be moot after the recent mini banking crisis, but it's still helpful to step back and think how we started.
+In the meantime, the Fed has carried out the swiftest policy rate increase in the history of the United States. As I have briefly discussed in a previous [post](https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html), the present interest rate level suggests that the impact on output is likely to be just as significant. This implies that the response from the Fed's end has been sufficiently forceful in all areas under its *direct* control. It's hard not to draw the conclusion that we are presently experiencing the most hawkish monetary policy position in recent US history, and its repercussions are just beginning to materialize^[We can discuss about the level of interest rates, but as I have explained in an earlier [post](https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html) I am very critical of the standard practice in using the distance of the policy rate relative to the neutral rates to indicate how neutral monetary policy is.]. 
 
-First, let me say that all central banks are effectively aiming for a soft landing. This means reducing inflation without causing a recession. Technically, only the Fed is has effectively a soft landing mandate since is required to balance maximum employment and price stability. Other central banks don't have this restriction[^3].
+Does this mean that a [soft landing](https://www.investopedia.com/terms/s/softlanding.asp) is off the table? That's a whole other discussion. But the short answer is "No." In fact, the opposite is true. According to this evidence, the Fed's actions are what kept a soft landing on the table.
 
-[^3]: Although, they still care about unemployment to avoid overshooting or undershooting inflation
 
-Yet soft landing is still the holy grail of central banking. R.Dornbusch famously said, "*No postwar recovery has died in bed of old age---the Federal Reserve has murdered every one of them*". The most notable (and technically the only) soft landing in the most recent 16 business cycles occurred in 1994 under Alan Greenspan. Inflation was rising rapidly in 1994, and Greenspan raised interest rates seven times in the space of a year, bringing them up to 6%. This was a significant increase, but it did not cause a recession. In fact, the economy continued to grow throughout 1994 and 1995. Why was it successful? Economists will pick three main reasons:
+Technically, only the Fed needs to comply to a soft landing because of its mandate to balance maximum employment and price stability. Other central banks don't have this restriction[^3]. Yet soft landing is still the holy grail of central banking. [R. Dornbusch](https://en.wikipedia.org/wiki/Rudi_Dornbusch) famously said, "*No postwar recovery has died in bed of old age---the Federal Reserve has murdered every one of them*". The most notable (and technically the only) soft landing in the most recent 16 business cycles occurred in 1994 under Alan Greenspan. Inflation was rising rapidly in 1994, and Greenspan raised interest rates seven times in the space of a year, bringing them up to 6%. This was a significant increase, but it did not cause a recession. In fact, the economy continued to grow throughout 1994 and 1995. Why was it successful? Economists will pick three main reasons:
 
 -   First, the economy was strong at the time, which helped to cushion the impact of the higher interest rates.
 -   Second, Greenspan was able to communicate his intentions clearly to the public, which helped to reduce uncertainty.
 -   Third, Greenspan was able to raise interest rates gradually, giving businesses and consumers time to adjust.
 
-In @fig-5 I plot this episode and compared it with the current tightening cycle. I have also added the "Hard landing" of Volcker (effectively begun by Burns and Miller) to make the case more clear. Before 1980s any comparisons are less meaningful (the Gold Standard, substantially different monetary policy framework, fiscal dominance). The three pre-conditions I enlisted before, continue to hold. The reaction function of the Fed under Greenspan and now are quite similar, including making up for the "long and variable lags" of Friedman.
+In @fig-5, I plotted this episode and compared it to the current tightening cycle. I also added the "Hard landing" of Volcker (which was essentially started by Burns and Miller) and the in-between tightening cycle of 1999 to make the case clearer. Before the 1980s, any comparisons are meaningless (the Gold Standard, substantially different monetary policy framework, fiscal dominance). 
+
+
+[^3]: Although, they still care about unemployment to avoid overshooting or undershooting inflation.
+
+
 
 ```{python}
 #| label: fig-5
-#| fig-cap: Monetary Policy and Soft Landing
+#| fig-cap: Monetary Policy Tightening Cycles
 fig, axes = plt.subplots(2, 2, gridspec_kw={"hspace": 0.5}, figsize=(10, 4))
 plt1 = data[['Proxy_rate', 'Fed_rate']][(data.index >= '1976-01-01') & (data.index <= '1985-01-01')].plot(ax=axes[0, 0],
                                                                                                           legend=False,
@@ -208,4 +220,9 @@ plt.show()
 
 <p></p>
 
-All these means is that the necessary conditions for soft-landing were set by the Fed. Against the consensus belief, it acted quite in advance and taking into account that the "long-variable-lags" practically imply a period of 1-2 years to see the effects of monetary policy
+The three conditions I listed before continue to hold. The Fed's reaction function under Greenspan and now is quite similar, including making up for Friedman's "long and variable lags." 
+
+In my judgment, though, the luck factors may be more important then the past. I call "luck factors" the factors that central banks cannot fully control, such as consumer and business behavior. These behaviors are generally stable and predictable, but they can be disrupted by indirect or second-round effects of monetary policy. For example, when interest rates rise, mortgage payments become more expensive, which reduces disposable income. This can lead to slower growth, which in turn can further reduce disposable income. These indirect effects is what makes the effects of monetary policy to have "long and variable lags". Supply shocks are also "luck factors", as are any other unanticipated events. 
+
+In addition, soft landing substantially depends on the preference around the *pace* that central banks want to bring inflation down. A fast pace, implies less chance for a soft-landing as it requires the real economy to be crashed. Too slow also reduce the chance for soft landing, as there is high chance inflation expectations to get de-anchored and new unfavorable shocks hit the system. So, soft landing is and remains a fine-tuning exercise difficult to achieve. In the current situation, the Fed is still implicitly that the Philips curve is relatively flat and that the pace of extensive margins charged by firms will slow down due to falling prices and the complete normalization of supply chains. All-in-all, soft landing remains (and ultimately is) a fine tuning exercise that is difficult to achieve - almost identical if not as elusive as timing the market. Based on the evidence here I do think the Fed took all necessary steps to achieve this goal and some of the necessary conditions for soft landing are clearly met. 
+
