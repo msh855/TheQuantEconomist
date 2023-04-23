@@ -1,7 +1,7 @@
 ---
 title: "Fed's Forward Guidance and Unconventional Policies"
 subtitle: "*Some Stylised Facts and recent performance*"
-date: "04/23/2023"
+date: last-modified
 draft: false
 categories:
   - Monetary Policy
@@ -10,7 +10,7 @@ execute:
    echo: false
 format:
   html:
-    code-fold: true   
+    code-fold: true
 title-block-banner: false
 comments:
   hypothesis: 
@@ -89,7 +89,7 @@ plt.show()
 
 <p></p>
 
-In recent years, many people (including respected [academics](https://www.lse.ac.uk/CFM/assets/pdf/CFM-Discussion-Papers-2022/CFMDP2022-09-Paper.pdf)) have criticized the Fed for acting too slowly to address the rising inflation. However, according to this evidence, the Fed began to tighten financial conditions well before the interest rate hikes took place. In fact, the actual tightening began eight months before the first rate hike in March 2022, and almost a year and a half after the pandemic shock. Note that when the Fed changed course, inflation was mostly [driven by supply-side factors](https://www.frbsf.org/economic-research/indicators-data/supply-and-demand-driven-pce-inflation/), such as supply chain disruptions and labor shortages. As a result, there was less room for monetary policy to do much. However, the Fed clearly began to change course before the pressure from the demand side on inflation started to substantially pick up.
+The Fed has been criticized (including by respected [academics](https://www.lse.ac.uk/CFM/assets/pdf/CFM-Discussion-Papers-2022/CFMDP2022-09-Paper.pdf)) for acting too slowly to address inflation, but the truth is that they began to tighten financial conditions well before the interest rate hikes. In fact, they started eight months before the first hike in March 2022, and almost a year and a half after the pandemic shock (@fig-1). This is important to note, because when the Fed changed course, inflation was mostly driven by  [driven by supply-side factors](https://www.frbsf.org/economic-research/indicators-data/supply-and-demand-driven-pce-inflation/), such as supply chain disruptions and labor shortages. This left less room for monetary policy to do much. However, the Fed clearly began to change course before the pressure from the demand side on inflation started to substantially pick up.
 
 It's worth emphasizing that even prior to the Global Financial Crisis (GFC), the proxy rate and the fund rate were not identical. Part of this discrepancy can be attributed to the inevitable measurement errors involved in calculating a statistical measure such as the proxy rate. Of course, it's impossible to completely eliminate statistical errors, but we can reasonably assume that most of the difference between the proxy rate and the fund rate can be attributed to communication-related factors.
 
@@ -158,7 +158,7 @@ plt.show()
 
 In the meantime, the Fed has carried out the swiftest policy rate increase in the history of the United States. As I have briefly discussed in a previous [post](https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html), the present interest rate level suggests that the impact on output is likely to be just as significant. This implies that the response from the Fed's end has been sufficiently forceful in all areas under its *direct* control. It's hard not to draw the conclusion that we are presently experiencing the most hawkish monetary policy position in recent US history, and its repercussions are just beginning to materialize^[We can discuss about the level of interest rates, but as I have explained in an earlier [post](https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html) I am very critical of the standard practice in using the distance of the policy rate relative to the neutral rates to indicate how neutral monetary policy is.]. 
 
-Does this mean that a [soft landing](https://www.investopedia.com/terms/s/softlanding.asp) is off the table? That's a whole other discussion. But the short answer is "No." In fact, the opposite is true. According to this evidence, the Fed's actions are what kept a soft landing on the table. And, this shouldn't be surprising. Technically, only the Fed needs to comply to a soft landing because of its mandate to balance maximum employment and price stability. Other central banks don't have this restriction[^3]. 
+Does this mean that a [soft landing](https://www.investopedia.com/terms/s/softlanding.asp) is off the table? That's a whole other discussion. But the short answer is "No". In fact, the opposite is true. According to this evidence, the Fed's actions are what kept a soft landing on the cards. And, this shouldn't be surprising. Technically, only the Fed needs to comply to a soft landing because of its mandate to balance maximum employment and price stability. Other central banks don't have this restriction[^3]. 
 
 Nevetheless, soft landing is still the holy grail of central banking. [R. Dornbusch](https://en.wikipedia.org/wiki/Rudi_Dornbusch) famously said, "*No postwar recovery has died in bed of old age---the Federal Reserve has murdered every one of them*". The most notable (and technically the only) soft landing in the most recent 16 business cycles occurred in 1994 under Alan Greenspan. Inflation was rising rapidly in 1994, and Greenspan raised interest rates seven times in the space of a year, bringing them up to 6%. This was a significant increase, but it did not cause a recession. In fact, the economy continued to grow throughout 1994 and 1995. Why was it successful? Economists will pick three main reasons:
 
