@@ -2,7 +2,7 @@
 title: "Fed's Forward Guidance and Unconventional Policies"
 subtitle: "*Some Stylised Facts and recent performance*"
 date: last-modified
-draft: true
+draft: false
 categories:
   - Monetary Policy
   - Inflation  
@@ -21,7 +21,7 @@ comments:
 
 ## Introduction
 
-In the world of central banking, few policies have been as widely discussed in recent years as forward guidance and balance sheet changes. These policy tools (known as non-conventional policies), define the broader monetary policy stance that goes beyond than just setting the policy rate. For example, forward guidance[^1] is a method used by central banks to directly communicate or signal their intentions in order to shape expectations and influence interest rates in the desired direction. During the 2008 financial crisis, forward guidance and Quantitative Easing (QE) became especially critical tools, as the policy rate hit zero. In order to continue stimulating the economy, the Federal Reserve (Fed) needed to find new ways to do so. As Ben [Bernanke](https://www.amazon.co.uk/21st-Century-Monetary-Policy-Inflation/dp/1324020466/ref=sr_1_1?adgrpid=1172080352962224&hvadid=73255235197595&hvbmt=be&hvdev=c&hvlocphy=4923&hvnetw=o&hvqmt=e&hvtargid=kwd-73255197392577%3Aloc-188&hydadcr=18495_2211395&keywords=21st+century+monetary+policy&qid=1681764141&sr=8-1) put it, "*we had to be creative*." Forward guidance allowed the Fed to do just that. More recently, forward guidance has played an important role in the ongoing debate over inflation. In this post, I will be looking at a few stylized facts about how the Fed uses this tool.
+In the world of central banking, there are few policies that have been as widely discussed in recent years as forward guidance and balance sheet changes. These policy tools, known as non-conventional policies, define the broader monetary policy stance that goes beyond just setting the policy rate. For example, forward guidance is a method used by central banks to directly communicate or signal their intentions in order to shape expectations and influence interest rates in the desired direction. During the 2008 financial crisis, forward guidance and Quantitative Easing (QE) became especially critical tools, as the policy rate hit zero. In order to continue stimulating the economy, the Federal Reserve (Fed) needed to find new ways to do so. As Ben [Bernanke](https://www.amazon.co.uk/21st-Century-Monetary-Policy-Inflation/dp/1324020466/ref=sr_1_1?adgrpid=1172080352962224&hvadid=73255235197595&hvbmt=be&hvdev=c&hvlocphy=4923&hvnetw=o&hvqmt=e&hvtargid=kwd-73255197392577%3Aloc-188&hydadcr=18495_2211395&keywords=21st+century+monetary+policy&qid=1681764141&sr=8-1) put it, "*we had to be creative*." Forward guidance allowed the Fed to do just that. More recently, forward guidance has played an important role in the ongoing debate over inflation. In this post, I will be looking at a few stylized facts about how the Fed uses this tool.
 
 [^1]: Throughout this post, I would be using this term to refer to the effects of direct communication or the signaling channel of balance sheet changes.
 
