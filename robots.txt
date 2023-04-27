@@ -1,1 +1,1 @@
-Sitemap: https://msh855.github.io/TheQuantEconomist/sitemap.xml
+Sitemap: https://www.the-quant-economist.com/sitemap.xml
