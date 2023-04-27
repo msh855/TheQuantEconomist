@@ -121,11 +121,11 @@ plt.show()
 
 Fed's tone shift was mostly evident in Jay Powell's Jackson Hole speech last August who declared \`\`the Federal Reserve must keep at it until the job is done". The US stock market slid sharply after Powell spoke, with the benchmark S&P 500 index falling 3.4 per cent, while the tech-heavy Nasdaq Composite tumbled 3.9 per cent, recording the one biggest one-day decline for both indices (outside sudden crashes).
 
-To put things in perspective, in @fig-3 I show the magnitude of this and other messages since 2020 and compare the unconventional part of the monetary policy to historical standards. The calculations are still based on the distance between the proxy rate and the policy rate. The left panel shows the average impact of communication-related factors across all tightening episodes since mid-70s as identified by the proxy rate. For the relevant periods, I have also filtered out the direct impact of balance sheet changes[^2]. The right panel shows the distribution of the interest rates across each decades[^3].
+To put things in perspective, in @fig-3 I show the magnitude of this and other messages since 2020 and compare the unconventional part of the monetary policy to historical standards. The calculations are still based on the distance between the proxy rate and the policy rate. The left panel shows the average impact of communication-related factors across all tightening episodes since mid-70s as identified by the proxy rate. For the relevant periods, I have also filtered out the direct impact of balance sheet changes[^2]. The right panel shows the distribution of the interest rates implied by forward guidance across each decades[^3].
 
-[^2]: this does not necessary remove the impact of balance sheet changes by signalling chancels.
+[^2]: TO filter out I just controlled for the change in 10 YT Treasury as proxy. This of course does not necessary remove the impact of balance sheet changes by signalling chancels. There are many findings that suggest that only the first round of QE was strong enough. Subsequent round became less effective as markets learned to anticipate Fed's balance sheets. It is also the reason, why Bernanke was arguing for more QE to offset this factor as well as to compensate for the tight Fiscal policy at the time. 
 
-[^3]: For readers not familiar with the box plots, see this [post](https://en.wikipedia.org/wiki/Box_plot)
+[^3]: For readers not familiar with box plots see this [post](https://en.wikipedia.org/wiki/Box_plot)
 
 ```{python}
 
