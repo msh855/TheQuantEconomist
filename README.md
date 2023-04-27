@@ -1,2 +1,1 @@
-Source code for my personal website: https://msh855.github.io/TheQuantEconomist/home.html
- 
+Source code for my personal website: www.the-quant-economist.com
