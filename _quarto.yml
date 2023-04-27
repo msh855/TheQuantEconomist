@@ -49,6 +49,9 @@ execute:
 #    theme: yeti
 #    css: styles.css
 
+resources:
+  - CNAME
+  
 format:
   html:
     theme:
