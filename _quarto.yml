@@ -51,7 +51,7 @@ execute:
 
 resources:
   - CNAME
-  
+
 format:
   html:
     theme:

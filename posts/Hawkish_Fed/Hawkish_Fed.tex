@@ -139,7 +139,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Fed's Forward Guidance and Unconventional Policies},
+  pdftitle={Fed's Forward Guidance},
   pdfauthor={Moustafa Chatzouz},
   colorlinks=true,
   linkcolor={blue},
@@ -148,7 +148,7 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
-\title{Fed's Forward Guidance and Unconventional Policies}
+\title{Fed's Forward Guidance}
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
@@ -161,7 +161,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, sharp corners, boxrule=0pt, breakable, enhanced, borderline west={3pt}{0pt}{shadecolor}, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, breakable, interior hidden, frame hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -307,10 +307,18 @@ are still based on the distance between the proxy rate and the policy
 rate. The left panel shows the average impact of communication-related
 factors across all tightening episodes since mid-70s as identified by
 the proxy rate. For the relevant periods, I have also filtered out the
-direct impact of balance sheet changes\footnote{this does not necessary
-  remove the impact of balance sheet changes by signalling chancels.}.
-The right panel shows the distribution of the interest rates across each
-decades\footnote{For readers not familiar with the box plots, see this
+direct impact of balance sheet changes\footnote{To filter out the direct
+  impact of balance sheet changes, I controlled for the change in 10Y
+  Treasuries. This may not completely capture the full impact, but it
+  should be close. Only the first round of QE was strong enough.
+  Subsequent rounds were less effective as markets anticipated the Fed's
+  actions. That is the reason why Bernanke wanted more QE to offset
+  these effects and compensate for the tight fiscal policy at the time.
+  A classic study is the one by
+  \href{https://www.nber.org/papers/w17555}{Krishnamurthy and
+  Vissing-Jorgensen}.}. The right panel shows the distribution of the
+interest rates implied by forward guidance across each
+decades\footnote{For readers not familiar with box plots see this
   \href{https://en.wikipedia.org/wiki/Box_plot}{post}}.
 
 \begin{figure}
@@ -438,8 +446,8 @@ dynamics are also similar to the tightening cycle of 1999, which ended
 with the dot-com crash. However, as the ``mini'' banking crash clearly
 demonstrated, the financial system is much more resilient today. Of
 course, there are some factors that are different between now and then,
-such as the starting point and the level of inflation. However, a full
-assessment of all these factors would require a whole new discussion.
+such as the starting level of inflation. However, a full assessment of
+all these factors would require a whole new discussion.
 
 However, I believe that luck factors are more important than they were
 in the past. I call ``luck factors'' the factors that central banks
