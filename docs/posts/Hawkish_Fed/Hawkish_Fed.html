@@ -2,21 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.594">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Moustafa Chatzouz">
-<meta name="dcterms.date" content="2023-04-24">
+<meta name="dcterms.date" content="2023-04-27">
 
-<title>Moustafa Chatzouz - Fed’s Forward Guidance and Unconventional Policies</title>
+<title>Moustafa Chatzouz - Fed’s Forward Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 
 
@@ -36,8 +41,8 @@ ul.task-list{list-style: none;}
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,37 +87,40 @@ gtag('config', '170377145', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Moustafa Chatzouz</span>
-  </a>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html">About</a>
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/msh855"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/msh855" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/Hajjouz"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/Hajjouz" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/moustafa-chatzouz/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/moustafa-chatzouz/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -122,7 +130,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -138,7 +146,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Fed’s Forward Guidance and Unconventional Policies</h1>
+<h1 class="title">Fed’s Forward Guidance</h1>
 <p class="subtitle lead"><em>Some Stylised Facts and recent performance</em></p>
   <div class="quarto-categories">
     <div class="quarto-category">Monetary Policy</div>
@@ -160,9 +168,10 @@ gtag('config', '170377145', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 24, 2023</p>
+      <p class="date">April 27, 2023</p>
     </div>
   </div>
+  
     
   </div>
   
@@ -185,7 +194,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <div id="fig-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="Hawkish_Fed_files/figure-html/fig-1-output-1.png" width="820" height="350" class="figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 1: The Proxy and Policy Rate</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;1: The Proxy and Policy Rate</figcaption>
 </figure>
 </div>
 </div>
@@ -204,7 +213,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <div id="fig-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="Hawkish_Fed_files/figure-html/fig-2-output-1.png" width="639" height="478" class="figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2: Interest Rates equivalent of Direct Communication</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Interest Rates equivalent of Direct Communication</figcaption>
 </figure>
 </div>
 </div>
@@ -212,55 +221,62 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <p>
 </p>
 <p>Fed’s tone shift was mostly evident in Jay Powell’s Jackson Hole speech last August who declared ``the Federal Reserve must keep at it until the job is done”. The US stock market slid sharply after Powell spoke, with the benchmark S&amp;P 500 index falling 3.4 per cent, while the tech-heavy Nasdaq Composite tumbled 3.9 per cent, recording the one biggest one-day decline for both indices (outside sudden crashes).</p>
-<p>To put things in perspective, in <a href="#fig-2">Figure&nbsp;2</a> I show the magnitude of this and other messages since 2020 and compare the unconventional part of the monetary policy to historical standards. The calculations are still based on the distance between the proxy rate and the policy rate. The left panel shows the average interest rate across each decade that are implied by the non-conventional factors, where I have also filtered out the direct impact of balance sheet changes. The right panel shows the distribution of the interest rates across each decades<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. To get some sense of the communication-related factors and other signalling channels, I also isolated the direct influence of the balance sheet changes.</p>
-<div class="cell" data-execution_count="6">
-<div class="cell-output cell-output-display">
-<p><img src="Hawkish_Fed_files/figure-html/cell-7-output-1.png" width="818" height="361"></p>
-</div>
-</div>
-<p>%This was not the only hawkish message, of this and the previous and subsequent messages was unparalleled and matched the record level of inflation since the 70s. In fact, the evidence in <a href="#fig-2">Figure&nbsp;2</a> suggests that the effects of its direct communication and balance sheet changes had the largest impact in the US history.</p>
-</section>
-<section id="the-implications-for-soft-landing" class="level2">
-<h2 class="anchored" data-anchor-id="the-implications-for-soft-landing">The implications for Soft Landing</h2>
-<p>In the meantime, the Fed has carried out the swiftest policy rate increase in the history of the United States. As I have briefly discussed in a previous <a href="https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html">post</a>, the present interest rate level suggests that the impact on output is likely to be just as significant. This implies that the response from the Fed’s end has been sufficiently forceful in all areas under its <em>direct</em> control. It’s hard not to draw the conclusion that we are presently experiencing the most hawkish monetary policy position in recent US history, and its repercussions are just beginning to materialize<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
-<p>Does this mean that a <a href="https://www.investopedia.com/terms/s/softlanding.asp">soft landing</a> is off the table? That’s a whole other discussion. But the short answer is “No”. In fact, the opposite is true. According to this evidence, the Fed’s actions are what kept a soft landing on the cards. And, this shouldn’t be surprising. Technically, only the Fed needs to comply to a soft landing because of its mandate to balance maximum employment and price stability. Other central banks don’t have this restriction<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
-<p>Nevetheless, soft landing is still the holy grail of central banking. <a href="https://en.wikipedia.org/wiki/Rudi_Dornbusch">R. Dornbusch</a> famously said, “<em>No postwar recovery has died in bed of old age—the Federal Reserve has murdered every one of them</em>”. The most notable (and technically the only) soft landing in the most recent 16 business cycles occurred in 1994 under Alan Greenspan. Inflation was rising rapidly in 1994, and Greenspan raised interest rates seven times in the space of a year, bringing them up to 6%. This was a significant increase, but it did not cause a recession. In fact, the economy continued to grow throughout 1994 and 1995. Why was it successful? Economists will pick three main reasons:</p>
-<ul>
-<li>First, the economy was strong at the time, which helped to cushion the impact of the higher interest rates.</li>
-<li>Second, Greenspan was able to communicate his intentions clearly to the public, which helped to reduce uncertainty.</li>
-<li>Third, Greenspan was able to raise interest rates gradually, giving businesses and consumers time to adjust.</li>
-</ul>
-<p>In <a href="#fig-5">Figure&nbsp;3</a>, I plotted this episode and compared it to the current tightening cycle. I also added the “Hard landing” of Volcker (which was essentially started by Burns and Miller) and the in-between tightening cycle of 1999 to make the case clearer. Before the 1980s, any comparisons are meaningless, as the Gold Standard was in place, there was a substantially different monetary policy framework, and fiscal dominance was the norm. I also ignored the tightening cycle that preceded the Global Financial Crisis (for obvious reasons) and the tightening cycle of 2018, as it was disrupted by the pandemic.</p>
+<p>To put things in perspective, in <a href="#fig-3">Figure&nbsp;3</a> I show the magnitude of this and other messages since 2020 and compare the unconventional part of the monetary policy to historical standards. The calculations are still based on the distance between the proxy rate and the policy rate. The left panel shows the average impact of communication-related factors across all tightening episodes since mid-70s as identified by the proxy rate. For the relevant periods, I have also filtered out the direct impact of balance sheet changes<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. The right panel shows the distribution of the interest rates across each decades<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
 <div class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display">
-<div id="fig-5" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="Hawkish_Fed_files/figure-html/fig-5-output-1.png" width="806" height="364" class="figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3: Monetary Policy Tightening Cycles</figcaption><p></p>
+<p><img src="Hawkish_Fed_files/figure-html/fig-3-output-1.png" width="810" height="411" class="figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Monetary Policy Tightening Cycles</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>
 </p>
-<p><br></p>
+<p>Ben Bernanke once said that “monetary policy is 99% words and 1% action.” This was certainly true in the current tightening cycle, where the Fed’s words had an unprecedented impact. The Fed’s communication and signaling factors added an additional 1.5% to the interest rate hike, which is three times more than the most aggressive Fed of the past.</p>
+<p>The credibility factor also played a role here. Before gaining the “credibility medal” the Fed struggled to convince the markets in the first two tightening cycles in Figure 3, even though it raised rates significantly. Things changed with Paul Volcker, but it wasn’t until forward guidance became part of the monetary policy transmission mechanism that markets started taking the Fed seriously.</p>
+<p>Another way to look at the impact of the Fed’s messaging in recent years is to look at the right panel of <a href="#fig-3">Figure&nbsp;3</a>, where I have plotted the distribution of the impact of forward guidance (in terms of interest rates). The Fed is now more likely to be seen as hawkish than dovish, given its seriousness in fighting inflation and the fact that markets still have faith in its words. This was not the case in the 1970s and 1980s. It is also worth noting that the formal incorporation of forward guidance has managed to have a relatively even impact across different economic conditions, indicating some ability to weigh the balance of risks and fine-tune its words to the situation.</p>
+</section>
+<section id="the-implications-for-soft-landing" class="level2">
+<h2 class="anchored" data-anchor-id="the-implications-for-soft-landing">The implications for Soft Landing</h2>
+<p>In the meantime, the Fed has carried out the swiftest policy rate increase in the history of the United States. As I have briefly discussed in a previous <a href="https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html">post</a>, the present interest rate level suggests that the impact on output is likely to be just as significant. This implies that the response from the Fed’s end has been sufficiently forceful in all areas under its <em>direct</em> control. It’s hard not to draw the conclusion that we are presently experiencing the most hawkish monetary policy position in recent US history, and its repercussions are just beginning to materialize<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>Does this mean that a <a href="https://www.investopedia.com/terms/s/softlanding.asp">soft landing</a> is off the table? That’s a whole other discussion. But the short answer is “No”. In fact, the opposite is true. According to this evidence, the Fed’s actions are what kept a soft landing on the cards. And, this shouldn’t be surprising. Technically, only the Fed needs to comply to a soft landing because of its mandate to balance maximum employment and price stability. Other central banks don’t have this restriction<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<p>Nevertheless, soft landing is still the holy grail of central banking. <a href="https://en.wikipedia.org/wiki/Rudi_Dornbusch">R. Dornbusch</a> famously said, “<em>No postwar recovery has died in bed of old age—the Federal Reserve has murdered every one of them</em>”. The most notable (and technically the only) soft landing in the most recent 16 business cycles occurred in 1994 under Alan Greenspan. Inflation was rising rapidly in 1994, and Greenspan raised interest rates seven times in the space of a year, bringing them up to 6%. This was a significant increase, but it did not cause a recession. In fact, the economy continued to grow throughout 1994 and 1995. Why was it successful? Economists will pick three main reasons:</p>
+<ul>
+<li>First, the economy was strong at the time, which helped to cushion the impact of the higher interest rates.</li>
+<li>Second, Greenspan was able to communicate his intentions clearly to the public, which helped to reduce uncertainty.</li>
+<li>Third, Greenspan was able to raise interest rates gradually, giving businesses and consumers time to adjust.</li>
+</ul>
+<p>In <a href="#fig-5">Figure&nbsp;4</a>, I plotted this episode and compared it to the current tightening cycle. I also added the “Hard landing” of Volcker (which was essentially started by Burns and Miller) and the in-between tightening cycle of 1999 to make the case clearer. Before the 1980s, any comparisons are meaningless, as the Gold Standard was in place, there was a substantially different monetary policy framework, and fiscal dominance was the norm. I also ignored the tightening cycle that preceded the Global Financial Crisis (for obvious reasons) and the tightening cycle of 2018, as it was disrupted by the pandemic.</p>
+<div class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="fig-5" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Hawkish_Fed_files/figure-html/fig-5-output-1.png" width="806" height="364" class="figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;4: Monetary Policy Tightening Cycles</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <p>
 </p>
 <p>Since the introduction of forward guidance and the use of direct communication to influence financial conditions and interest rates, all tightening cycles have followed the same pattern. The Fed begins tightening by communicating its intentions and later by making changes to its balance sheet. The Fed’s reaction function under Greenspan and now is quite similar, including making up for Friedman’s “long and variable lags.” However, unlike in the past, the use of unconventional tools allows the Fed to adjust its policy more smoothly and early on, without raising the policy rate. The three conditions that made Greenspan a legend continue to hold in some reasonable sense. The dynamics are also similar to the tightening cycle of 1999, which ended with the dot-com crash. However, as the “mini” banking crash clearly demonstrated, the financial system is much more resilient today. Of course, there are some factors that are different between now and then, such as the starting point and the level of inflation. However, a full assessment of all these factors would require a whole new discussion.</p>
 <p>However, I believe that luck factors are more important than they were in the past. I call “luck factors” the factors that central banks cannot fully control, such as consumer and business behavior. These behaviors are generally stable and predictable, but they can be disrupted by indirect or second-round effects of monetary policy. For example, when interest rates rise, mortgage payments become more expensive, which reduces disposable income. This can lead to slower growth, which in turn can further reduce disposable income. These indirect effects are what make the effects of monetary policy have “long and variable lags.” Supply shocks are also “luck factors,” as are any other unanticipated events. In addition, a soft landing substantially depends on the pace at which central banks want to bring inflation down. A fast pace implies less chance of a soft landing, as it would require the real economy to be crashed. Too slow also reduces the chance of a soft landing, as there is a high chance that inflation expectations will become de-anchored and new unfavorable shocks will hit the system.</p>
-<p>To conclude, a soft landing is a fine-tuning exercise that is difficult to achieve, almost identical if not as elusive as timing the market. However, for the current tightening cycle, a soft landing is still a highly probable and well-justified outcome. Based on the evidence here, the Fed has taken all necessary steps to achieve this goal and some of the necessary conditions for a soft landing are clearly met.</p>
+<p>To conclude, a soft landing is a fine-tuning exercise that is difficult to achieve, almost identical if not as elusive as timing the market. However, for the current tightening cycle, a soft landing is still a highly probable outcome. Based on the evidence here, the Fed has taken all necessary steps to achieve this goal and some of the necessary conditions for a soft landing are clearly met.</p>
 
 
 </section>
 
 
-</div><div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+</div><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1" role="doc-endnote"><p>It is sometimes surprising to hear Fed officials (such as James B. Bullard) support their arguments for the appropriate policy rate by referring to the Taylor rule, without considering the effects of direct communication, including the signals that their analysis sends to the markets. But it is even more surprising that analysts, journalists, and strategists often perpetuate the flaws in their thinking.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>For readers not familiar with the box plots, see this <a href="https://en.wikipedia.org/wiki/Box_plot">post</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>We can discuss about the level of interest rates, but as I have explained in an earlier <a href="https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html">post</a> I am very critical of the standard practice in using the distance of the policy rate relative to the neutral rates to indicate how neutral monetary policy is.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p>Although, they still care about unemployment to avoid overshooting or undershooting inflation.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>It is sometimes surprising to hear Fed officials (such as James B. Bullard) support their arguments for the appropriate policy rate by referring to the Taylor rule, without considering the effects of direct communication, including the signals that their analysis sends to the markets. But it is even more surprising that analysts, journalists, and strategists often perpetuate the flaws in their thinking.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>this does not necessary remove the impact of balance sheet changes by signalling chancels.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>For readers not familiar with the box plots, see this <a href="https://en.wikipedia.org/wiki/Box_plot">post</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>We can discuss about the level of interest rates, but as I have explained in an earlier <a href="https://msh855.github.io/TheQuantEconomist/posts/fed_and_private_consumption/the_fed_and_private_consumption.html">post</a> I am very critical of the standard practice in using the distance of the policy rate relative to the neutral rates to indicate how neutral monetary policy is.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Although, they still care about unemployment to avoid overshooting or undershooting inflation.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 
@@ -278,6 +294,24 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const disableStylesheet = (stylesheets) => {
     for (let i=0; i < stylesheets.length; i++) {
       const stylesheet = stylesheets[i];
@@ -307,8 +341,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     manageTransitions('#quarto-margin-sidebar .nav-link', false);
     if (alternate) {
       enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
     } else {
       disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
     }
     manageTransitions('#quarto-margin-sidebar .nav-link', true);
     // Switch the toggles
@@ -322,6 +362,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           toggle.classList.remove("alternate");
         }
       }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
     }
   }
   const isFileUrl = () => { 
@@ -374,7 +424,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -382,9 +434,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -396,7 +462,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -424,31 +507,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -458,6 +646,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Usual Disclaimer applies</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

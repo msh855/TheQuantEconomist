@@ -4,17 +4,17 @@ project:
 
 website:
   title: "Moustafa Chatzouz"
-  site-url: www.the-quant-economist.com #https://msh855.github.io/TheQuantEconomist
+  site-url: https://www.the-quant-economist.com #https://msh855.github.io/TheQuantEconomist
   description: "Observations about Macroecnomics, Finance and Public Debates"
   page-footer:
     left: "Usual Disclaimer applies"
-  listing:
-    contents: posts
-    sort: "date desc"
-    type: default
-    categories: true
-    feed: true
-  title-block-banner: true
+#  listing:
+#    contents: posts
+#    sort: "date desc"
+#    type: default
+#    categories: true
+#    feed: true
+#  title-block-banner: true
 
   navbar:
     #right:
@@ -38,8 +38,8 @@ website:
 
   google-analytics:  "170377145"
   cookie-consent: false
-  filters:
-  - code-filename
+# # filters:
+#  - code-filename
 
 execute:
   freeze: auto
