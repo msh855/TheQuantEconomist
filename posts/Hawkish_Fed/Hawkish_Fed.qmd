@@ -8,9 +8,13 @@ categories:
   - Inflation  
 execute:
    echo: false
-format:
-  html:
-    code-fold: true
+format: 
+  html: default
+  pdf: default
+#format:
+#  html:
+#    code-fold: true
+#   pdf: default
 title-block-banner: false
 comments:
   hypothesis: 
