@@ -9,16 +9,11 @@ categories:
 execute:
    echo: false
 format: 
-  html: default
-  pdf: default
-#format:
-#  html:
-#    code-fold: true
-#   pdf: default
+  html:
+    code-fold: true
+  pdf:
+    toc: false
 title-block-banner: false
-comments:
-  hypothesis: 
-    theme: clean
 ---
 
 <div align="justify">

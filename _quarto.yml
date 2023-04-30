@@ -8,13 +8,6 @@ website:
   description: "Observations about Macroecnomics, Finance and Public Debates"
   page-footer:
     left: "Usual Disclaimer applies"
-#  listing:
-#    contents: posts
-#    sort: "date desc"
-#    type: default
-#    categories: true
-#    feed: true
-#  title-block-banner: true
 
   navbar:
     #right:
@@ -31,10 +24,8 @@ website:
         href: https://twitter.com/Hajjouz
       - icon: linkedin
         href: https://www.linkedin.com/in/moustafa-chatzouz/
-
-
-    #  - icon: rss
-    #    href: index.xml
+      - icon: rss
+        href: index.xml
 
   google-analytics:  "170377145"
   cookie-consent: false

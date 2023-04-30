@@ -1,7 +1,7 @@
 # Options specified here will apply to all posts in this folder
 
 # freeze computational output
-freeze: true
+# freeze: true # see https://quarto.org/docs/projects/code-execution.html#freeze)
 
 # Enable banner style title blocks
 title-block-banner: false
@@ -12,20 +12,19 @@ author: 'Moustafa Chatzouz'
 # Table of content settings
 toc: true
 toc-depth: 3
-
 page-layout: article
-
 comments:
   utterances:
     repo:  msh855/BlogComments
+  hypothesis:
+    theme: clean
+
 
 format:
   html:
     include-after-body: ../share_button.html
 
-# freeze computational output
-# (see https://quarto.org/docs/projects/code-execution.html#freeze)
-# freeze: true
 
-# Enable banner style title blocks
-# title-block-banner: true
+
+
+
