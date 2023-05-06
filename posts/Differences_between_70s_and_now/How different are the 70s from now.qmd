@@ -8,6 +8,11 @@ categories:
   - Inflation  
 execute:
   echo: false
+format: 
+  html:
+    code-fold: true
+  pdf:
+    toc: false
 title-block-banner: false
 ---
 

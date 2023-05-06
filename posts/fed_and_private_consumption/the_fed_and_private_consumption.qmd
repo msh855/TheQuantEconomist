@@ -7,23 +7,29 @@ categories:
   - Inflation  
 execute:
    echo: false
-format:
+format: 
   html:
-    code-fold: true   
+    code-fold: true
+  pdf:
+    toc: false   
 title-block-banner: false
 ---
 
 <div align="justify">
 
+> -  *The hawkishness of the Fed depends on how changes in interest rates affect consumer spending, which is the largest component of aggregate demand. The elasticity of intertemporal substitution qualifies as a forward-looking criterion in assessing the aggressiveness of monetary policy by capturing the sensitivity of private consumption to changes in interest rates. I show that the Fed’s recent projections imply a very tight monetary policy stance, especially in the near term. However, the implied level of elasticity of intertemporal substitution is quite unusual compared to other empirical studies, suggesting that inflation may not go down as quickly as the Fed is expecting due to income effects. As a result, it appears that luck factors matter more for inflation dynamics as neither the supply side factors nor the indirect effects of higher interest rates (which appear more relevant empirically) are in Fed’s direct control.*.
+
+<!--
 > -   *How hawkish is the Fed? The answer to this question depends on the transmission of interest rates to consumer spending, the largest component of aggregate demand. In this post, I provide an illustrative analysis of how sensitive consumption is to changes in interest rates according to the Fed's recent projections*.
 
-> -   *According to this analysis, the Fed assumes that private consumption is extremely sensitive to its projected policy rates; the assumed degree of sensitivity implies a very tight monetary policy stance, especially in the near term.*
+> -   *By inferring the degree of the elasticity of intertemporal substation from the Fed's projections, I show that this implies a very tight monetary policy stance, especially in the near term.*
 
 > -   *The Federal Reserve's assumptions about the impact of higher interest rates on consumption may not be unrealistic, but they are based on an unusual level of elasticity of intertemporal substitution compared to other empirical studies. As a result, it is possible that consumption may not react as much to higher interest rates as the Fed expects, because higher rates also support personal incomes, particularly for those who are net savers and wealthier individuals. In this case, higher interest rate hikes may not effectively reduce inflation as quickly as the Fed desires, leading to the potential for even higher interest rate increases in the future.*
 
 > -   *It also appears that luck factors matter more for inflation dynamics as neither the supply side factors nor the indirect effects of higher interest rates (which appear more relevant empirically) are in Fed's direct control*.
 
 > -   *Overall, even if the aggregate effects of monetary policy are probably about as large as we want, I discuss here why monetary policy works largely through redistribution. For that reason, if inflation does not normalise as quickly as the Fed hopes it is questionable whether it will insist on any excessive tightening for too long*.
+-->
 
 ## Introduction
 
