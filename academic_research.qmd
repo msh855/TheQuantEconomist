@@ -1,0 +1,24 @@
+---
+# title: "Academic Research"
+format: html
+editor: visual
+draft: true 
+---
+
+<div align="justify"> 
+
+## Academic Background and Research  
+
+I started my PhD in fiscal policy in 2010, at the height of the Greek sovereign debt crisis. At the time, there was a lot of debate about whether Greece's debt adjustment program would be successful in reducing its debt-to-GDP ratio.
+
+One way to assess this possibility is to estimate the so-called fiscal multipliers, which measure the impact of a change in government spending or tax revenues on output. This was a good way to start my PhD research, as a common problem for PhD students is finding a research question to work on.
+
+The value of the fiscal multipliers determines whether debt-to-GDP can go up or down with fiscal consolidations. For example, if a cut in spending has a more than proportional impact on output, then the debt-to-GDP ratio can increase. This is because the numerator (debt) falls slower than the denominator (GDP).
+
+The value of the fiscal multipliers also determines whether fiscal consolidations should be spending- or tax-driven. If spending multipliers are higher than tax multipliers, then it is better to have fiscal consolidations that are tax-driven, as this will have less of an impact on the economy.
+
+The literature on fiscal multipliers is vast, both theoretically and empirically. However, there was little to no empirical research on fiscal multipliers in Greece at the time I started my PhD. For the record, my research confirmed that the standard textbook assumptions about fiscal multipliers might be correct for Greece. This contradicted the assumption made by the IMF at the time (such "miscalculation" made headlines later).
+
+Moving on the more serious stuff 
+
+[to be completed ....]
