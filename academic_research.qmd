@@ -19,6 +19,18 @@ The value of the fiscal multipliers also determines whether fiscal consolidation
 
 The literature on fiscal multipliers is vast, both theoretically and empirically. However, there was little to no empirical research on fiscal multipliers in Greece at the time I started my PhD. For the record, my research confirmed that the standard textbook assumptions about fiscal multipliers might be correct for Greece. This contradicted the assumption made by the IMF at the time (such "miscalculation" made headlines later).
 
-Moving on the more serious stuff 
+
+After I did some initial research, I moved on to more complex topics. There are some deep and unanswered questions in economics that do not have easy answers. The low interest rate environment and the calls for fiscal policy to play a more active role after the financial crisis have revived old debates and classic discussions about public debt.
+
+<!--
+While there are clearly bad cases for using public debt, there are also good reasons to do so. The most important reason is that capitalism is inherently flawed due to two factors: uncertainty and the finite ability of people to work.
+
+Capitalism can fail for many reasons in practice, but most of those reasons can be fixed in theory. For example, if monopolies and rent-seeking are to blame, societies and governments can find ways to remove those distortions. However, it is much harder to account for the inherent inability of humanity to predict the future or have people live forever. According to neoclassical theory, these two factors are sufficient to cause the private sector to misallocate resources. These are the fundamental causes of market failures, which means that capitalism will never allocate resources as efficiently as Adam Smith envisioned. Instead, it will tend to over-accumulate capital (excesses). This is not a new idea; Marx predicted the same thing. However, it is also the central proposition of neoclassical economics. Unfortunately, you may not have heard about it because it is often ignored by academics and journalists, who are more interested in ideology than in understanding the real world. To understand why, who can absorb the excess savings other than the government ?  
+
+The most obvious example of this is the low interest rate environment that began in the early 1980s. The primary cause of this was the death of a large number of people. China's one-child policy and the lack of a strong social safety net also contributed to this problem.
+--> 
 
 [to be completed ....]
+
+
+

@@ -1,0 +1,25 @@
+---
+title: "The wrong discussion about Public Debt"
+#subtitle: " "
+date: today
+author: "Moustafa Chatzouz"
+format: html
+categories:
+  - Fiscal Policy
+editor: visual
+draft: true 
+---
+
+### Introduction
+
+Interest rates have been declining steadily since the early 1980s. There are a number of factors that have contributed to this trend, including:
+
+-   **The rise of emerging markets**: Emerging markets start amassing a large amount of capital, which subsequently flooded the global financial system. This has led to a decline in interest rates, as investors have sought out higher yields in developed markets.
+-   **Population aging**: Aging populations in developed countries have led to an increase in savings. This is because older people tend to save more for retirement than younger people.
+-   **The shift to private pensions**: Many developed countries have moved away from public pensions in recent years. This has created a strong incentive for households to save more for retirement, as they will no longer be guaranteed a state pension.
+-   **Globalization and technological change**: Globalization and technological change have led to increased productivity and economic growth. This has also contributed to the decline in interest rates, as central banks have been able to keep rates low without fear of inflation.
+-   **The weakening of the welfare state**: The welfare state in many developed countries has weakened in recent years. This has led to an increase in the need for households to save for their own retirement and healthcare.
+
+In addition to these factors, the one-child policy in China also played a role in the decline of interest rates. The one-child policy led to a large increase in savings among Chinese households, as they had to save more to provide for their children's education and retirement. This excess savings flowed into the global financial system, putting downward pressure on interest rates.
+
+### The Sustainability of Public Debt: The wrong discussion
