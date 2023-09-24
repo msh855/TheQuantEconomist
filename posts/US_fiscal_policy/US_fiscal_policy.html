@@ -222,7 +222,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <p>So, what drives the US’s expansionary fiscal policy? According to the CBO data (<a href="#fig-spendingallocation">Figure&nbsp;3</a>), the majority of the US government’s spending is on mandatory programs like Social Security and Medicare. As we can see, mandatory spending as a percentage of total outlays has been rising, particularly since the 1990s, and will most likely continue to consume the most of budgetary resources in the near future. What we’re seeing here is the growing fiscal cost of population ageing as more people become eligible for mandatory programs like Social Security and Medicare. This is a problem that most of the advanced world is dealing with, not just the United States.</p>
 <div id="fig-spendingallocation" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Budget_allocations.png" class="img-fluid figure-img" width="478"></p>
+<p><img src="images/Budget_allocations.png" class="img-fluid figure-img" width="510"></p>
 <figcaption class="figure-caption">Figure&nbsp;3: US Government Spending (% Total)</figcaption>
 </figure>
 </div>
@@ -238,7 +238,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <p>Markets place a lot of emphasis on borrowing costs. Not unjustifiably considering that politicians cannot directly control interest payments. However, if you start reading the news, you will think that US start being charged loan-sharking interest rates. Let’s see what the reality looks like. Below I show the effective interest rate against the 10-year U.S. Treasury (UST) bond. The effective interest rate is the overall cost of borrowing that takes into account all interest rates that the US government is charged for issuing different debt products. For convenience, I also have the monetary policy cycles since 1960s.</p>
 <div id="fig-usinterestrates" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Borrowing_cost.png" class="img-fluid figure-img" width="511"></p>
+<p><img src="images/Borrowing_cost.png" class="img-fluid figure-img" width="640"></p>
 <figcaption class="figure-caption">Figure&nbsp;4: US Borrowing costs</figcaption>
 </figure>
 </div>
@@ -250,7 +250,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <p>Borrowing costs on their own do not necessarily matter. Measuring public indebtness as a fraction of GDP, what efffectively matters is the effective interest rate in relation to economic growth. In public finance literature, this is usually written as <span class="math inline">\(r-g\)</span>, where <span class="math inline">\(r\)</span> is the previously mentioned effective interest rate and <span class="math inline">\(g\)</span> is the nominal growth rate of the economy. This <span class="math inline">\(r-g\)</span> gap has a simple explanation. When the economy grows faster than debt, the debt-to-GDP ratio falls (and vice versa). In practice, and from purely a public finance perspective, extra debt may be added when the government is dis-saving (accumulates primary deficits) or removed when the government saves money (accumulates primary surpluses). Then, the debt creating flows (i.e.&nbsp;how public debt changes period-by-period) can be decomposed in two main parts: the contribution of the <span class="math inline">\(r-g\)</span> dynamics and b) the behavior of primary balances. Anything else we can assume for simplicity are residual factors (such the so called stock-flow adjustments). This decomposition is also appealing because it provides a high-level overview of the part of public debt over which politicians have direct control, namely primary balances, and the part over which they do not, namely <span class="math inline">\(r-g\)</span> dynamics. So, how does the picture come together when we put all of these pieces together? This is how this decomposition looks when using CBO data.</p>
 <div id="fig-rgdynamics" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/r_g_dynamics.png" class="img-fluid figure-img" width="483"></p>
+<p><img src="images/r_g_dynamics.png" class="img-fluid figure-img" width="552"></p>
 <figcaption class="figure-caption">Figure&nbsp;5: Debt Creating Flows</figcaption>
 </figure>
 </div>
@@ -317,7 +317,7 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <p>The turning point for the <span class="math inline">\(r^*&gt;g^*\)</span> reversal occurred around the mid-1990s, according to this evidence. This is not a coincidence either. This is the period when globalization accelerated, leading to more free movement of capital across the world. For example, the share of external debt as a percentage of total debt began to increase not only in the US, but also in countries like Greece.</p>
 <div id="fig-stars" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/rstar_public_debt.png" class="img-fluid figure-img" width="545"></p>
+<p><img src="images/rstar_public_debt.png" class="img-fluid figure-img" width="646"></p>
 <figcaption class="figure-caption">Figure&nbsp;7: The evolution of natural interest rates and long-term growth</figcaption>
 </figure>
 </div>
@@ -334,15 +334,27 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <section id="us-fiscal-policy-is-worlds-fiscal-policy" class="level3">
 <h3 class="anchored" data-anchor-id="us-fiscal-policy-is-worlds-fiscal-policy">US Fiscal Policy is World’s Fiscal Policy</h3>
 <p>I mentioned before that it doesn’t really matter whether the world or the US itself has a savings glut issue. Here’s why. <a href="#fig-usdeficits">Figure&nbsp;8</a> shows the global shares of budget and current account deficits for the US and other countries. The US current account deficits account for more than half of global current account deficits. The US budget deficits are also large, accounting for close to 44% of the world’s total. Practically and with slightly overestimating things, just the United States is absorbing close to 2/3 of global savings with budget deficits have a significant proportion to this.</p>
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-usdeficits" class="quarto-layout-panel">
 <figure class="figure">
-<p><img src="images/share_current_account.png" class="img-fluid figure-img" width="389"></p>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-surus" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/share_current_account.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits"></p>
+<figcaption class="figure-caption">(a) Budget Deficit</figcaption>
 </figure>
 </div>
-<div id="fig-usdeficits" class="quarto-figure quarto-figure-center anchored">
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-hanno" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/share_budgets.png" class="img-fluid figure-img" width="426"></p>
-<figcaption class="figure-caption">Figure&nbsp;8: US deficits (% World’s total)</figcaption>
+<p><img src="images/share_current_account.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits"></p>
+<figcaption class="figure-caption">(b) Current Account Deficit</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8: US deficits (% World’s total)</figcaption><p></p>
 </figure>
 </div>
 <p>Although these numbers raise many other questions and expose some vulnerabilities, they also show that US fiscal policy is, in effect, the world’s fiscal policy. As long as the world as a whole continues to produce surpluses at a faster pace than the US produces deficits (a scenario that is not implausible given population aging, for example), US public debt is unlikely to have a significant impact on either domestic or global interest rates (<span class="math inline">\(r^*\)</span>), or to crowd out a significant amount of capital.</p>
