@@ -13,6 +13,7 @@ format:
   pdf:
     toc: false
 title-block-banner: false
+draft: true
 ---
 
 <div align="justify">
