@@ -3,9 +3,9 @@
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/Hajjouz
+   # - icon: twitter
+  #    text: Twitter
+   #   href: https://twitter.com/Hajjouz
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/moustafa-chatzouz/

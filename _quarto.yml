@@ -22,12 +22,12 @@ website:
       #  href: academic_research.qmd
       - icon: github
         href: https://github.com/msh855
-      - icon: twitter
-        href: https://twitter.com/Hajjouz
+      #- icon: twitter
+       # href: https://twitter.com/Hajjouz
       - icon: linkedin
         href: https://www.linkedin.com/in/moustafa-chatzouz/
-      - icon: rss
-        href: index.xml
+     # - icon: rss
+      #  href: index.xml
 
   google-analytics:  "170377145"
   cookie-consent: false

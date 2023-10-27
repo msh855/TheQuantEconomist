@@ -56,7 +56,7 @@ In this post, I will focus on the first issue. Clarifying this issue can help to
 The effects of interest rates on consumption are a central part of macroeconomic theory. When interest rates rise, there are two main effects:
 
 1.  **The substitution effect**: Higher interest rates make it more expensive to consume now, so people tend to save more and consume less.
-2.  **The income effect:**: Higher interest rates also increase the income that people earn from their savings, which can lead to increased consumption.
+2.  **The income effect**: Higher interest rates also increase the income that people earn from their savings, which can lead to increased consumption.
 
 The overall effect of interest rates on consumption is ambiguous, and depends on the relative strength of the substitution and income effects. In general, the substitution effect is stronger for people who have lower incomes and less wealth, while the income effect is stronger for people who have higher incomes and more wealth.
 
@@ -138,7 +138,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px 
 
-path_stata_file = '/Users/safishajjouz/Downloads/eis_det.dta'
+path_stata_file = '/Users/safishajjouz/GitHub/TheQuantEconomist/data_inputs/eis_det.dta'
+#path_stata_file = '/Users/safishajjouz/Downloads/eis_det.dta'
 df_eis = pd.read_stata(path_stata_file)
 
 # Winsorization 
