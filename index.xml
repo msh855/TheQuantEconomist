@@ -6,16 +6,17 @@
       version="2.0">
 <channel>
 <title>Moustafa Chatzouz</title>
-<link>https://www.the-quant-economist.com/index.html</link>
+<link>https://www.the-quant-economist.com/</link>
 <atom:link href="https://www.the-quant-economist.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Observations about Macroecnomics, Finance and Public Debates</description>
-<generator>quarto-1.3.340</generator>
-<lastBuildDate>Wed, 06 Sep 2023 21:00:00 GMT</lastBuildDate>
+<generator>quarto-1.4.549</generator>
+<lastBuildDate>Wed, 06 Sep 2023 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Is the US Fiscal Policy Reckless?</title>
   <dc:creator>Moustafa Chatzouz</dc:creator>
   <link>https://www.the-quant-economist.com/posts/US_fiscal_policy/US_fiscal_policy.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -27,10 +28,14 @@
 <section id="introduction" class="level3">
 <h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
 <p>The US public debt has reached about 100% of GDP, and the Congressional Budget Office (CBO) <a href="https://www.cbo.gov/data/budget-economic-data">projects</a> that it will continue to rise if the US government continues to accumulate deficits (Figure&nbsp;1). This raises concerns about the sustainability of public debt and the US fiscal policy more generally. Unsustainable US public debt could crack the entire financial system, with devastating consequences for the global economy. All of this has led to the (false) perception that US fiscal policy is “reckless” and government debt is out of control. In this post, I will give a quick overview of US fiscal policy and explain why I believe that this is not the case.</p>
-<div id="fig-publicdebt" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/US_public_Debt.png" class="img-fluid figure-img" width="546"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: The Evolution of Public Debt and Budget Deficits in the US. The debit limit is taken from <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=Pyw2q8kAAAAJ&amp;citation_for_view=Pyw2q8kAAAAJ:_FxGoFyzp5QC">Mehrotra and Sergeyev</a></figcaption>
+<div id="fig-publicdebt" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publicdebt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/US_public_Debt.png" class="img-fluid figure-img" width="546">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publicdebt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The Evolution of Public Debt and Budget Deficits in the US. The debit limit is taken from <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=Pyw2q8kAAAAJ&amp;citation_for_view=Pyw2q8kAAAAJ:_FxGoFyzp5QC">Mehrotra and Sergeyev</a>
+</figcaption>
 </figure>
 </div>
 <p>In the following sections, I will first provide an overview of the US fiscal situation and what primarily drives budget deficits. Then I’ll quickly discuss whether public debt is sustainable, and then I’ll conclude with a normative discussion of whether US fiscal policy is truly “reckless”. To be clear, the discussion here is about the trajectory of public debt, that is, its historical and expected trend.</p>
@@ -38,10 +43,14 @@
 <section id="us-fiscal-stance" class="level3">
 <h3 class="anchored" data-anchor-id="us-fiscal-stance">US Fiscal Stance</h3>
 <p><strong>Fiscal stance</strong> is a measure of whether government policy is stimulating the economy (expansionary), having no impact (neutral), or slowing the economy (contractionary). One common way to measure fiscal stance is the <strong>cyclically-adjusted primary balance</strong> (CAPB) as a fraction of potential output. Primary balance is the government’s budget balance adjusted for the business cycle. This removes the effects of the economic cycle on government budgets, so it is a better measure of policy decisions<sup>1</sup>.</p>
-<div id="fig-fiscalstance" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/US_stance.png" class="img-fluid figure-img" width="587"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: <strong>Fiscal Stance</strong> is calculated as the negative of CAPB. A positive fiscal stance indicates expansionary fiscal policy, while a negative fiscal stance indicates contractionary fiscal policy. <strong>Fiscal impulse</strong> is the year-over-year change in fiscal stance. A positive fiscal impulse indicates that the government is becoming more expansionary, while a negative fiscal impulse indicates that the government is becoming in this case less expansionary.</figcaption>
+<div id="fig-fiscalstance" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fiscalstance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/US_stance.png" class="img-fluid figure-img" width="587">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fiscalstance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: <strong>Fiscal Stance</strong> is calculated as the negative of CAPB. A positive fiscal stance indicates expansionary fiscal policy, while a negative fiscal stance indicates contractionary fiscal policy. <strong>Fiscal impulse</strong> is the year-over-year change in fiscal stance. A positive fiscal impulse indicates that the government is becoming more expansionary, while a negative fiscal impulse indicates that the government is becoming in this case less expansionary.
+</figcaption>
 </figure>
 </div>
 <p>Figure&nbsp;2 shows that fiscal policy in the United States has been particularly expansionary at least since 2002 and according to IMF’s recent projections it is expected to remain so in the coming years, albeit at a slower pace. That means the US fiscal policy has been running deficits (unrelated to the cycle of the economy) for at least the last 20 years, and there is a good chance that this will continue.</p>
@@ -50,10 +59,14 @@
 <h3 class="anchored" data-anchor-id="what-drives-us-deficits">What Drives US deficits?</h3>
 <p>The Congressional Budget Office (CBO) in the US groups spending into three broad categories: mandatory, discretionary, and interest spending. Mandatory outlays is seen as necessary for the economy to function, making it more difficult to change the law. In contrast, discretionary spending, such as defense spending, is more up to the government to decide what to do and hence is easier to change. The third category is self-explanatory: it is the interest paid by the government on its public debt.</p>
 <p>So, what drives the US’s expansionary fiscal policy? According to the CBO data (Figure&nbsp;3), the majority of the US government’s spending is on mandatory programs like Social Security and Medicare. As we can see, mandatory spending as a percentage of total outlays has been rising, particularly since the 1990s, and will most likely continue to consume the most of budgetary resources in the future. What we’re seeing here is the growing fiscal cost of population ageing as more people become eligible for mandatory programs like Social Security and Medicare. This is a problem that most of the advanced world is dealing with, not just the United States.</p>
-<div id="fig-spendingallocation" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/Budget_allocations.png" class="img-fluid figure-img" width="510"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: US Government Spending (% Total)</figcaption>
+<div id="fig-spendingallocation" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-spendingallocation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/Budget_allocations.png" class="img-fluid figure-img" width="510">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spendingallocation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: US Government Spending (% Total)
+</figcaption>
 </figure>
 </div>
 <p>On the other hand, as the US began to invest less in national defense after the end of Cold War, the share of discretionary spending in the budget has been declining over time and this trajectory is expected to continue. Finally, the share of interest payments has been hovering around 10% of the budget for all of these years, though it is expected to reach record levels as public indebtedness rises under unchanged policies. Overall, however, the cost of social programs would continue to dominate the budget.</p>
@@ -66,10 +79,14 @@
 <li><strong>Low overall Borrowing costs</strong>:</li>
 </ol>
 <p>Markets place a lot of emphasis on borrowing costs. Not unjustifiably considering that politicians cannot directly control interest payments. However, if you start reading the news, you will think that US start being charged loan-sharking interest rates. Let’s see what the reality looks like. Below I show the effective interest rate against the 10-year U.S. Treasury (UST) bond. The effective interest rate is the overall cost of borrowing that takes into account all interest rates that the US government is charged for issuing different debt products. For convenience, I also have the monetary policy cycles since 1960s. Here what is worth commenting is that monetary policy play does not seem to play a particular role for the sustainability of debt. Other fundamentals, like level of debt, population and technological growth, productivity, and so on, are the factors mostly influencing trends in borrowing costs.</p>
-<div id="fig-usinterestrates" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/Borrowing_cost.png" class="img-fluid figure-img" width="640"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: US Borrowing costs</figcaption>
+<div id="fig-usinterestrates" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-usinterestrates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/Borrowing_cost.png" class="img-fluid figure-img" width="640">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-usinterestrates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: US Borrowing costs
+</figcaption>
 </figure>
 </div>
 <p>In the current situation, do you see anything to worry about here? I don’t. Overall borrowing costs are at the same levels as before the pandemic (Figure&nbsp;4). Debt service costs are still low, which is understandable given that long-term interest rates were structurally low before COVID-19. The monetary shock of the last 18 months is starting to have an impact on borrowing costs, but it is highly questionable whether this situation will last for too long as the diagram above also shows. It is also important to note that these are nominal borrowing costs. Subtracting inflation (which helps to deflate debt), the cost of borrowing is even lower <!--# There is the issue of inflation-linked bonds, but this is only a tiny fraction of the overall supply of bonds -->.</p>
@@ -78,10 +95,14 @@
 <li><strong>Favorable r-g fundamentals</strong>:</li>
 </ol>
 <p>Borrowing costs on their own do not necessarily matter. Measuring public indebtedness as a fraction of GDP, what effectively matters is the effective interest rate in relation to economic growth. In public finance literature, this is usually written as <img src="https://latex.codecogs.com/png.latex?r-g">, where <img src="https://latex.codecogs.com/png.latex?r"> is the previously mentioned effective interest rate and <img src="https://latex.codecogs.com/png.latex?g"> is the nominal growth rate of the economy. This <img src="https://latex.codecogs.com/png.latex?r-g"> gap has a simple explanation. When the economy grows faster than debt, the debt-to-GDP ratio falls (and vice versa). In practice, and from purely a public finance perspective, extra debt may be added when the government is dis-saving (accumulates primary deficits) or removed when the government saves money (accumulates primary surpluses). Then, the debt creating flows (i.e.&nbsp;how public debt changes period-by-period) can be decomposed in two main parts: the contribution of the <img src="https://latex.codecogs.com/png.latex?r-g"> dynamics and b) the behavior of primary balances. Anything else we can assume for simplicity are residual factors (such the so called stock-flow adjustments). This decomposition is also appealing because it provides a high-level overview of the part of public debt over which politicians have direct control, namely primary balances, and the part over which they do not, namely <img src="https://latex.codecogs.com/png.latex?r-g"> dynamics. So, how does the picture come together when we put all of these pieces together? This is how this decomposition looks when using CBO data.</p>
-<div id="fig-rgdynamics" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/r_g_dynamics.png" class="img-fluid figure-img" width="552"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: Debt Creating Flows</figcaption>
+<div id="fig-rgdynamics" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rgdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/r_g_dynamics.png" class="img-fluid figure-img" width="552">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rgdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Debt Creating Flows
+</figcaption>
 </figure>
 </div>
 <p>Figure&nbsp;5 which deconstructs the year-over-year change in public debt into <img src="https://latex.codecogs.com/png.latex?r-g">, primary balances, and residual factors, reveals that the Congressional Budget Office (CBO) anticipates that <img src="https://latex.codecogs.com/png.latex?r-g"> dynamics will remain favorable at levels comparable to the previous decade. This suggests there is no compelling reason to believe that the national debt has gotten out of hand. Just balancing out the books the debt-to-GDP would be facing a <u><em>falling</em></u> trajectory. But even if we assume that public debt can reach quite high levels, such as 150%-180% of GDP, the baseline projections imply that the US government would need a small primary surplus, close to 1%-1.5% of GDP, to stabilize debt at that levels. Not trivial, but not difficult either, given how feasible such an adjustment is for such an extremely high public debt level<sup>3</sup>.</p>
@@ -89,10 +110,14 @@
 <li><strong>Balance of Risks</strong></li>
 </ol>
 <p>However, debt sustainability is more than just a baseline. From the perspective of risk management, the distribution of r-g shocks, which encompass virtually every type of shock that could occur in the United States as well as internationally, is also crucial. How does this appear when examining the history of these shocks?</p>
-<div id="fig-rgshocks" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/r_g_shocks.png" class="img-fluid figure-img" width="644"></p>
-<figcaption class="figure-caption">Figure&nbsp;6: <strong>Distribution of r-g shocks</strong></figcaption>
+<div id="fig-rgshocks" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rgshocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/r_g_shocks.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="644">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rgshocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: <strong>Distribution of r-g shocks</strong>
+</figcaption>
 </figure>
 </div>
 <p>Figure&nbsp;6 shows the historical distribution of the r−g gap since the 1960s, as well as after the mid-1990s and what the Congressional Budget Office (CBO) projects. This analysis leads to two conclusions:</p>
@@ -150,10 +175,14 @@
 <p>The evidence from Summers et al.&nbsp;is too old to be useful now. So the question is whether we are still in this secular trajectory of excess savings, and hence if still makes sense to take this as the starting point in assessing US public debt. Some <a href="http://www.econ.ucla.edu/fgeerolf/research/Efficiency_Emp.pdf">new evidence</a> says so, confirming essentially Ben Bernanke’s hypothesis that the global economy has a savings glut problem. For reasons that I will explain later, when the global economy as a whole has a savings glut problem this mostly likely implies that the United States has it too. And, US public debt is key to fixing this problem.</p>
 <p>To get a more “real-time” estimate of whether that starting point is still appropriate in the current circumstances, I’ll use the <a href="https://www.newyorkfed.org/research/policy/rstar">Holston, Laubach, Williams (HLW) dataset</a>, which produces estimates for both <img src="https://latex.codecogs.com/png.latex?r%5E*"> and <img src="https://latex.codecogs.com/png.latex?g%5E*">, and are the closest proxies for assessing dynamic inefficiency in real-time. People use their estimates to look at <img src="https://latex.codecogs.com/png.latex?r%5E*">, possibly because they are more preoccupied with the day-to-day developments in the economy and what monetary policy is doing. But If we want to consider whether we are still in the same secular trend in which the there is a tendency in producing more liquidity that can be absorbed, then we should be looking at the level of <img src="https://latex.codecogs.com/png.latex?r%5E*"> in relation to <img src="https://latex.codecogs.com/png.latex?g%5E*">. That is why I also think that in this case “how accurate” the estimation of <img src="https://latex.codecogs.com/png.latex?r%5E*"> across different models is irrelevant; what matters is if the signal from these models are pointing to the same secular trajectory for the <img src="https://latex.codecogs.com/png.latex?r%5E*-g%5E*"> gap.</p>
 <p>Figure&nbsp;7 shows how the real interest rate <img src="https://latex.codecogs.com/png.latex?r%5E*">, the long-term growth <img src="https://latex.codecogs.com/png.latex?g%5E*">, and the gap between them (<img src="https://latex.codecogs.com/png.latex?r%5E*%E2%88%92g%5E%E2%88%97">) have evolved over time, along with the debt-to-GDP ratio, since the late 1960s. The data shows that both <img src="https://latex.codecogs.com/png.latex?r%5E*"> and <img src="https://latex.codecogs.com/png.latex?g%5E*"> have declined over time, and this is not a coincidence. While other factors, such as productivity growth, may also play a role, the accumulation of capital (savings) is certainly a major driver and common factor affecting the <img src="https://latex.codecogs.com/png.latex?r%5E*%E2%88%92g%5E%E2%88%97"> gap. The consequences of excessive savings start to become visible in the early 1980s. When savings begin to accumulate more quickly, we first notice a decrease in the <img src="https://latex.codecogs.com/png.latex?r%5E*%E2%88%92g%5E%E2%88%97"> gap. As savings become excessively high as a result of even higher global saving rates, the gap becomes negative. In other words, as excess liquidity became too prevalent around the world, it began to show up in US data as well. The turning point for the sign reversal in <img src="https://latex.codecogs.com/png.latex?r%5E*-g%5E*"> occurred around the mid-1990s, coinciding with the acceleration of globalization and the increased free movement of capital across the world. For example, the share of external debt as a percentage of total debt began to rise not only in the US, but also in countries like Greece.</p>
-<div id="fig-stars" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/rstar_public_debt.png" class="img-fluid figure-img" width="646"></p>
-<figcaption class="figure-caption">Figure&nbsp;7: The evolution of natural interest rates and long-term growth</figcaption>
+<div id="fig-stars" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/rstar_public_debt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="646">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: The evolution of natural interest rates and long-term growth
+</figcaption>
 </figure>
 </div>
 <p>The <img src="https://latex.codecogs.com/png.latex?r%E2%88%92g"> gap in public finance and the <img src="https://latex.codecogs.com/png.latex?r%5E*%E2%88%92g%5E*"> gap here are typically linked. A favorable r−g gap helps sustain public debt and the US government’s ability to maintain higher debt levels. This ability can help address the issue of excess savings. In simpler terms, US debt is most likely to be sustainable when the world saves more than it spends. The strong correlation between the <img src="https://latex.codecogs.com/png.latex?r%E2%88%92g"> gap and excess savings is evident when we combine the evidence presented here with the CBO data discussed earlier. Both show negative r−g gaps after 2000. However, excess savings is a sufficient but not necessary condition for the public finance <img src="https://latex.codecogs.com/png.latex?r%E2%88%92g"> gap to be negative. Therefore, without further investigation, it is unclear whether the CBO’s long-term projection of a negative <img src="https://latex.codecogs.com/png.latex?r%E2%88%92g"> gap also indicates that excess savings are expected to persist. Nonetheless, the evidence here also shows that the <img src="https://latex.codecogs.com/png.latex?r%5E*%E2%88%92g%5E*"> gap is still negative even after the pandemic, suggesting that the secular problem of excess savings is still persisting. Therefore, starting from this situation strengthens the case for assessing public debt in light of its ability to absorb excess liquidity and crowd out excess savings.</p>
@@ -170,26 +199,38 @@
 <h3 class="anchored" data-anchor-id="us-fiscal-policy-is-worlds-fiscal-policy">US Fiscal Policy is World’s Fiscal Policy</h3>
 <p>I mentioned before that it doesn’t really matter whether the world or the US itself has a savings glut issue. Here’s why. Figure&nbsp;8 shows the global shares of budget and current account deficits for the US and other countries. The US current account deficit accounts for more than half of global current account deficits, and the US budget deficit is also large, accounting for close to 44% of the world’s total. To put it simply, the US is absorbing nearly two-thirds of global savings, with a significant proportion of this going to US budget deficit.</p>
 <div id="fig-usdeficits" class="quarto-layout-panel">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-surus" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/share_current_account.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits"></p>
-<figcaption class="figure-caption">(a) Largest Current Account Deficit Countries</figcaption>
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-usdeficits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-usdeficits" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-surus" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/share_current_account.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Largest Current Account Deficit Countries
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-hanno" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/share_budgets.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits"></p>
-<figcaption class="figure-caption">(b) Largest Budget Deficit Countries</figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-usdeficits" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-hanno" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/US_fiscal_policy/images/share_budgets.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Largest Budget Deficit Countries
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;8: US deficits (% World’s total)</figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-usdeficits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: US deficits (% World’s total)
+</figcaption>
 </figure>
 </div>
 <p>Although these numbers raise many other questions and expose some vulnerabilities, they also show that US fiscal policy is, in effect, the world’s fiscal policy. As long as the world as a whole continues to produce surpluses at a faster pace than the US produces deficits (a scenario that is not implausible given population aging, for example), US public debt is unlikely to have a significant impact on either domestic or global interest rates (<img src="https://latex.codecogs.com/png.latex?r%5E*">), or to crowd out a significant amount of capital (if at all in this case).</p>
@@ -218,13 +259,14 @@
 </section></div> ]]></description>
   <category>Fiscal Policy</category>
   <guid>https://www.the-quant-economist.com/posts/US_fiscal_policy/US_fiscal_policy.html</guid>
-  <pubDate>Wed, 06 Sep 2023 21:00:00 GMT</pubDate>
+  <pubDate>Wed, 06 Sep 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Fed’s Forward Guidance</title>
   <dc:creator>Moustafa Chatzouz</dc:creator>
   <link>https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -251,10 +293,14 @@
 <p>Before the global financial crisis, the proxy rate and the fund rate were closely correlated. However, they started to diverge after 2007, when quantitative easing (QE) and forward guidance became integral components of the monetary policy framework. During this period, the use of forward guidance amounted to a monetary policy stance of negative interest rates (validating the purpose that it was designed). These ultra-low interest rates persisted until 2014 according to the proxy rate. At that point the Fed started tightening its policy until the pandemic hit.</p>
 <div class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
-<div id="fig-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-1-output-1.png" width="820" height="350" class="figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: The Proxy and Policy Rate</figcaption>
+<div id="fig-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-1-output-1.png" width="820" height="350" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The Proxy and Policy Rate
+</figcaption>
 </figure>
 </div>
 </div>
@@ -270,10 +316,14 @@
 <p>The difference between the proxy and policy rate shows the level of interest rate implied by the Fed’s forward guidance. Figure&nbsp;2 shows exactly this. For example, at the peak of the proxy rate during this monetary policy tightening cycle, the Fed added an extra 3% to the policy rate by just pointing what will be doing. This means that until October 2022, the economy was effectively operating at an interest rate level closer to 6% than the official policy rate of 3%<sup>1</sup>. It was only after October 2022 that the proxy rate start coming off, signaling a less hawkish stance.</p>
 <div class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
-<div id="fig-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-2-output-1.png" width="639" height="478" class="figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: Interest Rates equivalent of Direct Communication</figcaption>
+<div id="fig-2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-2-output-1.png" width="639" height="478" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Interest Rates equivalent of Direct Communication
+</figcaption>
 </figure>
 </div>
 </div>
@@ -284,10 +334,14 @@
 <p>To put things in perspective, in Figure&nbsp;3 I show the magnitude of this and other messages since 2020 and compare the unconventional part of the monetary policy to historical standards. The calculations are still based on the distance between the proxy rate and the policy rate. The left panel shows the average impact of communication-related factors across all tightening episodes since mid-70s as identified by the proxy rate. For the relevant periods, I have also filtered out the direct impact of balance sheet changes<sup>2</sup>. The right panel shows the distribution of the interest rates implied by forward guidance across each decades<sup>3</sup>.</p>
 <div class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display">
-<div id="fig-3" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-3-output-1.png" width="810" height="411" class="figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: Monetary Policy Tightening Cycles</figcaption>
+<div id="fig-3" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-3-output-1.png" width="810" height="411" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Monetary Policy Tightening Cycles
+</figcaption>
 </figure>
 </div>
 </div>
@@ -311,10 +365,14 @@
 <p>In Figure&nbsp;4, I plotted this episode and compared it to the current tightening cycle. I also added the “Hard landing” of Volcker (which was essentially started by Burns and Miller) and the in-between tightening cycle of 1999 to make the case clearer. Before the 1980s, any comparisons are meaningless, as the Gold Standard was in place, there was a substantially different monetary policy framework, and fiscal dominance was the norm. I also ignored the tightening cycle that preceded the Global Financial Crisis (for obvious reasons) and the tightening cycle of 2018, as it was disrupted by the pandemic.</p>
 <div class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display">
-<div id="fig-5" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-5-output-1.png" width="806" height="364" class="figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: Monetary Policy Tightening Cycles</figcaption>
+<div id="fig-5" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed_files/figure-html/fig-5-output-1.png" width="806" height="364" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Monetary Policy Tightening Cycles
+</figcaption>
 </figure>
 </div>
 </div>
@@ -342,13 +400,14 @@
   <category>Monetary Policy</category>
   <category>Inflation</category>
   <guid>https://www.the-quant-economist.com/posts/Hawkish_Fed/Hawkish_Fed.html</guid>
-  <pubDate>Fri, 21 Apr 2023 21:00:00 GMT</pubDate>
+  <pubDate>Fri, 21 Apr 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>The Fed and Private Consumption (Wonkish)</title>
   <dc:creator>Moustafa Chatzouz</dc:creator>
   <link>https://www.the-quant-economist.com/posts/fed_and_private_consumption/the_fed_and_private_consumption.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -471,7 +530,11 @@
 <p>However, in the current context, the strength of the substitution effects, that is, the size of the elasticity of intertemporal substitution (EIS), also matters for the tightness of monetary policy. To get a sense of this, I used an excellent <a href="http://meta-analysis.cz/substitution/">meta-analysis</a> that collects more than 2,700 published estimates of the EIS across countries, with about half of them focusing on the United States. Based on this study, I show below the distribution of the EIS across countries, including the US. The red horizontal line is when the EIS equals 1, so values above this line indicate when the substitution effect dominates.</p>
 <div class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<p><img src="https://www.the-quant-economist.com/posts/fed_and_private_consumption/the_fed_and_private_consumption_files/figure-html/cell-2-output-1.png" width="662" height="544"></p>
+<div>
+<figure class="figure">
+<p><img src="https://www.the-quant-economist.com/posts/fed_and_private_consumption/the_fed_and_private_consumption_files/figure-html/cell-2-output-1.png" width="662" height="544" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The good news is that the Fed’s forecasts suggest that monetary policy is quite tight (more than the market assumes). This is because the estimated value of the elasticity of substitution, <img src="https://latex.codecogs.com/png.latex?%5Csigma">, lies in the range of extreme values. For the size of the substitution effects assumed here, the rise in interest rates implies a rather strong impact on consumption in the near term.</p>
@@ -498,13 +561,14 @@
   <category>Monetary Policy</category>
   <category>Inflation</category>
   <guid>https://www.the-quant-economist.com/posts/fed_and_private_consumption/the_fed_and_private_consumption.html</guid>
-  <pubDate>Tue, 05 Jul 2022 21:00:00 GMT</pubDate>
+  <pubDate>Tue, 05 Jul 2022 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How different are the 70s from today?</title>
   <dc:creator>Moustafa Chatzouz</dc:creator>
   <link>https://www.the-quant-economist.com/posts/differences_between_70s_and_now/How_different_are_the_70s_from_now.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -550,7 +614,7 @@
   <category>Monetary Policy</category>
   <category>Inflation</category>
   <guid>https://www.the-quant-economist.com/posts/differences_between_70s_and_now/How_different_are_the_70s_from_now.html</guid>
-  <pubDate>Wed, 23 Mar 2022 22:00:00 GMT</pubDate>
+  <pubDate>Thu, 24 Mar 2022 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
