@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -49,7 +49,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -58,8 +64,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=170377145"></script>
@@ -77,9 +85,41 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -87,9 +127,9 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Moustafa Chatzouz</span>
     </a>
@@ -101,24 +141,24 @@ gtag('config', '170377145', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/msh855" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/msh855"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/moustafa-chatzouz/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/moustafa-chatzouz/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -177,7 +217,9 @@ gtag('config', '170377145', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <div align="justify">
 
@@ -186,11 +228,15 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 </blockquote>
 <section id="introduction" class="level3">
 <h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
-<p>The US public debt has reached about 100% of GDP, and the Congressional Budget Office (CBO) <a href="https://www.cbo.gov/data/budget-economic-data">projects</a> that it will continue to rise if the US government continues to accumulate deficits (<a href="#fig-publicdebt">Figure&nbsp;1</a>). This raises concerns about the sustainability of public debt and the US fiscal policy more generally. Unsustainable US public debt could crack the entire financial system, with devastating consequences for the global economy. All of this has led to the (false) perception that US fiscal policy is “reckless” and government debt is out of control. In this post, I will give a quick overview of US fiscal policy and explain why I believe that this is not the case.</p>
-<div id="fig-publicdebt" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/US_public_Debt.png" class="img-fluid figure-img" width="546"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: The Evolution of Public Debt and Budget Deficits in the US. The debit limit is taken from <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=Pyw2q8kAAAAJ&amp;citation_for_view=Pyw2q8kAAAAJ:_FxGoFyzp5QC">Mehrotra and Sergeyev</a></figcaption>
+<p>The US public debt has reached about 100% of GDP, and the Congressional Budget Office (CBO) <a href="https://www.cbo.gov/data/budget-economic-data">projects</a> that it will continue to rise if the US government continues to accumulate deficits (<a href="#fig-publicdebt" class="quarto-xref">Figure&nbsp;1</a>). This raises concerns about the sustainability of public debt and the US fiscal policy more generally. Unsustainable US public debt could crack the entire financial system, with devastating consequences for the global economy. All of this has led to the (false) perception that US fiscal policy is “reckless” and government debt is out of control. In this post, I will give a quick overview of US fiscal policy and explain why I believe that this is not the case.</p>
+<div id="fig-publicdebt" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publicdebt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/US_public_Debt.png" class="img-fluid figure-img" width="546">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publicdebt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The Evolution of Public Debt and Budget Deficits in the US. The debit limit is taken from <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=Pyw2q8kAAAAJ&amp;citation_for_view=Pyw2q8kAAAAJ:_FxGoFyzp5QC">Mehrotra and Sergeyev</a>
+</figcaption>
 </figure>
 </div>
 <p>In the following sections, I will first provide an overview of the US fiscal situation and what primarily drives budget deficits. Then I’ll quickly discuss whether public debt is sustainable, and then I’ll conclude with a normative discussion of whether US fiscal policy is truly “reckless”. To be clear, the discussion here is about the trajectory of public debt, that is, its historical and expected trend.</p>
@@ -198,22 +244,30 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <section id="us-fiscal-stance" class="level3">
 <h3 class="anchored" data-anchor-id="us-fiscal-stance">US Fiscal Stance</h3>
 <p><strong>Fiscal stance</strong> is a measure of whether government policy is stimulating the economy (expansionary), having no impact (neutral), or slowing the economy (contractionary). One common way to measure fiscal stance is the <strong>cyclically-adjusted primary balance</strong> (CAPB) as a fraction of potential output. Primary balance is the government’s budget balance adjusted for the business cycle. This removes the effects of the economic cycle on government budgets, so it is a better measure of policy decisions<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<div id="fig-fiscalstance" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/US_stance.png" class="img-fluid figure-img" width="587"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: <strong>Fiscal Stance</strong> is calculated as the negative of CAPB. A positive fiscal stance indicates expansionary fiscal policy, while a negative fiscal stance indicates contractionary fiscal policy. <strong>Fiscal impulse</strong> is the year-over-year change in fiscal stance. A positive fiscal impulse indicates that the government is becoming more expansionary, while a negative fiscal impulse indicates that the government is becoming in this case less expansionary.</figcaption>
+<div id="fig-fiscalstance" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fiscalstance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/US_stance.png" class="img-fluid figure-img" width="587">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fiscalstance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: <strong>Fiscal Stance</strong> is calculated as the negative of CAPB. A positive fiscal stance indicates expansionary fiscal policy, while a negative fiscal stance indicates contractionary fiscal policy. <strong>Fiscal impulse</strong> is the year-over-year change in fiscal stance. A positive fiscal impulse indicates that the government is becoming more expansionary, while a negative fiscal impulse indicates that the government is becoming in this case less expansionary.
+</figcaption>
 </figure>
 </div>
-<p><a href="#fig-fiscalstance">Figure&nbsp;2</a> shows that fiscal policy in the United States has been particularly expansionary at least since 2002 and according to IMF’s recent projections it is expected to remain so in the coming years, albeit at a slower pace. That means the US fiscal policy has been running deficits (unrelated to the cycle of the economy) for at least the last 20 years, and there is a good chance that this will continue.</p>
+<p><a href="#fig-fiscalstance" class="quarto-xref">Figure&nbsp;2</a> shows that fiscal policy in the United States has been particularly expansionary at least since 2002 and according to IMF’s recent projections it is expected to remain so in the coming years, albeit at a slower pace. That means the US fiscal policy has been running deficits (unrelated to the cycle of the economy) for at least the last 20 years, and there is a good chance that this will continue.</p>
 </section>
 <section id="what-drives-us-deficits" class="level3">
 <h3 class="anchored" data-anchor-id="what-drives-us-deficits">What Drives US deficits?</h3>
 <p>The Congressional Budget Office (CBO) in the US groups spending into three broad categories: mandatory, discretionary, and interest spending. Mandatory outlays is seen as necessary for the economy to function, making it more difficult to change the law. In contrast, discretionary spending, such as defense spending, is more up to the government to decide what to do and hence is easier to change. The third category is self-explanatory: it is the interest paid by the government on its public debt.</p>
-<p>So, what drives the US’s expansionary fiscal policy? According to the CBO data (<a href="#fig-spendingallocation">Figure&nbsp;3</a>), the majority of the US government’s spending is on mandatory programs like Social Security and Medicare. As we can see, mandatory spending as a percentage of total outlays has been rising, particularly since the 1990s, and will most likely continue to consume the most of budgetary resources in the future. What we’re seeing here is the growing fiscal cost of population ageing as more people become eligible for mandatory programs like Social Security and Medicare. This is a problem that most of the advanced world is dealing with, not just the United States.</p>
-<div id="fig-spendingallocation" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/Budget_allocations.png" class="img-fluid figure-img" width="510"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: US Government Spending (% Total)</figcaption>
+<p>So, what drives the US’s expansionary fiscal policy? According to the CBO data (<a href="#fig-spendingallocation" class="quarto-xref">Figure&nbsp;3</a>), the majority of the US government’s spending is on mandatory programs like Social Security and Medicare. As we can see, mandatory spending as a percentage of total outlays has been rising, particularly since the 1990s, and will most likely continue to consume the most of budgetary resources in the future. What we’re seeing here is the growing fiscal cost of population ageing as more people become eligible for mandatory programs like Social Security and Medicare. This is a problem that most of the advanced world is dealing with, not just the United States.</p>
+<div id="fig-spendingallocation" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-spendingallocation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Budget_allocations.png" class="img-fluid figure-img" width="510">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spendingallocation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: US Government Spending (% Total)
+</figcaption>
 </figure>
 </div>
 <p>On the other hand, as the US began to invest less in national defense after the end of Cold War, the share of discretionary spending in the budget has been declining over time and this trajectory is expected to continue. Finally, the share of interest payments has been hovering around 10% of the budget for all of these years, though it is expected to reach record levels as public indebtedness rises under unchanged policies. Overall, however, the cost of social programs would continue to dominate the budget.</p>
@@ -226,36 +280,48 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <li><strong>Low overall Borrowing costs</strong>:</li>
 </ol>
 <p>Markets place a lot of emphasis on borrowing costs. Not unjustifiably considering that politicians cannot directly control interest payments. However, if you start reading the news, you will think that US start being charged loan-sharking interest rates. Let’s see what the reality looks like. Below I show the effective interest rate against the 10-year U.S. Treasury (UST) bond. The effective interest rate is the overall cost of borrowing that takes into account all interest rates that the US government is charged for issuing different debt products. For convenience, I also have the monetary policy cycles since 1960s. Here what is worth commenting is that monetary policy play does not seem to play a particular role for the sustainability of debt. Other fundamentals, like level of debt, population and technological growth, productivity, and so on, are the factors mostly influencing trends in borrowing costs.</p>
-<div id="fig-usinterestrates" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/Borrowing_cost.png" class="img-fluid figure-img" width="640"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: US Borrowing costs</figcaption>
+<div id="fig-usinterestrates" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-usinterestrates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Borrowing_cost.png" class="img-fluid figure-img" width="640">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-usinterestrates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: US Borrowing costs
+</figcaption>
 </figure>
 </div>
-<p>In the current situation, do you see anything to worry about here? I don’t. Overall borrowing costs are at the same levels as before the pandemic (<a href="#fig-usinterestrates">Figure&nbsp;4</a>). Debt service costs are still low, which is understandable given that long-term interest rates were structurally low before COVID-19. The monetary shock of the last 18 months is starting to have an impact on borrowing costs, but it is highly questionable whether this situation will last for too long as the diagram above also shows. It is also important to note that these are nominal borrowing costs. Subtracting inflation (which helps to deflate debt), the cost of borrowing is even lower <!--# There is the issue of inflation-linked bonds, but this is only a tiny fraction of the overall supply of bonds -->.</p>
+<p>In the current situation, do you see anything to worry about here? I don’t. Overall borrowing costs are at the same levels as before the pandemic (<a href="#fig-usinterestrates" class="quarto-xref">Figure&nbsp;4</a>). Debt service costs are still low, which is understandable given that long-term interest rates were structurally low before COVID-19. The monetary shock of the last 18 months is starting to have an impact on borrowing costs, but it is highly questionable whether this situation will last for too long as the diagram above also shows. It is also important to note that these are nominal borrowing costs. Subtracting inflation (which helps to deflate debt), the cost of borrowing is even lower <!--# There is the issue of inflation-linked bonds, but this is only a tiny fraction of the overall supply of bonds -->.</p>
 <p>Secondly, consider the years preceding the 1980s. The era of rising borrowing costs. We can see that the effective interest rate was constantly below the 10y UST. This reflects the ability of governments to partially hedge its borrowing costs against rising interest rates by rolling-over debt and exploiting different maturity structures. After the long-standing structural problems of the last few decades, the maturity structure played less of a role because interest rates across different maturities start converging to the same levels, and thus the effective interest rate and the 10y UST were quite similar<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 <ol start="2" type="1">
 <li><strong>Favorable r-g fundamentals</strong>:</li>
 </ol>
 <p>Borrowing costs on their own do not necessarily matter. Measuring public indebtedness as a fraction of GDP, what effectively matters is the effective interest rate in relation to economic growth. In public finance literature, this is usually written as <span class="math inline">\(r-g\)</span>, where <span class="math inline">\(r\)</span> is the previously mentioned effective interest rate and <span class="math inline">\(g\)</span> is the nominal growth rate of the economy. This <span class="math inline">\(r-g\)</span> gap has a simple explanation. When the economy grows faster than debt, the debt-to-GDP ratio falls (and vice versa). In practice, and from purely a public finance perspective, extra debt may be added when the government is dis-saving (accumulates primary deficits) or removed when the government saves money (accumulates primary surpluses). Then, the debt creating flows (i.e.&nbsp;how public debt changes period-by-period) can be decomposed in two main parts: the contribution of the <span class="math inline">\(r-g\)</span> dynamics and b) the behavior of primary balances. Anything else we can assume for simplicity are residual factors (such the so called stock-flow adjustments). This decomposition is also appealing because it provides a high-level overview of the part of public debt over which politicians have direct control, namely primary balances, and the part over which they do not, namely <span class="math inline">\(r-g\)</span> dynamics. So, how does the picture come together when we put all of these pieces together? This is how this decomposition looks when using CBO data.</p>
-<div id="fig-rgdynamics" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/r_g_dynamics.png" class="img-fluid figure-img" width="552"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: Debt Creating Flows</figcaption>
+<div id="fig-rgdynamics" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rgdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/r_g_dynamics.png" class="img-fluid figure-img" width="552">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rgdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Debt Creating Flows
+</figcaption>
 </figure>
 </div>
-<p><a href="#fig-rgdynamics">Figure&nbsp;5</a> which deconstructs the year-over-year change in public debt into <span class="math inline">\(r-g\)</span>, primary balances, and residual factors, reveals that the Congressional Budget Office (CBO) anticipates that <span class="math inline">\(r-g\)</span> dynamics will remain favorable at levels comparable to the previous decade. This suggests there is no compelling reason to believe that the national debt has gotten out of hand. Just balancing out the books the debt-to-GDP would be facing a <u><em>falling</em></u> trajectory. But even if we assume that public debt can reach quite high levels, such as 150%-180% of GDP, the baseline projections imply that the US government would need a small primary surplus, close to 1%-1.5% of GDP, to stabilize debt at that levels. Not trivial, but not difficult either, given how feasible such an adjustment is for such an extremely high public debt level<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p><a href="#fig-rgdynamics" class="quarto-xref">Figure&nbsp;5</a> which deconstructs the year-over-year change in public debt into <span class="math inline">\(r-g\)</span>, primary balances, and residual factors, reveals that the Congressional Budget Office (CBO) anticipates that <span class="math inline">\(r-g\)</span> dynamics will remain favorable at levels comparable to the previous decade. This suggests there is no compelling reason to believe that the national debt has gotten out of hand. Just balancing out the books the debt-to-GDP would be facing a <u><em>falling</em></u> trajectory. But even if we assume that public debt can reach quite high levels, such as 150%-180% of GDP, the baseline projections imply that the US government would need a small primary surplus, close to 1%-1.5% of GDP, to stabilize debt at that levels. Not trivial, but not difficult either, given how feasible such an adjustment is for such an extremely high public debt level<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
 <ol start="3" type="1">
 <li><strong>Balance of Risks</strong></li>
 </ol>
 <p>However, debt sustainability is more than just a baseline. From the perspective of risk management, the distribution of r-g shocks, which encompass virtually every type of shock that could occur in the United States as well as internationally, is also crucial. How does this appear when examining the history of these shocks?</p>
-<div id="fig-rgshocks" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/r_g_shocks.png" class="img-fluid figure-img" width="644"></p>
-<figcaption class="figure-caption">Figure&nbsp;6: <strong>Distribution of r-g shocks</strong></figcaption>
+<div id="fig-rgshocks" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rgshocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/r_g_shocks.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="644">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rgshocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: <strong>Distribution of r-g shocks</strong>
+</figcaption>
 </figure>
 </div>
-<p><a href="#fig-rgshocks">Figure&nbsp;6</a> shows the historical distribution of the r−g gap since the 1960s, as well as after the mid-1990s and what the Congressional Budget Office (CBO) projects. This analysis leads to two conclusions:</p>
+<p><a href="#fig-rgshocks" class="quarto-xref">Figure&nbsp;6</a> shows the historical distribution of the r−g gap since the 1960s, as well as after the mid-1990s and what the Congressional Budget Office (CBO) projects. This analysis leads to two conclusions:</p>
 <ul>
 <li><p>A negative r−g gap is usually the norm than the exception across all cases.</p></li>
 <li><p>The balance of risks is asymmetric in favor of public finances, with the likelihood of favorable shocks (<span class="math inline">\(r&lt;g\)</span>) exceeding the chance of an unfavorable shock.</p></li>
@@ -309,15 +375,19 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 <p>Ironically, in the 1980s, economists like Larry Summers <a href="https://academic.oup.com/restud/article-abstract/56/1/1/1673996">convinced</a> people that advanced economies could never be in a situation of excess savings. This not only consolidated the idea that crowding out private capital is always a bad idea but also contributed in designing fiscal frameworks where public debt was treated and seen more as an instrument for managing the economic cycle, along the lines of Keynesian economics. Hence, fiscal frameworks never build any capacity to foresee structural problems and view public debt as a tool treating excess savings. We also had all those reforms that the general public knows by the name “neo-liberal agenda”, which includes the advent of private pension systems, weakness of welfare state, and so on and helped accumulate extra buffer of savings. These issues were revisited after the Global Financial Crisis, but it was already too late.</p>
 <p>The evidence from Summers et al.&nbsp;is too old to be useful now. So the question is whether we are still in this secular trajectory of excess savings, and hence if still makes sense to take this as the starting point in assessing US public debt. Some <a href="http://www.econ.ucla.edu/fgeerolf/research/Efficiency_Emp.pdf">new evidence</a> says so, confirming essentially Ben Bernanke’s hypothesis that the global economy has a savings glut problem. For reasons that I will explain later, when the global economy as a whole has a savings glut problem this mostly likely implies that the United States has it too. And, US public debt is key to fixing this problem.</p>
 <p>To get a more “real-time” estimate of whether that starting point is still appropriate in the current circumstances, I’ll use the <a href="https://www.newyorkfed.org/research/policy/rstar">Holston, Laubach, Williams (HLW) dataset</a>, which produces estimates for both <span class="math inline">\(r^*\)</span> and <span class="math inline">\(g^*\)</span>, and are the closest proxies for assessing dynamic inefficiency in real-time. People use their estimates to look at <span class="math inline">\(r^*\)</span>, possibly because they are more preoccupied with the day-to-day developments in the economy and what monetary policy is doing. But If we want to consider whether we are still in the same secular trend in which the there is a tendency in producing more liquidity that can be absorbed, then we should be looking at the level of <span class="math inline">\(r^*\)</span> in relation to <span class="math inline">\(g^*\)</span>. That is why I also think that in this case “how accurate” the estimation of <span class="math inline">\(r^*\)</span> across different models is irrelevant; what matters is if the signal from these models are pointing to the same secular trajectory for the <span class="math inline">\(r^*-g^*\)</span> gap.</p>
-<p><a href="#fig-stars">Figure&nbsp;7</a> shows how the real interest rate <span class="math inline">\(r^*\)</span>, the long-term growth <span class="math inline">\(g^*\)</span>, and the gap between them (<span class="math inline">\(r^*−g^∗\)</span>) have evolved over time, along with the debt-to-GDP ratio, since the late 1960s. The data shows that both <span class="math inline">\(r^*\)</span> and <span class="math inline">\(g^*\)</span> have declined over time, and this is not a coincidence. While other factors, such as productivity growth, may also play a role, the accumulation of capital (savings) is certainly a major driver and common factor affecting the <span class="math inline">\(r^*−g^∗\)</span> gap. The consequences of excessive savings start to become visible in the early 1980s. When savings begin to accumulate more quickly, we first notice a decrease in the <span class="math inline">\(r^*−g^∗\)</span> gap. As savings become excessively high as a result of even higher global saving rates, the gap becomes negative. In other words, as excess liquidity became too prevalent around the world, it began to show up in US data as well. The turning point for the sign reversal in <span class="math inline">\(r^*-g^*\)</span> occurred around the mid-1990s, coinciding with the acceleration of globalization and the increased free movement of capital across the world. For example, the share of external debt as a percentage of total debt began to rise not only in the US, but also in countries like Greece.</p>
-<div id="fig-stars" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/rstar_public_debt.png" class="img-fluid figure-img" width="646"></p>
-<figcaption class="figure-caption">Figure&nbsp;7: The evolution of natural interest rates and long-term growth</figcaption>
+<p><a href="#fig-stars" class="quarto-xref">Figure&nbsp;7</a> shows how the real interest rate <span class="math inline">\(r^*\)</span>, the long-term growth <span class="math inline">\(g^*\)</span>, and the gap between them (<span class="math inline">\(r^*−g^∗\)</span>) have evolved over time, along with the debt-to-GDP ratio, since the late 1960s. The data shows that both <span class="math inline">\(r^*\)</span> and <span class="math inline">\(g^*\)</span> have declined over time, and this is not a coincidence. While other factors, such as productivity growth, may also play a role, the accumulation of capital (savings) is certainly a major driver and common factor affecting the <span class="math inline">\(r^*−g^∗\)</span> gap. The consequences of excessive savings start to become visible in the early 1980s. When savings begin to accumulate more quickly, we first notice a decrease in the <span class="math inline">\(r^*−g^∗\)</span> gap. As savings become excessively high as a result of even higher global saving rates, the gap becomes negative. In other words, as excess liquidity became too prevalent around the world, it began to show up in US data as well. The turning point for the sign reversal in <span class="math inline">\(r^*-g^*\)</span> occurred around the mid-1990s, coinciding with the acceleration of globalization and the increased free movement of capital across the world. For example, the share of external debt as a percentage of total debt began to rise not only in the US, but also in countries like Greece.</p>
+<div id="fig-stars" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/rstar_public_debt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="646">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: The evolution of natural interest rates and long-term growth
+</figcaption>
 </figure>
 </div>
 <p>The <span class="math inline">\(r−g\)</span> gap in public finance and the <span class="math inline">\(r^*−g^*\)</span> gap here are typically linked. A favorable r−g gap helps sustain public debt and the US government’s ability to maintain higher debt levels. This ability can help address the issue of excess savings. In simpler terms, US debt is most likely to be sustainable when the world saves more than it spends. The strong correlation between the <span class="math inline">\(r−g\)</span> gap and excess savings is evident when we combine the evidence presented here with the CBO data discussed earlier. Both show negative r−g gaps after 2000. However, excess savings is a sufficient but not necessary condition for the public finance <span class="math inline">\(r−g\)</span> gap to be negative. Therefore, without further investigation, it is unclear whether the CBO’s long-term projection of a negative <span class="math inline">\(r−g\)</span> gap also indicates that excess savings are expected to persist. Nonetheless, the evidence here also shows that the <span class="math inline">\(r^*−g^*\)</span> gap is still negative even after the pandemic, suggesting that the secular problem of excess savings is still persisting. Therefore, starting from this situation strengthens the case for assessing public debt in light of its ability to absorb excess liquidity and crowd out excess savings.</p>
-<p>The evolution of public debt in relation to the <span class="math inline">\(r^*-g^*\)</span> dynamics is also worth discussing. According to <a href="#fig-stars">Figure&nbsp;7</a>, the crowding-in (in this case) effects of falling public debt supported high levels of <span class="math inline">\(r^*-g^*\)</span> gap during the first period of falling public debt. During the early 1980s, when the <span class="math inline">\(r^*-g^*\)</span> gap began to close, some early warning signs began to emerge. It was a time of greater economic integration and a greater influx of liquidity into the United States. It is probable that the rising debt levels during this period partially offset the excess liquidity, this time as a result of crowding out effects. But as <span class="math inline">\(r^*-g^*\)</span> was close to zero, this level of public debt may have been close to optimal at the time (a situation referred to in academic writing as the Golden Rule). This observation, coincidentally or not, appears to be supported by <a href="https://www.sciencedirect.com/science/article/pii/S0304393298000312">some contemporary literature</a>.</p>
+<p>The evolution of public debt in relation to the <span class="math inline">\(r^*-g^*\)</span> dynamics is also worth discussing. According to <a href="#fig-stars" class="quarto-xref">Figure&nbsp;7</a>, the crowding-in (in this case) effects of falling public debt supported high levels of <span class="math inline">\(r^*-g^*\)</span> gap during the first period of falling public debt. During the early 1980s, when the <span class="math inline">\(r^*-g^*\)</span> gap began to close, some early warning signs began to emerge. It was a time of greater economic integration and a greater influx of liquidity into the United States. It is probable that the rising debt levels during this period partially offset the excess liquidity, this time as a result of crowding out effects. But as <span class="math inline">\(r^*-g^*\)</span> was close to zero, this level of public debt may have been close to optimal at the time (a situation referred to in academic writing as the Golden Rule). This observation, coincidentally or not, appears to be supported by <a href="https://www.sciencedirect.com/science/article/pii/S0304393298000312">some contemporary literature</a>.</p>
 <p>In the mid-1990s, excess liquidity began to build up. The subsequent debt adjustment may have been too extensive contributing to excess savings even domestically in the US. After 2000, things changed rapidly. Public debt and the <span class="math inline">\(r^*−g^*\)</span> gap began moving in opposite directions, with debt rising and the gap declining, though it remained negative. The negative gap was further amplified by the Global Financial Crisis, despite the even faster rise in public debt. While correlations do not necessarily imply causation, and public debt could have crowd out capital, I believe that this clear disconnect between <span class="math inline">\(r^*\)</span> and public debt, as well as between public debt and the <span class="math inline">\(r^*−g^*\)</span> gap is due to two main reasons: (a) foreign lending and (b) excessive quantitative easing (QE).</p>
 <p>First, during this period there was a massive influx from abroad to the US helping financing the US deficit. Overlapping global shocks, such as the global financial crisis, the Eurozone crisis, Brexit, and trade wars have led to excess fiscal adjustments in some countries (e.g., the UK and the Eurozone), higher uncertainty, and enormous surpluses in others (e.g., Asian countries). This has created a strong demand for US Treasury bonds, which has helped to finance the US deficit. The large inflow of foreign lending, which the Federal Reserve was not considering when making its quantitative easing decisions, significantly reduced any crowding out effects. This allowed the natural rate of interest <span class="math inline">\(r^*\)</span> to remain low, and this in turn might have also dragged down long-term growth rate <span class="math inline">\(g^*\)</span>.</p>
 <p>Second, fiscal policy is often blamed for being too tight during this period, but I believe that the real issue was ultra-loose monetary policy. As I showed before, fiscal policy was overall expansionary. If monetary policy had not been so aggressive with enormous amounts of quantitative easing (QE), fiscal policy would have been able to crowd out more of the excessive savings in the US and abroad. Rising long-term real interest rates would have been all that was needed to lift all boats (inflation, recovery, growth, etc.). Crowding-out excess savings and private capital was essential for this and the Fed did not let it happen efficiently. Without a fiscal-monetary framework, monetary policy did not internalize the enormous global demand for US Treasuries and, by extension, the enormous amounts of foreign lending financing public debt. This distorted the proper functioning of public debt to absorb more of the excess savings and crowd out capital, so real interest rates could start rising again.</p>
@@ -328,28 +398,40 @@ gtag('config', '170377145', { 'anonymize_ip': true});
 </section>
 <section id="us-fiscal-policy-is-worlds-fiscal-policy" class="level3">
 <h3 class="anchored" data-anchor-id="us-fiscal-policy-is-worlds-fiscal-policy">US Fiscal Policy is World’s Fiscal Policy</h3>
-<p>I mentioned before that it doesn’t really matter whether the world or the US itself has a savings glut issue. Here’s why. <a href="#fig-usdeficits">Figure&nbsp;8</a> shows the global shares of budget and current account deficits for the US and other countries. The US current account deficit accounts for more than half of global current account deficits, and the US budget deficit is also large, accounting for close to 44% of the world’s total. To put it simply, the US is absorbing nearly two-thirds of global savings, with a significant proportion of this going to US budget deficit.</p>
+<p>I mentioned before that it doesn’t really matter whether the world or the US itself has a savings glut issue. Here’s why. <a href="#fig-usdeficits" class="quarto-xref">Figure&nbsp;8</a> shows the global shares of budget and current account deficits for the US and other countries. The US current account deficit accounts for more than half of global current account deficits, and the US budget deficit is also large, accounting for close to 44% of the world’s total. To put it simply, the US is absorbing nearly two-thirds of global savings, with a significant proportion of this going to US budget deficit.</p>
 <div id="fig-usdeficits" class="quarto-layout-panel">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-surus" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/share_current_account.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits"></p>
-<figcaption class="figure-caption">(a) Largest Current Account Deficit Countries</figcaption>
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-usdeficits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-usdeficits" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-surus" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/share_current_account.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Largest Current Account Deficit Countries
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-hanno" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/share_budgets.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits"></p>
-<figcaption class="figure-caption">(b) Largest Budget Deficit Countries</figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-usdeficits" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-hanno" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/share_budgets.png" class="img-fluid figure-img" data-ref-parent="fig-usdeficits">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Largest Budget Deficit Countries
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;8: US deficits (% World’s total)</figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-usdeficits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: US deficits (% World’s total)
+</figcaption>
 </figure>
 </div>
 <p>Although these numbers raise many other questions and expose some vulnerabilities, they also show that US fiscal policy is, in effect, the world’s fiscal policy. As long as the world as a whole continues to produce surpluses at a faster pace than the US produces deficits (a scenario that is not implausible given population aging, for example), US public debt is unlikely to have a significant impact on either domestic or global interest rates (<span class="math inline">\(r^*\)</span>), or to crowd out a significant amount of capital (if at all in this case).</p>
@@ -432,6 +514,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -498,13 +607,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -583,10 +694,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -596,8 +706,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -610,6 +729,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -653,6 +891,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -678,6 +917,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -742,7 +1007,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Usual Disclaimer applies</div>   
+    <div class="nav-footer-left">
+<p>Usual Disclaimer applies</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
@@ -751,6 +1018,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 
