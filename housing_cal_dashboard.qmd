@@ -1,0 +1,7 @@
+---
+title: "When Should you Buy A House?"
+include-iframe: true
+---
+
+```{=html}
+<iframe src="https://housingcalculations.streamlit.app/" width="100%" height="800"></iframe>

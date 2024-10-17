@@ -18,6 +18,8 @@ website:
       #  href: macro_for_social_change.qmd
       - text: About
         href: about.qmd
+      - text: Housing Calculation Dashboard
+        href: housing_cal_dashboard.qmd
       #- text: Academic Research
       #  href: academic_research.qmd
       - icon: github

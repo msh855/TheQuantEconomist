@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/home.html",
     "items": [
       "/posts/US_fiscal_policy/US_fiscal_policy.html",
       "/posts/Hawkish_Fed/Hawkish_Fed.html",
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "listing": "/home.html",
+    "listing": "/index.html",
     "items": [
       "/posts/US_fiscal_policy/US_fiscal_policy.html",
       "/posts/Hawkish_Fed/Hawkish_Fed.html",
