@@ -3,7 +3,7 @@
     "path": "~/GitHub/TheQuantEconomist/chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Impact.qmd",
     "project_path": "chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Impact.qmd",
     "type": "quarto_markdown",
-    "hash": "1153234043",
+    "hash": "2459921396",
     "contents": "",
     "dirty": false,
     "created": 1729413109645.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "2599:1087",
-        "cursorPosition": "47,7",
-        "scrollLine": "38"
+        "cursorPosition": "1,27",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1729413525,
+    "lastKnownWriteTime": 1729413738,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1729413525697,
+    "last_content_update": 1729413738980,
     "read_only": false,
     "read_only_alternatives": []
 }
