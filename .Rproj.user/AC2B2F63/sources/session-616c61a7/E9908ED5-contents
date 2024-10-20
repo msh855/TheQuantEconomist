@@ -1,0 +1,14 @@
+---
+#title: "Home"
+#description: "Bringing clarity to the world of finance"
+listing:
+  contents: chatGPT_posts
+  fields: [date, title, reading-time]
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+---

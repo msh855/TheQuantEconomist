@@ -1,0 +1,85 @@
+---
+#title: "About"
+about:
+  template: jolla
+  links:
+   # - icon: twitter
+  #    text: Twitter
+   #   href: https://twitter.com/Hajjouz
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/moustafa-chatzouz/
+    - icon: github
+      text: Github
+      href: https://github.com/msh855
+---
+
+<div align="justify">
+  
+Welcome to my blog! 
+
+Allow me to introduce myself. I come from and I grew up in the beautiful [Meteora](https://www.wikiwand.com/en/Meteora). That's the only interesting information, the rest is self-promotion :) 
+
+I have over a decade of experience as a macroeconomist, mainly working in policy-making and academia, and demonstrated good knowledge of the US and the UK economy, and financial markets. Academically, I specialize in fiscal policy, macroeconomic theory, computational economics, and time-series econometrics.
+
+<!--  I have over a decade of experience as an economist and researcher in academic and policy-making institutions, I have honed my expertise in macroeconomic analysis. My primary focus has been on the US and UK economies, with a lesser emphasis on the Eurozone. I specialize in fiscal policy, macroeconomic theory, computational economics, and have also dabbled in asset pricing and financial theory.
+
+<!--Beyond academia, I have ventured into the field of data science, which has provided me with invaluable insights into the applications of machine learning in macroeconomic analysis. However, at heart and in training, I remain a macroeconomist. My academic pursuits have endowed me with a strong quantitative and mathematical foundation, allowing me to tackle problems with a flexible and interdisciplinary approach. My career path has been unconventional, but it is also a reflection of my passion for exploring the intersection of various disciplines.-->
+
+Those who know me would describe me as thoughtful, perhaps because I enjoy debunking economic theories with a blend of academic rigor and personal insights.
+
+Through this blog, I aim to share my knowledge and curiosity about macroeconomic and financial issues drawing on my experience as a macroeconomist. I also find blogging as a good mean to register or log an analysis about an issue of interest. 
+
+I'm always happy to connect with new people. Please feel free to message me on social media, and I look forward to sharing my insights with you. 
+
+I hope you enjoy the content.
+
+<!--
+I have over 10 years of experience as an economist and in macroeconomic research, mainly working in academic and policy-making and economic research institutes. During this time, I developed strong knowledge of the US and UK economies, and to a lesser extent the Eurozone. Academically, I specialize in fiscal policy, macroeconomic theory, computational economics, and to a lesser extent asset pricing and financial theory. 
+
+Outside academia, I also had the opportunity to work as a data scientist, which gave me a good understanding of the machine learning ecosystem and its applications, especially for macroeconomic analysis. At heart and by training, I remain a macroeconomist, and I am fortunate to have developed a strong quantitative and mathematical background during my years of study and research. This has allowed me to approach problems with a great deal of flexibility but also made me a kind of polymath across different disciplines. My (unusual) career path is a reflection of this. 
+
+Friends would describe me as thoughtful. That is because they have see me enjoying debunking economic theories and ideas with solid academic theory or my own reflections and predictions.
+
+I intend to share my knowledge and curiosity about macroeconomic and financial issues in this blog. I will draw on my experiences and knowledge from academia, policy making, and portfolio management (trading) to write about these topics. I may also post other topics of general interest.
+
+
+I'm always happy to connect with new people. Feel free to message me on social media. 
+
+I hope you enjoy the content here. 
+-->
+
+<!-- 
+The best way to contact me is via my socials or by posting your comments. Unfortunately, using Quarto to create this website had some drawbacks. One drawback is that comments require users to have GitHub, which is not the best for the general audience. However, Quarto had other advantages which I needed to create this website.
+
+
+<!-- Please have a look at my [Linkedin profile](https://www.linkedin.com/in/moustafa-chatzouz/) if you are interested in my "CV". 
+
+<!-- Academically, I specialize in Fiscal Policy, Macroeconomic Theory, and Computational Economics. I  have worked in the  applications of [General Equilibrium with Incomplete Asset Markets](https://cowles.yale.edu/sites/default/files/files/pub/d09/d0919.pdf), and as an economist I am strongly influenced by the works of [Peter Diamond](https://www.wikiwand.com/en/Peter_Diamond), [T. Sargent](https://www.wikiwand.com/en/Thomas_J._Sargent), and [O. Blanchard](https://www.wikiwand.com/en/Olivier_Blanchard). The combined influences of their work on my research helped me to build a solid knowledge around fiscal policy, public debt, and macroeconomic and finance theory. 
+
+Computational Economics came as a byproduct of my research. I ended up discovering that I enjoy coding, programming and got reasonably good at it. I developed own ways of solving stochastic macroeconomic models with large state-space. Because of this strand of research, I later on discovered Machine Learning as it was related to some of the stuff I was working (See [here](https://web.stanford.edu/~maliars/Files/JME2021.pdf) for what I mean). 
+
+<!-- #I never managed to finish my academic work that I started at graduate school as I accidentally dropped out from academia and then I was left with no courage to start over. Now I don't feel much regret, but I do miss the time to be creative and think about interesting problems. Maybe this website is a reflection of this need.  -->
+
+<!-- Since I cannot separate my quant and economist side, I decided to name this blog "_The Quant Economist_", but I  mainly aim to write (infrequently) about macroeconomic and finance related topics, and applied data science material. I believe that evidence based economics is pretty much data science, and data science is a good tool for better economics. Not to mention that data science (or Machine Learning) is the new econometrics. So, whenever I post about some applied data science material this is mostly to promote some good use-cases in macroeconomics or finance. -->
+
+<!-- [//]: # Another reason that I like to use data science is because it helps to cut the noise from the financial press or the exposure to too much information. I admit I dislike most of the financial news. Most of the time the financial press writes too much and says too little, tends to unnecessarily complicate things, and recycles knowledge without any added value. After all, journalism is a business about entertainment not a search for truth. The trick is to stay away from most on what you read and try to develop your own process of making decisions. 
+
+[//]: # (This was also one of the reasons behind my (private) [Python library](https://github.com/msh855/myPortfolioManagement) for asset management as it helps collect and analyse information in the way I see most fit for managing my savings as well as develop more intuition about the space of products that I might have to invest.)
+
+Ah, one final plead. I encourage you to call me Safis. This is my nickname name and how my family and friends call me. -->
+
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+<sub> ***Disclaimer**: None of the information presented anywhere on this site should be inferred as an investment advice or be considered that is related directly or indirectly to any other author’s related functions. The author is not responsible for the accuracy, readability, reliability or correctness of any of the statements or accompanied code. Nothing here should be construed as representing the views of my current or past employers. Everything I write is my personal opinion and not recommendations to trade or invest.*<sub>
+
+
