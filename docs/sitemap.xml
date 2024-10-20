@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.the-quant-economist.com/index.html</loc>
-    <lastmod>2023-04-29T18:13:17.525Z</lastmod>
+    <loc>https://www.the-quant-economist.com/about.html</loc>
+    <lastmod>2023-10-21T10:08:29.060Z</lastmod>
   </url>
   <url>
-    <loc>https://www.the-quant-economist.com/chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Blog_Post.html</loc>
-    <lastmod>2024-10-20T09:02:59.050Z</lastmod>
+    <loc>https://www.the-quant-economist.com/chatGPT_posts/trade_balance_and_fx/Trade_Balance_Detailed_Discussion.html</loc>
+    <lastmod>2024-10-20T07:54:39.592Z</lastmod>
   </url>
   <url>
     <loc>https://www.the-quant-economist.com/home.html</loc>
@@ -30,14 +30,26 @@
   </url>
   <url>
     <loc>https://www.the-quant-economist.com/chatGPT_blog.html</loc>
-    <lastmod>2024-10-20T07:35:52.477Z</lastmod>
+    <lastmod>2024-10-20T11:23:33.270Z</lastmod>
   </url>
   <url>
-    <loc>https://www.the-quant-economist.com/chatGPT_posts/trade_balance_and_fx/Trade_Balance_Detailed_Discussion.html</loc>
+    <loc>https://www.the-quant-economist.com/chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Blog_Post.html</loc>
+    <lastmod>2024-10-20T09:02:59.050Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.the-quant-economist.com/index.html</loc>
+    <lastmod>2023-04-29T18:13:17.525Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.the-quant-economist.com/chatGPT_posts/trade_balance_and_fx/Trade_Balance_Blog_Post.html</loc>
+    <lastmod>2024-10-20T10:30:50.221Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.the-quant-economist.com/chatGPT_posts/trade_balance_and_fx/Trade_Balance.html</loc>
+    <lastmod>2024-10-20T11:25:39.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.the-quant-economist.com/archive/Trade_Balance_Detailed_Discussion.html</loc>
     <lastmod>2024-10-20T07:54:39.592Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.the-quant-economist.com/about.html</loc>
-    <lastmod>2023-10-21T10:08:29.060Z</lastmod>
   </url>
 </urlset>

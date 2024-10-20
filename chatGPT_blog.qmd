@@ -1,6 +1,4 @@
 ---
-#title: "Home"
-#description: "Bringing clarity to the world of finance"
 listing:
   contents: chatGPT_posts
   fields: [date, title, reading-time]
@@ -12,3 +10,11 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+
+*This page features various conversations with ChatGPT on a range of economic topics. I'm sharing some that I believe a wider audience will find useful. It's also an example of how ChatGPT or other LLM models can be used. Therefore, I've decided to employ it as a 'co-author' on this website to promote educational content on some key economic topics.*
+
+::: {style="height: 100px;"}
+:::
+
+<!-- Adds a large space before the listing -->
+
