@@ -11,7 +11,7 @@ page-layout: full
 title-block-banner: false
 ---
 
-*This page features various conversations with ChatGPT on a range of economic topics. I'm sharing some that I believe a wider audience will find useful. It's also an example of how ChatGPT or other LLM models can be used. Therefore, I've decided to employ it as a 'co-author' on this website to promote educational content on some key economic topics.*
+*This page features various conversations with ChatGPT on a range of economic topics. I'm sharing some that I believe a wider audience will find useful. It's also an example of how ChatGPT or other LLM models can be used. Therefore, I've decided to employ it as a 'co-author' on this website to promote educational content on some key economic topics.  **User disclaimer applies for the use of LLMs and any content here does not necessary represent the views of mine or my employer**.*
 
 ::: {style="height: 100px;"}
 :::
