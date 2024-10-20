@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Moustafa Chatzouz",
+    "title": "The Quant Economist Blog",
     "section": "",
     "text": "Is the US Fiscal Policy Reckless?\n\n\nExplaining Why the United States’ Public Debt May Be Low\n\n\n\n\n\nSep 7, 2023\n\n\n33 min\n\n\n\n\n\n\n\nFed’s Forward Guidance\n\n\nSome Stylised Facts and recent performance\n\n\n\n\n\nApr 22, 2023\n\n\n20 min\n\n\n\n\n\n\n\nThe Fed and Private Consumption (Wonkish)\n\n\nwhy inflation might not go down as fast as the Fed believes?\n\n\n\n\n\nJul 6, 2022\n\n\n14 min\n\n\n\n\n\n\n\nHow different are the 70s from today?\n\n\nInflation is high, and while there are many similarities with the 70s so are the dissimilarities. Here I discuss a few important dissimilarities\n\n\n\n\n\nMar 24, 2022\n\n\n8 min\n\n\n\n\n\n\nNo matching items"
   },
@@ -40,13 +40,6 @@
     "title": "Public Debt and the r-star",
     "section": "",
     "text": "Public debt influences r-star through various channels. Here’s how:\n\nCrowding Out Private Investment\n\nWhen a government borrows excessively, it competes with private borrowers for funds. This can push up interest rates, making borrowing more expensive for private firms. When private investment is crowded out, the balance between savings and investment shifts, putting upward pressure on r-star. However, if debt is sustainable, this effect is minimized, and r-star remains stable.\n\nMarket Perception and Risk Premium\n\nInvestors closely monitor a government’s debt levels. If they believe the debt is becoming unsustainable, they demand higher returns to compensate for the risk of default. This risk premium increases long-term interest rates, which, in turn, drives up r-star. Conversely, when debt is sustainable, confidence remains high, and risk premiums stay low, keeping r-star in check.\n\nExpectations of Fiscal Policy Adjustments\n\nHigh debt levels often lead to expectations of future fiscal tightening (such as higher taxes or reduced government spending) to stabilize the debt. These expectations can lead households and firms to increase precautionary savings, which lowers r-star. However, if debt is under control, these adjustments aren’t expected, and r-star reflects more fundamental factors like productivity and population growth rather than fears of future austerity.\n\nFiscal Policy Flexibility\n\nWhen debt is sustainable, governments have more room to use fiscal policy actively. They can stimulate the economy during downturns without spooking markets. This flexibility helps smooth fluctuations in r-star over time. On the other hand, if debt is too high, fiscal policy options become limited, and r-star can fall as future growth expectations deteriorate.\n\nGlobal Capital Flows\n\nPublic debt in major economies can influence global interest rates. If markets perceive a major economy’s debt as risky, global investors demand higher returns, raising interest rates globally. This “global crowding out” effect increases r-star even in other countries. Conversely, when public debt is sustainable, it helps keep global interest rates and r-star stable."
-  },
-  {
-    "objectID": "chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Blog_Post.html#why-debt-sustainability-matters-for-r-star",
-    "href": "chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Blog_Post.html#why-debt-sustainability-matters-for-r-star",
-    "title": "Public Debt and the r-star",
-    "section": "",
-    "text": "The sustainability condition places a critical constraint on how much public debt can be sustained without leading to higher long-term interest rates. If debt grows too fast relative to GDP, it raises borrowing costs across the economy, including r-star. However, when debt is under control, r-star remains stable, reflecting fundamental economic factors instead of debt-related risks."
   },
   {
     "objectID": "chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Blog_Post.html#conclusion",
@@ -205,7 +198,7 @@
   {
     "objectID": "chatGPT_blog.html",
     "href": "chatGPT_blog.html",
-    "title": "Moustafa Chatzouz",
+    "title": "The Quant Economist Blog",
     "section": "",
     "text": "Public Debt and the r-star\n\n\nchatGPT explores how Public Debt could affect r-star\n\n\n\n\n\nOct 20, 2024\n\n\n4 min\n\n\n\n\n\n\n\nTrade Balance, Exchange Rates, Dollar Invoicing, and Inflation\n\n\nchatGPT explores the link between Trade Balance and Exchange rates\n\n\n\n\n\nOct 20, 2024\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
   },

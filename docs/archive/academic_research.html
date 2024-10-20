@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Quant Economist Blog</title>
+<title>Moustafa Chatzouz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=170377145"></script>
 
 <script type="text/javascript">
@@ -109,47 +78,18 @@ gtag('js', new Date());
 gtag('config', '170377145', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+</head>
 
-<link rel="alternate" type="application/rss+xml" title="The Quant Economist Blog" href="index.xml" data-external="1"></head>
-
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">The Quant Economist Blog</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Moustafa Chatzouz</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -157,16 +97,14 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./chatGPT_blog.html"> 
-<span class="menu-text">ChatGPT Economics</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chatGPT_blog.html"> 
+<span class="menu-text">ChatGPT Economics</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/msh855"> <i class="bi bi-github" role="img">
@@ -187,108 +125,38 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Fiscal Policy">Fiscal Policy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Inflation">Inflation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Monetary Policy">Monetary Policy <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
 
+<div align="justify">
+
+<section id="academic-background-and-research" class="level2">
+<h2 class="anchored" data-anchor-id="academic-background-and-research">Academic Background and Research</h2>
+<p>I started my PhD in fiscal policy in 2010, at the height of the Greek sovereign debt crisis. At the time, there was a lot of debate about whether Greece’s debt adjustment program would be successful in reducing its debt-to-GDP ratio.</p>
+<p>One way to assess this possibility is to estimate the so-called fiscal multipliers, which measure the impact of a change in government spending or tax revenues on output. This was a good way to start my PhD research, as a common problem for PhD students is finding a research question to work on.</p>
+<p>The value of the fiscal multipliers determines whether debt-to-GDP can go up or down with fiscal consolidations. For example, if a cut in spending has a more than proportional impact on output, then the debt-to-GDP ratio can increase. This is because the numerator (debt) falls slower than the denominator (GDP).</p>
+<p>The value of the fiscal multipliers also determines whether fiscal consolidations should be spending- or tax-driven. If spending multipliers are higher than tax multipliers, then it is better to have fiscal consolidations that are tax-driven, as this will have less of an impact on the economy.</p>
+<p>The literature on fiscal multipliers is vast, both theoretically and empirically. However, there was little to no empirical research on fiscal multipliers in Greece at the time I started my PhD. For the record, my research confirmed that the standard textbook assumptions about fiscal multipliers might be correct for Greece. This contradicted the assumption made by the IMF at the time (such “miscalculation” made headlines later).</p>
+<p>After I did some initial research, I moved on to more complex topics. There are some deep and unanswered questions in economics that do not have easy answers. The low interest rate environment and the calls for fiscal policy to play a more active role after the financial crisis have revived old debates and classic discussions about public debt.</p>
+<!--
+While there are clearly bad cases for using public debt, there are also good reasons to do so. The most important reason is that capitalism is inherently flawed due to two factors: uncertainty and the finite ability of people to work.
+
+Capitalism can fail for many reasons in practice, but most of those reasons can be fixed in theory. For example, if monopolies and rent-seeking are to blame, societies and governments can find ways to remove those distortions. However, it is much harder to account for the inherent inability of humanity to predict the future or have people live forever. According to neoclassical theory, these two factors are sufficient to cause the private sector to misallocate resources. These are the fundamental causes of market failures, which means that capitalism will never allocate resources as efficiently as Adam Smith envisioned. Instead, it will tend to over-accumulate capital (excesses). This is not a new idea; Marx predicted the same thing. However, it is also the central proposition of neoclassical economics. Unfortunately, you may not have heard about it because it is often ignored by academics and journalists, who are more interested in ideology than in understanding the real world. To understand why, who can absorb the excess savings other than the government ?  
+
+The most obvious example of this is the low interest rate environment that began in the early 1980s. The primary cause of this was the death of a large number of people. China's one-child policy and the lack of a strong social safety net also contributed to this problem.
+-->
+<p>[to be completed ….]</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Fiscal Policy" data-listing-date-sort="1694041200000" data-listing-file-modified-sort="1701238853413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="33" data-listing-word-count-sort="6585">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/US_fiscal_policy/US_fiscal_policy.html" class="no-external">Is the US Fiscal Policy Reckless?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/US_fiscal_policy/US_fiscal_policy.html" class="no-external"><em>Explaining Why the United States’ Public Debt May Be Low</em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/US_fiscal_policy/US_fiscal_policy.html" class="no-external">
-<div class="listing-date">
-Sep 7, 2023
-</div>
-<div class="listing-reading-time">
-33 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Monetary Policy,Inflation" data-listing-date-sort="1682118000000" data-listing-file-modified-sort="1692464342026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3948">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Hawkish_Fed/Hawkish_Fed.html" class="no-external">Fed’s Forward Guidance</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Hawkish_Fed/Hawkish_Fed.html" class="no-external"><em>Some Stylised Facts and recent performance</em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Hawkish_Fed/Hawkish_Fed.html" class="no-external">
-<div class="listing-date">
-Apr 22, 2023
-</div>
-<div class="listing-reading-time">
-20 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Monetary Policy,Inflation" data-listing-date-sort="1657062000000" data-listing-file-modified-sort="1698420579264" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2649">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/fed_and_private_consumption/the_fed_and_private_consumption.html" class="no-external">The Fed and Private Consumption (Wonkish)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/fed_and_private_consumption/the_fed_and_private_consumption.html" class="no-external"><em>why inflation might not go down as fast as the Fed believes?</em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/fed_and_private_consumption/the_fed_and_private_consumption.html" class="no-external">
-<div class="listing-date">
-Jul 6, 2022
-</div>
-<div class="listing-reading-time">
-14 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Monetary Policy,Inflation" data-listing-date-sort="1648080000000" data-listing-file-modified-sort="1683979970187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1533">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/differences_between_70s_and_now/How_different_are_the_70s_from_now.html" class="no-external">How different are the 70s from today?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/differences_between_70s_and_now/How_different_are_the_70s_from_now.html" class="no-external"><em>Inflation is high, and while there are many similarities with the 70s so are the dissimilarities. Here I discuss a few important dissimilarities</em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/differences_between_70s_and_now/How_different_are_the_70s_from_now.html" class="no-external">
-<div class="listing-date">
-Mar 24, 2022
-</div>
-<div class="listing-reading-time">
-8 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

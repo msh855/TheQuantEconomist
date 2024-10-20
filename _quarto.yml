@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Moustafa Chatzouz"
+  title: "The Quant Economist Blog"
   site-url: https://www.the-quant-economist.com #https://msh855.github.io/TheQuantEconomist
   description: "Observations about Macroecnomics, Finance and Public Debates"
   page-footer:
@@ -13,11 +13,14 @@ website:
     #right:
      # - text: Home
      #   href: home.qmd
+    left: 
+     - text: ChatGPT Economics
+       href: chatGPT_blog.qmd
+       
     right:
       - text: About
         href: about.qmd
-      - text: ChatGPT Economics
-        href: chatGPT_blog.qmd
+     
       
       - icon: github
         href: https://github.com/msh855
