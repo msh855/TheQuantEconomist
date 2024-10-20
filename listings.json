@@ -1,20 +1,19 @@
 [
   {
+    "listing": "/chatGPT_blog.html",
+    "items": [
+      "/chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Blog_Post.html",
+      "/chatGPT_posts/trade_balance_and_fx/Trade_Balance.html",
+      "/chatGPT_posts/MTM/mtm_theory.html"
+    ]
+  },
+  {
     "listing": "/home.html",
     "items": [
       "/posts/US_fiscal_policy/US_fiscal_policy.html",
       "/posts/Hawkish_Fed/Hawkish_Fed.html",
       "/posts/fed_and_private_consumption/the_fed_and_private_consumption.html",
       "/posts/differences_between_70s_and_now/How_different_are_the_70s_from_now.html"
-    ]
-  },
-  {
-    "listing": "/chatGPT_blog.html",
-    "items": [
-      "/chatGPT_posts/new_post_test/testing.html",
-      "/chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Blog_Post.html",
-      "/chatGPT_posts/trade_balance_and_fx/Trade_Balance.html",
-      "/chatGPT_posts/MTM/mtm_theory.html"
     ]
   },
   {
