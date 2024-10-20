@@ -45,7 +45,7 @@ The sustainability condition says that for the debt-to-GDP ratio to remain stabl
 
 $\Delta d_t \leq (r - g) d\_{t-1}$
 
-If ($r \> g$), the debt is growing faster than the economy, and for sustainability, the government needs to run **primary surpluses** (where revenue exceeds non-interest expenditures) to offset this growth.
+If ($r > g$), the debt is growing faster than the economy, and for sustainability, the government needs to run **primary surpluses** (where revenue exceeds non-interest expenditures) to offset this growth.
 
 ## 2. Link to Long-Term Interest Rates
 
@@ -53,7 +53,7 @@ The sustainability condition places a limit on how much debt a government can is
 
 ### 2.1 Market Perception of Default Risk and Confidence
 
-Financial markets closely watch the debt-to-GDP ratio and the trajectory of debt growth. If debt is perceived as sustainable ($r - g \< 0$), markets remain confident in the government's ability to pay back debt, keeping long-term interest rates low.
+Financial markets closely watch the debt-to-GDP ratio and the trajectory of debt growth. If debt is perceived as sustainable ($r - g < 0$), markets remain confident in the government's ability to pay back debt, keeping long-term interest rates low.
 
 ### 2.2 Crowding Out and Private Investment
 
@@ -85,4 +85,4 @@ High public debt in a major economy can influence global capital flows. If perce
 
 ## Conclusion
 
-Debt sustainability is crucial for stabilizing r-star. When the sustainability condition ($r - g \< 0$) is met, debt levels are managed relative to GDP, preventing an undue rise in long-term interest rates. This ensures that r-star remains aligned with economic fundamentals, supporting balanced growth and economic stability.
+Debt sustainability is crucial for stabilizing r-star. When the sustainability condition ($r - g < 0$) is met, debt levels are managed relative to GDP, preventing an undue rise in long-term interest rates. This ensures that r-star remains aligned with economic fundamentals, supporting balanced growth and economic stability.
