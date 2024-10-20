@@ -16,5 +16,12 @@
       "/posts/fed_and_private_consumption/the_fed_and_private_consumption.html",
       "/posts/differences_between_70s_and_now/How_different_are_the_70s_from_now.html"
     ]
+  },
+  {
+    "listing": "/chatGPT_blog.html",
+    "items": [
+      "/chatGPT_posts/debt_and_rstar/Public_Debt_and_r_star_Impact.html",
+      "/chatGPT_posts/trade_balance_and_fx/Trade_Balance_Detailed_Discussion.html"
+    ]
   }
 ]
