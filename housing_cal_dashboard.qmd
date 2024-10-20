@@ -1,7 +1,159 @@
 ---
-title: "When Should you Buy A House?"
-include-iframe: true
+title: "Mortgage vs Rent Analysis"
+format: dashboard
+server: shiny
 ---
 
-```{=html}
-<iframe src="https://housingcalculations.streamlit.app/" width="100%" height="800"></iframe>
+```{r}
+library(shiny)
+library(ggplot2)
+library(lubridate)
+
+# functions 
+monthly_repayment_schedule <- function(interest, amount, years, start_date) {
+  total_months <- years * 12
+  interest_rate <- interest / 12  # Monthly interest rate
+  monthly_payment <- amount * (interest_rate * (1 + interest_rate)^total_months) /
+    ((1 + interest_rate)^total_months - 1)
+  
+  schedule <- data.frame(Principle = numeric(total_months), Interest = numeric(total_months))
+  
+  for (i in 1:total_months) {
+    interest_payment <- amount * interest_rate
+    principle_payment <- monthly_payment - interest_payment
+    amount <- amount - principle_payment
+    schedule[i, ] <- c(principle_payment, interest_payment)
+  }
+  
+  schedule$Date <- seq(as.Date(start_date), by = "month", length.out = total_months)
+  return(schedule)
+}
+
+rent_schedule <- function(rent_growth, current_rent, years, start_date) {
+  growth_rate <- rent_growth / 12
+  periods <- years * 12
+  rents <- numeric(periods)
+  
+  for (i in 1:periods) {
+    if (i == 1) {
+      rents[i] <- current_rent * (1 + growth_rate)
+    } else {
+      rents[i] <- rents[i - 1] * (1 + growth_rate)
+    }
+  }
+  
+  dates <- seq(as.Date(start_date), by = "month", length.out = periods)
+  return(data.frame(Date = dates, Rent = round(rents)))
+}
+
+
+find_optimal_buying_point <- function(df_payments) {
+  # Initialize the intersection index as NULL
+  intersection_index <- NULL
+  
+  # Loop through the dataframe
+  for (i in 1:nrow(df_payments)) {
+    # Check if rent is greater than or equal to interest at each row
+    if (df_payments$Rent[i] >= df_payments$Interest[i]) {
+      intersection_index <- i
+      break
+    }
+  }
+  
+  # If an intersection is found, return the relevant information
+  if (!is.null(intersection_index)) {
+    return(list(
+      date = df_payments$Date[intersection_index],
+      interest_value = df_payments$Interest[intersection_index],
+      index = intersection_index
+    ))
+  } else {
+    return(list(date = NULL, interest_value = NULL, index = NULL))
+  }
+}
+```
+
+```{r}
+
+# UI: Setting up the user interface with sliders
+ui <- fluidPage(
+  # Apply a custom theme using the bslib package
+  titlePanel("Mortgage vs Rent"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("interest", "Interest Rate (%)", min = 1, max = 10, value = 4.75, step = 0.1),
+      sliderInput("amount", "Loan Amount (£)", min = 100000, max = 1000000, value = 500000, step = 10000),
+      sliderInput("years", "Years of Repayment", min = 10, max = 30, value = 25),
+      sliderInput("rent_growth", "Rent Growth Rate (%)", min = 1, max = 10, value = 3.0, step = 0.1),
+      sliderInput("current_rent", "Current Rent (£)", min = 500, max = 5000, value = 1600, step = 50)
+    ),
+    
+    mainPanel(
+      plotOutput("plot")
+    )
+  )
+)
+```
+
+```{r}
+# Server: Functionality for mortgage, rent calculations, and plotting
+server <- function(input, output) {
+  
+  # Generate the plot based on user inputs
+  output$plot <- renderPlot({
+    
+    # Recalculate mortgage and rent schedules
+    interest <- input$interest / 100
+    df_payments <- monthly_repayment_schedule(interest, input$amount, input$years, Sys.Date())
+    rents <- rent_schedule(input$rent_growth / 100, input$current_rent, input$years, Sys.Date())
+    
+    df_payments$Rent <- rents$Rent
+    
+    # Find the optimal buying point
+    optimal_buying_point <- find_optimal_buying_point(df_payments)
+    
+    intersection_date <- optimal_buying_point$date
+    intersection_value <- optimal_buying_point$interest_value
+    intersection_index <- optimal_buying_point$index
+    
+    # Calculate the average interest payments
+    average_interest <- mean(df_payments$Interest)
+    
+    # Create the plot using ggplot2
+    p <- ggplot(df_payments, aes(x = Date)) +
+      geom_line(aes(y = Interest, color = "Monthly Interest Payments")) +
+      geom_line(aes(y = Rent, color = "Rent Schedule")) +
+      scale_color_manual(values = c("blue", "orange")) +
+      labs(title = "Mortgage vs Rent Schedule", x = "Date", y = "Amount (£)") +
+      theme_minimal()
+    
+    # Highlight the intersection point if it exists
+    if (!is.null(intersection_date)) {
+      months_from_start <- intersection_index + 1  # Adding 1 because index starts at 0
+      
+      annotation_text <- paste0("Optimal Price: £", round(intersection_value, 2), 
+                                "\nOptimal buying date is in ", months_from_start, " months")
+      
+      p <- p +
+        geom_point(aes(x = intersection_date, y = intersection_value), color = "red", size = 3) +
+        geom_vline(xintercept = as.numeric(intersection_date), color = "red", linetype = "dashed") +
+        annotate("text", x = intersection_date, y = intersection_value + 100, label = annotation_text, 
+                 color = "green", size = 4, hjust = 0)
+    }
+    
+    # Add a horizontal line for the average interest payments
+    p <- p +
+      geom_hline(aes(yintercept = average_interest), color = "purple", linetype = "dashed") +
+      annotate("text", x = df_payments$Date[length(df_payments$Date) / 2], y = average_interest + 200,
+               label = paste0("Average Interest: £", round(average_interest, 2)), 
+               color = "purple", size = 4, hjust = 0)
+    
+    # Display the plot
+    print(p)
+  })
+}
+
+# Shiny app call
+shinyApp(ui = ui, server = server)
+```
