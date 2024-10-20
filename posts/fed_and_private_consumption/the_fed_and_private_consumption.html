@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Moustafa Chatzouz">
+<meta name="dcterms.date" content="2022-07-06">
+
+<title>Moustafa Chatzouz - The Fed and Private Consumption (Wonkish)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=170377145"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '170377145', { 'anonymize_ip': true});
+</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Moustafa Chatzouz</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../chatGPT_blog.html"> 
+<span class="menu-text">ChatGPT Economics</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/msh855"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/moustafa-chatzouz/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#interest-rates-and-the-price-of-consumption-across-time" id="toc-interest-rates-and-the-price-of-consumption-across-time" class="nav-link" data-scroll-target="#interest-rates-and-the-price-of-consumption-across-time">Interest rates and the price of consumption across time</a></li>
+  <li><a href="#some-illustrative-and-inconvenient-arithmetics" id="toc-some-illustrative-and-inconvenient-arithmetics" class="nav-link" data-scroll-target="#some-illustrative-and-inconvenient-arithmetics">Some illustrative (and inconvenient) Arithmetics</a></li>
+  <li><a href="#reality-vs-the-fed" id="toc-reality-vs-the-fed" class="nav-link" data-scroll-target="#reality-vs-the-fed">Reality vs the Fed</a></li>
+  <li><a href="#a-few-further-considerations" id="toc-a-few-further-considerations" class="nav-link" data-scroll-target="#a-few-further-considerations">A Few Further Considerations</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="the_fed_and_private_consumption.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Fed and Private Consumption (Wonkish)</h1>
+<p class="subtitle lead"><em>why inflation might not go down as fast as the Fed believes?</em></p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Monetary Policy</div>
+    <div class="quarto-category">Inflation</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Moustafa Chatzouz </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 6, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div align="justify">
+
+<blockquote class="blockquote">
+<ul>
+<li><em>The hawkishness of the Federal Reserve (Fed) is determined by how changes in interest rates affect consumer spending, which is the largest component of aggregate demand. The elasticity of intertemporal substitution is a forward-looking measure that can be used to assess the aggressiveness of monetary policy by capturing the sensitivity of private consumption to changes in interest rates. I show that the Fed’s recent projections imply a very tight monetary policy stance (tighter than the market expects) especially in the near term. However, the implied level of elasticity of intertemporal substitution is quite unusual compared to other empirical studies, suggesting that this may trigger strong income effects and inflation may not fall as quickly as the Fed is expecting. As a result, it appears that luck factors matter more for inflation dynamics, as neither the supply-side factors nor the indirect effects of higher interest rates (which appear more relevant empirically) are under the Fed’s direct control.</em></li>
+</ul>
+</blockquote>
+<!--
+> -   *How hawkish is the Fed? The answer to this question depends on the transmission of interest rates to consumer spending, the largest component of aggregate demand. In this post, I provide an illustrative analysis of how sensitive consumption is to changes in interest rates according to the Fed's recent projections*.
+
+> -   *By inferring the degree of the elasticity of intertemporal substation from the Fed's projections, I show that this implies a very tight monetary policy stance, especially in the near term.*
+
+> -   *The Federal Reserve's assumptions about the impact of higher interest rates on consumption may not be unrealistic, but they are based on an unusual level of elasticity of intertemporal substitution compared to other empirical studies. As a result, it is possible that consumption may not react as much to higher interest rates as the Fed expects, because higher rates also support personal incomes, particularly for those who are net savers and wealthier individuals. In this case, higher interest rate hikes may not effectively reduce inflation as quickly as the Fed desires, leading to the potential for even higher interest rate increases in the future.*
+
+> -   *It also appears that luck factors matter more for inflation dynamics as neither the supply side factors nor the indirect effects of higher interest rates (which appear more relevant empirically) are in Fed's direct control*.
+
+> -   *Overall, even if the aggregate effects of monetary policy are probably about as large as we want, I discuss here why monetary policy works largely through redistribution. For that reason, if inflation does not normalise as quickly as the Fed hopes it is questionable whether it will insist on any excessive tightening for too long*.
+-->
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Central banks have begun their tightening cycle to bring an exceptionally high inflation rate down, and are committed to even more tightening if inflation remains high. In assessing the tightness of monetary policy, it is common to compare the policy rate (the rate at which banks lend to each other) to the size of inflation or the level of neutral interest rates, and to compare this distance across time. However, this approach does not tell us much about the expected drop in aggregate demand.</p>
+<p>More importantly, comparisons across time are not very meaningful. For example, a 50 basis point increase in the policy rate might have a stronger impact today than it did 20-30 years ago, because a much larger number of people are now leveraged. Therefore, even if the distance between the policy rate and inflation looks larger (or smaller) between two different periods, such comparisons are inconsistent due to differences in the prevailing structure of the economy.</p>
+<p>he Federal Reserve’s ability to control inflation is closely linked to how interest rates affect consumer spending. This is because consumer spending accounts for roughly 60% of aggregate demand, which is equivalent to GDP. Therefore, a supplementary (and perhaps more appropriate) way to assess the tightness of monetary policy is to look at the effects of interest rates on private consumption.</p>
+<p>The short-term nominal interest rates, which are the Federal Reserve’s main tool for affecting aggregate demand, transmit to private consumption in two broad ways. The first is through a direct channel, which takes into account how interest rates alone affect consumption. The second is through an indirect channel, which only focuses on the second-order effects of interest rate changes on aggregate demand, namely the change in disposable income of households. It is important to note that the indirect effects emanate from the direct impact of the original interest rate change and are therefore a function of consumers’ response to rising interest rates.</p>
+<p>In evaluating the right monetary policy stance, it is necessary to make judgments on two interdependent issues:</p>
+<ul>
+<li>How the direct effects would affect consumption.</li>
+<li>Whether the transmission mechanism of monetary policy relies more on the direct or indirect channel.</li>
+</ul>
+<p>Inappropriate judgments on the first issue would necessarily lead to misleading or fallacious judgments on the second. While the first issue may seem less controversial, the quantitative impact of monetary policy on private consumption is still ambiguous.</p>
+<p>In this post, I will focus on the first issue. Clarifying this issue can help to bring more clarity when assessing monetary policy tightness. For example, if the direct effects are expected to be sufficiently strong, the fall in disposable income will contribute less to the drop in aggregate demand. Otherwise, the potential reliance on the indirect effects implies a more persistent inflation and uncertain outlook, and adds to the factors that the Federal Reserve needs to overcome, since such second-order effects are (together with the supply side factors) not under its direct control.</p>
+</section>
+<section id="interest-rates-and-the-price-of-consumption-across-time" class="level2">
+<h2 class="anchored" data-anchor-id="interest-rates-and-the-price-of-consumption-across-time">Interest rates and the price of consumption across time</h2>
+<p>The effects of interest rates on consumption are a central part of macroeconomic theory. When interest rates rise, there are two main effects:</p>
+<ol type="1">
+<li><strong>The substitution effect</strong>: Higher interest rates make it more expensive to consume now, so people tend to save more and consume less.</li>
+<li><strong>The income effect</strong>: Higher interest rates also increase the income that people earn from their savings, which can lead to increased consumption.</li>
+</ol>
+<p>The overall effect of interest rates on consumption is ambiguous, and depends on the relative strength of the substitution and income effects. In general, the substitution effect is stronger for people who have lower incomes and less wealth, while the income effect is stronger for people who have higher incomes and more wealth.</p>
+<p>The conventional view is that (on aggregate) higher interest rates reduce consumption, as the substitution effect outweighs the income effect. However, the size of the effect is uncertain, and depends on the distribution of income and wealth in the economy.</p>
+<p>One way to measure the relative strength of the substitution and income effects is to look at the elasticity of intertemporal substitution (EIS). The EIS is a measure of how responsive people are to changes in interest rates. A higher EIS means that people are more likely to save when interest rates rise, and consume less.</p>
+<p>In the next section, I estimate the EIS based on the Fed’s forecasts. This will allow me to extract the implicit judgement that the Fed is making about the effects of interest rates on consumption.</p>
+</section>
+<section id="some-illustrative-and-inconvenient-arithmetics" class="level2">
+<h2 class="anchored" data-anchor-id="some-illustrative-and-inconvenient-arithmetics">Some illustrative (and inconvenient) Arithmetics</h2>
+<p>To this end, I will use a conventional macroeconomic approach. This may not allow definite conclusions, but it works well as a proof of concept. Assuming that households are reasonably forward-looking, conventional macroeconomic theory likes to use the so-called Euler equation to study consumption dynamics. People may also be familiar with this equation through the CAMP model, which is used to study the relationship between business cycles and asset prices.</p>
+<p>There are various versions of this equation, depending on the application. For the point I want to make here, a conventional approach is sufficient. In this case, and in order to link inflation, interest rates, consumption, income, and substitution effects, I would assume that aggregate consumption follows the rule below (See <a href="https://core.ac.uk/download/pdf/6377146.pdf">here</a> or <a href="https://www.thijsvanrens.com/macro/SE_IE_note.pdf">here</a> for a simple example)</p>
+<p><span class="math display">\[
+E_{t} \Delta \overline{ c_{t+1}}=\sigma \widehat{r_{t}}
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\Delta \overline{ c_{t+1}} = \log(c_{t+1})-\log(c_{t}) \quad (\text{real consumption growth})
+\]</span></p>
+<p><span class="math display">\[
+\widehat{r_{t}} = \log(r_{t})-\log(r^*)
+\]</span></p>
+<p><span class="math display">\[
+\text{and} \quad r_{t} = i_{t}-\pi_{t+1} \quad ( \text{real risk-free/fund rate with } r^* \equiv \text{long-run values})
+\]</span></p>
+<p>The parameter <span class="math inline">\(\sigma\)</span> is the so-called <a href="https://www.wikiwand.com/en/Elasticity_of_intertemporal_substitution">elasticity of intertemporal substitution</a>, which controls the sensitivity of consumption growth to changes in interest rates<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. The higher this value, the more sensitive consumption growth is to a change in interest rates. This parameter also controls the balance between the substitution and income effects. More specifically:</p>
+<p><span class="math display">\[
+\sigma
+\begin{cases}
+&lt; 1 \qquad \text{Income Effect &gt; Substitution Effect} \\
+&gt; 1 \qquad \text{Income Effect &lt; Substitution Effect} \\
+= 1 \qquad \text{Income Effect = Substitution Effect}
+\end{cases}
+\]</span></p>
+<p>An estimate of less than one implies that the income effect dominates the substitution effect and consumption tends to increase after an increase in interest rates. Conversely, when the substitution effect is greater than the income effect (<span class="math inline">\(\sigma &gt; 1\)</span>), higher interest rates encourage more savings and less borrowing, hence aggregate demand falls. There is also the third case where these two effects cancel each other out, so consumption is insensitive to interest rates. This is irrelevant in the short run, but not implausible in the long run.</p>
+<p>Note that the natural interest rate is a function of <span class="math inline">\(\sigma\)</span>, which captures households’ desire to smooth consumption over time. For example, if consumers <em>permanently</em> change their consumption preferences (e.g.&nbsp;becoming more stingy) this affects the path of consumption and, by extension, the supply of savings, which is important for natural interest rates.</p>
+<p>In the <a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20220615.htm">June statement</a>, the Fed released the following projections:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>Long-run</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>real GDP growth</td>
+<td>1.7</td>
+<td>1.7</td>
+<td>1.9</td>
+<td>1.8</td>
+</tr>
+<tr class="even">
+<td>PCE Inflation</td>
+<td>5.2</td>
+<td>2.6</td>
+<td>2.2</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Federal funds rate</td>
+<td>3.4</td>
+<td>3.4</td>
+<td>3.4</td>
+<td>2.5</td>
+</tr>
+</tbody>
+</table>
+<p>I use these projections to reverse engineer and uncover the parameter <span class="math inline">\(\sigma\)</span> based on the consumption rule above. As the Federal Reserve does not publish its projections for real consumption growth, I will use real GDP growth instead. In the data, real GDP growth and real consumption growth are strongly correlated (the correlation coefficient is roughly 0.90–0.99), so this approximation does little harm. Therefore, such forecasts imply that the EIS is:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Central Scenario</td>
+<td>N/A</td>
+<td>4.5</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>For the year 2022, it was not possible to estimate <span class="math inline">\(\sigma\)</span>, since mathematically, the interest rates were too low for the size of inflation, and therefore the logarithm was not defined. In general, the Fed’s central forecasts imply a rather stable <span class="math inline">\(\sigma \approx 5\)</span> across the forecast years. Interestingly, this in turn implies that the Fed may need to raise interest rates by another 200 basis points by the end of 2022 in order to validate its assumption.</p>
+<p>This evidence suggests that a) the Fed may be assuming that substitution effects outweigh income effects on the aggregate<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, which is in line with conventional wisdom, but is also signalling that markets might be underestimating the probability for higher interest rates in the future.</p>
+</section>
+<section id="reality-vs-the-fed" class="level2">
+<h2 class="anchored" data-anchor-id="reality-vs-the-fed">Reality vs the Fed</h2>
+<p>However, in the current context, the strength of the substitution effects, that is, the size of the elasticity of intertemporal substitution (EIS), also matters for the tightness of monetary policy. To get a sense of this, I used an excellent <a href="http://meta-analysis.cz/substitution/">meta-analysis</a> that collects more than 2,700 published estimates of the EIS across countries, with about half of them focusing on the United States. Based on this study, I show below the distribution of the EIS across countries, including the US. The red horizontal line is when the EIS equals 1, so values above this line indicate when the substitution effect dominates.</p>
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="the_fed_and_private_consumption_files/figure-html/cell-2-output-1.png" width="662" height="544" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The good news is that the Fed’s forecasts suggest that monetary policy is quite tight (more than the market assumes). This is because the estimated value of the elasticity of substitution, <span class="math inline">\(\sigma\)</span>, lies in the range of extreme values. For the size of the substitution effects assumed here, the rise in interest rates implies a rather strong impact on consumption in the near term.</p>
+<p>The bad news is that the Fed is quite likely to be wrong. The most likely values of <span class="math inline">\(\sigma\)</span> (see Figure) suggest that the income effect typically dominates. This means that consumption could still drop, but not as much as the Fed might be expecting. This is because the rich are likely to hold consumption firm, even if interest rates rise. Relative to the case where the substitution effects dominate, consumption takes a smaller hit in this case, but it takes a longer time to recover.</p>
+<p>The ugly part is that central banks, including the Fed, have traditionally focused on aggregate outcomes. This was partly due to data limitations, as it was hard to identify distributional effects without large individual-level panels. But it also reflected the conventional view that monetary policy works largely through intertemporal substitution, which was thought to affect everyone in much the same way. Nevertheless, recent recent <a href="https://benjaminmoll.com/wp-content/uploads/2019/07/HANK.pdf">research</a> is convincingly suggesting that monetary policy works largely through indirect effects. As I noted, income effects are likely to be empirically more relevant than the Fed might be assuming. Practically, this means that the lags of monetary policy might be too long to affect private consumption much.</p>
+</section>
+<section id="a-few-further-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="a-few-further-considerations">A Few Further Considerations</h2>
+<p>My previous post did not aim to provide a comprehensive analysis. To simplify matters, I only focused on consumption-saving choices, taking into account the desire of consumers to smooth consumption over time. However, at times of heightened uncertainty, households may develop another motive for saving: precautionary savings. This is a way of insuring themselves against uncertain labor market prospects. A precautionary savings motive combined with pessimistic sentiment also contributes to a falling aggregate demand. Therefore, even if the Fed gets it wrong with the intertemporal substitution, uncertainty is on its side. All it takes is to spread the fear of recession and aggregate demand (and oil prices) will fall.</p>
+<p>Wealth effects, that is the drop in consumption due to the fall in asset prices, is another important channel that affects private consumption. I did not discuss this here either, but I expect that such effects are already incorporated in the Fed’s latest forecasts. In principle, one could use the same strategy that I developed here to uncover what the Fed is expecting, but the consumption rule might need to be changed to Epstein-Zin preferences.</p>
+<p>Overall, however, it appears that luck factors are more important for inflation dynamics. Neither the supply side factors nor the indirect effects are under the Fed’s direct control.</p>
+
+
+</section>
+
+
+</div><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Risk aversion and EIS are not separable here. For asset pricing and studying the behaviour of equity premia is important to separate the two. There is a large body of literature that uses, the so-called, <a href="https://www.wikiwand.com/en/Epstein%E2%80%93Zin_preferences">Epstein-Zin preferences</a> for this purpose.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This also implies that the demand for mortgages will also drop. So, house prices might be under real pressure considering the banking sector will cut lending.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+
+
+
+<title>share</title>
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6440fc4ac1f1cd00199ca71d&amp;product=inline-share-buttons&amp;source=platform" async="async"></script>
+
+
+
+
+<div class="sharethis-inline-share-buttons"></div>
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="msh855/BlogComments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Usual Disclaimer applies</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
