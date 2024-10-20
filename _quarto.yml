@@ -6,6 +6,7 @@ website:
   title: "The Quant Economist Blog"
   site-url: https://www.the-quant-economist.com #https://msh855.github.io/TheQuantEconomist
   description: "Observations about Macroecnomics, Finance and Public Debates"
+  margin-header: subscribe.html
   page-footer:
     left: "Usual Disclaimer applies"
 
@@ -20,15 +21,15 @@ website:
     right:
       - text: About
         href: about.qmd
-     
-      
       - icon: github
         href: https://github.com/msh855
       - icon: linkedin
         href: https://www.linkedin.com/in/moustafa-chatzouz/
       - icon: rss
         href: index.xml
-
+      - icon: Subscribe 
+        
+  
   google-analytics:  "170377145"
   cookie-consent: false
 # # filters:

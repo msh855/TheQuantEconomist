@@ -1,1 +1,7 @@
 /* css styles */
+/* Increase the margin or padding of the header */
+header {
+    margin-left: 50px;  /* Increase or adjust as needed */
+    margin-right: 50px; /* Increase or adjust as needed */
+    padding: 20px;      /* You can also adjust padding */
+}
