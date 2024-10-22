@@ -1,1 +1,26 @@
 /* css styles */
+/* Increase the margin or padding of the header */
+/* header {
+/*    margin-left: 50px;  /* Increase or adjust as needed */
+/*    margin-right: 50px; /* Increase or adjust as needed */
+/*    padding: 20px;      /* You can also adjust padding */
+/* } */
+
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
