@@ -1,26 +1,57 @@
-/* css styles */
-/* Increase the margin or padding of the header */
-/* header {
-/*    margin-left: 50px;  /* Increase or adjust as needed */
-/*    margin-right: 50px; /* Increase or adjust as needed */
-/*    padding: 20px;      /* You can also adjust padding */
-/* } */
+
+/* Custom styles for blog listing page */
+
+/* Style for the main blog post title */
+.quarto-listing-default .listing-title {
+    font-size: 20px;  /* Adjust this value as needed */
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for titles in the grid layout */
+.quarto-listing-default.grid .listing-title {
+    font-size: 1.25rem;  /* Slightly smaller for grid layout */
+}
+
+/* Style for titles in the table layout */
+.quarto-listing-default.table .listing-title {
+    font-size: 1.1rem;  /* Even smaller for table layout */
+}
+
+/* Hover effect for titles */
+.quarto-listing-default .listing-title:hover {
+    color: #2c5282;  /* Change color on hover */
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quarto-listing-default .listing-title {
+        font-size: 1.5rem;  /* Slightly smaller on mobile */
+    }
+    
+    .quarto-listing-default.grid .listing-title {
+        font-size: 1.1rem;
+    }
+}
+
 
 h1 {
-  font-size: 18px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 26px;
-}
-h4 {
   font-size: 22px;
 }
-h5 {
+h2 {
   font-size: 18px;
 }
+h3 {
+  font-size: 12px;
+}
+h4 {
+  font-size: 10px;
+}
+h5 {
+  font-size: 8px;
+}
 h6 {
-  font-size: 16px;
+  font-size: 6px;
 }
