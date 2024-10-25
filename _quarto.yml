@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "The Quant Economist Blog"
+  title: "The Quant Economist"
   site-url: https://www.the-quant-economist.com #https://msh855.github.io/TheQuantEconomist
   description: "Observations about Macroecnomics, Finance and Public Debates"
   margin-header: subscribe.html
@@ -14,6 +14,7 @@ website:
     #right:
      # - text: Home
      #   href: home.qmd
+   
     left: 
      - text: ChatGPT Economics
        href: chatGPT_blog.qmd
@@ -48,6 +49,7 @@ resources:
 
 format:
   html:
+    css: styles.css  # Add this line to include the custom CSS
     theme:
       light: theme.scss #yeti
       dark: Darkly
