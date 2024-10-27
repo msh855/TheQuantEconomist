@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.the-quant-economist.com/about.html</loc>
-    <lastmod>2023-10-21T10:08:29.060Z</lastmod>
+    <loc>https://www.the-quant-economist.com/Global Outlook/imf_oct_2024.html</loc>
+    <lastmod>2024-10-27T08:42:28.026Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.the-quant-economist.com/global_economic_outlook.html</loc>
+    <lastmod>2024-10-27T08:41:20.851Z</lastmod>
   </url>
   <url>
     <loc>https://www.the-quant-economist.com/chatGPT_posts/fiscal_policy_and_inequality/fiscal_policy_and_inequality.html</loc>
@@ -67,5 +71,9 @@
   <url>
     <loc>https://www.the-quant-economist.com/index.html</loc>
     <lastmod>2023-04-29T18:13:17.525Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.the-quant-economist.com/about.html</loc>
+    <lastmod>2023-10-21T10:08:29.060Z</lastmod>
   </url>
 </urlset>

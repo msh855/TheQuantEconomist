@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/global_economic_outlook.html",
+    "items": [
+      "/Global Outlook/imf_oct_2024.html"
+    ]
+  },
+  {
     "listing": "/home.html",
     "items": [
       "/posts/US_fiscal_policy/US_fiscal_policy.html",
