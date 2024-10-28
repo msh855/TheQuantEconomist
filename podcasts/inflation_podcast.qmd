@@ -1,0 +1,13 @@
+---
+title: "Inflation Time"
+subtitle: "*A summary of the economic literature on Inflation*"
+author: "notebookLLM"
+date: "2024-10-27"
+format: html
+---
+
+# Inflation: From Past to Present 
+
+To access the audio file, click on the link below (takes some time to load):
+
+[Listen to Audio](https://notebooklm.google.com/notebook/ff8f5b9a-4907-4dc3-ab58-3897b6b28eb8/audio)

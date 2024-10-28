@@ -1,0 +1,22 @@
+---
+#title: "Home"
+#description: "Bringing clarity to the world of finance"
+listing:
+  contents: podcasts
+  fields: [date, title, reading-time]
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+---
+
+
+*This page posts LLM podcasts. A user disclaimer applies to the use of LLMs, and any content here does not necessarily represent my views or those of my employer.*
+
+::: {style="height: 100px;"}
+:::
+
+<!-- Adds a large space before the listing -->
