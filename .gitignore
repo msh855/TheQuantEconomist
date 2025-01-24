@@ -48,3 +48,5 @@ docs/chatGPT_blog.html
 .Rproj.user/AC2B2F63/sources/prop/31756BB5
 posts/.DS_Store
 /.Rproj.user
+.DS_Store
+/posts
