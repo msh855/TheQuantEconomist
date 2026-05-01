@@ -14,8 +14,7 @@ about:
       href: https://github.com/msh855
 ---
 
-<div align="justify">
-  
+
 Welcome to my blog! 
 
 Allow me to introduce myself. I come from and I grew up in the beautiful [Meteora](https://www.wikiwand.com/en/Meteora). That's the only interesting information, the rest is self-promotion :) 

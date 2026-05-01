@@ -50,3 +50,5 @@ posts/.DS_Store
 /.Rproj.user
 .DS_Store
 /posts
+
+**/*.quarto_ipynb

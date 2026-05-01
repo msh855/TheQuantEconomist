@@ -15,15 +15,15 @@ website:
      # - text: Home
      #   href: home.qmd
    
-    left: 
-     - text: ChatGPT Economics
-       href: chatGPT_blog.qmd
+#   left: 
+#     - text: ChatGPT Economics
+#       href: chatGPT_blog.qmd
     
-     - text: Global Outlook
-       href: global_economic_outlook.qmd
+#     - text: Global Outlook
+#       href: global_economic_outlook.qmd
      
-     - text: LLM Podcast Series
-       href: podcastsLLM.qmd
+#     - text: LLM Podcast Series
+#       href: podcastsLLM.qmd
        
     right:
       - text: About
