@@ -52,3 +52,4 @@ posts/.DS_Store
 /posts
 
 **/*.quarto_ipynb
+.DS_Store
